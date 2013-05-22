@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="all09031@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_21_SRC_BYUIdaho_Friday.mov"
+        refid="asset1034174115503"
+        size="103417411"
+        display-name="SRC Anounces New BYU-Idaho Friday"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="SRC Anounces New BYU-Idaho Friday"
+        refid="2011_05_21_SRC_BYUIdaho_Friday.mov"
+        video-full-refid="asset1034174115503"
+        active="TRUE">
+        <short-description>Discounts will be offered to students who wear BYU-Idaho apparel.  We sat down with the SRC to find out more about it.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Campus</tag>
+        <tag>SRC</tag>
+        <tag>BYU-Idaho Friday</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

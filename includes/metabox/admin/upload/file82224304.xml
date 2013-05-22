@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="jdhernandezr@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_13_IN_4PawsAdoptionCenter.mp4"
+        refid="asset822243049649"
+        size="82224304"
+        display-name="Paws Adoption Center "
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Paws Adoption Center "
+        refid="2011_05_13_IN_4PawsAdoptionCenter.mp4"
+        video-full-refid="asset822243049649"
+        active="TRUE">
+        <short-description>This video talks about the Adaption Center located in Idaho Falls, Idaho</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>lifestyle</tag>
+        <tag>cats adoption</tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

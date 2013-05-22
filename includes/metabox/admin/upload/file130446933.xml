@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ras07001@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_25_Tuesday Update.mov"
+        refid="asset1304469332303"
+        size="130446933"
+        display-name="I-News Update; Paul Cardall Concert "
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Update; Paul Cardall Concert "
+        refid="2011_05_25_Tuesday Update.mov"
+        video-full-refid="asset1304469332303"
+        active="TRUE">
+        <short-description>Brian Thackeray recaps the Paul Cardall Concert and gets feedback from Paul himself.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Tuesday Update</tag>
+        <tag>Campus </tag>
+        <tag>I-News</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="all09031@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="June_23_show.mp4"
+        refid="asset8898713114460"
+        size="889871311"
+        display-name="I~News Weekly Wrap-up - June 24th 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I~News Weekly Wrap-up - June 24th 2011"
+        refid="June_23_show.mp4"
+        video-full-refid="asset8898713114460"
+        active="FALSE">
+        <short-description>I~News weekly wrap-up for the week ending on June 24th 2011</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Weekly Wrap-Up</tag>
+        <tag>I~News</tag>
+        <tag>Campus</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="bur08027@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_3_aquaticos_alberto website.mov"
+        refid="asset737780069061"
+        size="73778006"
+        display-name="Aerobicos Aquaticos"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Aerobicos Aquaticos"
+        refid="2011_06_3_aquaticos_alberto website.mov"
+        video-full-refid="asset737780069061"
+        active="TRUE">
+        <short-description>Clases de areobicos son cada Martes, Miércoles y Jueves en el edificio Hart.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Campus</tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

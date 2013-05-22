@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="mar06046@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_27_06_ANTHONY.mov"
+        refid="asset1093072498961"
+        size="109307249"
+        display-name="Anthony Robles Interview with Levi Christiansen"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Anthony Robles Interview with Levi Christiansen"
+        refid="2011_27_06_ANTHONY.mov"
+        video-full-refid="asset1093072498961"
+        active="FALSE">
+        <short-description>Levi Christiansen interviewes 2011 NCAA Champion Wrestler Anthony Robles. </short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Levi</tag>
+        <tag>Sports </tag>
+        <tag>NCAA</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

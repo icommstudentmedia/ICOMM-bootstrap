@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="MAR06046@BYUI.EDU" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_07_09_Wrap_Up.mov"
+        refid="asset9919810727320"
+        size="991981072"
+        display-name="I-News Weekly Wrap-Up: Week of July 7th"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Weekly Wrap-Up: Week of July 7th"
+        refid="2011_07_09_Wrap_Up.mov"
+        video-full-refid="asset9919810727320"
+        active="FALSE">
+        <short-description>This week in News we review national and local stories. Thanks for watching!</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>News</tag>
+        <tag>Current </tag>
+        <tag>Enents</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

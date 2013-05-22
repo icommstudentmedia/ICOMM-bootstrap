@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ras07001@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_22_I-News Update Air Show.mov"
+        refid="asset1455784584849"
+        size="145578458"
+        display-name="I-News Update; Legacy Fight Museum Air Show"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Update; Legacy Fight Museum Air Show"
+        refid="2011_06_22_I-News Update Air Show.mov"
+        video-full-refid="asset1455784584849"
+        active="TRUE">
+        <short-description>Airplane engines could be heard Saturday as the Legacy Fight Museum took to the sky.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>I-News</tag>
+        <tag>Air Show</tag>
+        <tag>Ryan Rasmussen</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

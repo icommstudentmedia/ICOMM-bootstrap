@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="dav10010@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_09_YOGA_CLASS.mov"
+        refid="asset566847239892"
+        size="56684723"
+        display-name="Yoga, Stress Reliever"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Yoga, Stress Reliever"
+        refid="2011_06_09_YOGA_CLASS.mov"
+        video-full-refid="asset566847239892"
+        active="TRUE">
+        <short-description>Students participate in yoga class.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>yoga</tag>
+        <tag>fitness</tag>
+        <tag>andrea davison</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

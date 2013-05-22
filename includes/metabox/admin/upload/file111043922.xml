@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ras07001@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="Tuesday Update June 1, 2011.mov"
+        refid="asset1110439221594"
+        size="111043922"
+        display-name="I-News Update; Devotional speaker Nora Nyland"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Update; Devotional speaker Nora Nyland"
+        refid="Tuesday Update June 1, 2011.mov"
+        video-full-refid="asset1110439221594"
+        active="TRUE">
+        <short-description>
+This weeks I-News update takes a look back at Nora Nyland Devotional talk for May 31, 2011.  
+</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Denise Valladolid</tag>
+        <tag>I-News Update</tag>
+        <tag>Devotional </tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

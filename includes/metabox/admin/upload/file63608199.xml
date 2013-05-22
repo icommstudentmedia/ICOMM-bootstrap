@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="tha09003@buyi.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="Duckie.mov"
+        refid="asset636081999432"
+        size="63608199"
+        display-name="Outdoor Activity "
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Outdoor Activity "
+        refid="Duckie.mov"
+        video-full-refid="asset636081999432"
+        active="TRUE">
+        <short-description>Brief summary of recent events of outdoor activities.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Sports</tag>
+        <tag>Brian Thackeray</tag>
+        <tag>outdoor</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

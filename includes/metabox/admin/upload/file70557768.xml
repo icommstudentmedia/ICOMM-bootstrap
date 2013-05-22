@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="mar06046@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_6_1_IN_Hatz.mov"
+        refid="asset705577681343"
+        size="70557768"
+        display-name="Hatz on campus"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Hatz on campus"
+        refid="2011_6_1_IN_Hatz.mov"
+        video-full-refid="asset705577681343"
+        active="TRUE">
+        <short-description>Hats are on campus! </short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>David</tag>
+        <tag>hat</tag>
+        <tag>Campus</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

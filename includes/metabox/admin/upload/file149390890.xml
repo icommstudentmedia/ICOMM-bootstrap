@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="denisevalladolid@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_25_TipsForGuys.mov"
+        refid="asset1493908908543"
+        size="149390890"
+        display-name="What Men Should Know"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="What Men Should Know"
+        refid="2011_05_25_TipsForGuys.mov"
+        video-full-refid="asset1493908908543"
+        active="TRUE">
+        <short-description>A few dating tips for guys that girls provided here from BYU-I.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Denise Valladolid</tag>
+        <tag>dating</tag>
+        <tag>social</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

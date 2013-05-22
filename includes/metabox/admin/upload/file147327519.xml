@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ras07001@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_28_Tuesday Update.mov"
+        refid="asset1473275195590"
+        size="147327519"
+        display-name="I-News Daily Update; 50 Lap Relay Race and Mud Volleyball"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Daily Update; 50 Lap Relay Race and Mud Volleyball"
+        refid="2011_06_28_Tuesday Update.mov"
+        video-full-refid="asset1473275195590"
+        active="FALSE">
+        <short-description>Brian Thackeray recaps the 50 Lap Relay Race and Denise Valladolid and Ryan Rasmussen cover the Mud Volleyball Tournament.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Daily Update</tag>
+        <tag>BYU-Idaho</tag>
+        <tag>I-News</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

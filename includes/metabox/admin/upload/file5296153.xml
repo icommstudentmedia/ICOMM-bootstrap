@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="jdhernandezr@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="hellow.mov"
+        refid="asset52961536100"
+        size="5296153"
+        display-name="Test 4 same video "
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Test 4 same video "
+        refid="hellow.mov"
+        video-full-refid="asset52961536100"
+        active="TRUE">
+        <short-description>Test 4 same video </short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>campus</tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

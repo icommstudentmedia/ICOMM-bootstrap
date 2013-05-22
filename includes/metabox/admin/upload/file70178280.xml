@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="denisevalladolid@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_25_Textinglaw.mov"
+        refid="asset701782804046"
+        size="70178280"
+        display-name="Cross the Street or "
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Cross the Street or "
+        refid="2011_05_25_Textinglaw.mov"
+        video-full-refid="asset701782804046"
+        active="TRUE">
+        <short-description>The new law that was recently passed says that it is banned to text message when walking on the crosswalk.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Denise Valladolid</tag>
+        <tag>Texting</tag>
+        <tag>Law</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="aaronegbertallsop@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_15_Daily_Update.mov"
+        refid="asset1115182254883"
+        size="111518225"
+        display-name="I~News Daily Update - June 15th 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I~News Daily Update - June 15th 2011"
+        refid="2011_06_15_Daily_Update.mov"
+        video-full-refid="asset1115182254883"
+        active="TRUE">
+        <short-description>In this I~News Daily Update we sit down with comedian Stephen Jones.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Aaron Egbert Allsop</tag>
+        <tag>Update</tag>
+        <tag>Stephen Jones</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

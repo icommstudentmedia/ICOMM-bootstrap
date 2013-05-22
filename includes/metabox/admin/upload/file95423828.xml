@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="com09006@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_06_IN_UPDATE.mov"
+        refid="asset954238287714"
+        size="95423828"
+        display-name="I-News Daily Update; June 6th, 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Daily Update; June 6th, 2011"
+        refid="2011_06_06_IN_UPDATE.mov"
+        video-full-refid="asset954238287714"
+        active="TRUE">
+        <short-description>Thanks for tuning into i-News, keeping you connected to campus, community and current events.
+
+http://www.byuicomm.net/?p=4855</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>daily update</tag>
+        <tag>i-News</tag>
+        <tag>alleged rape</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="sit06002@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_01_MeditationWorkshop.mov"
+        refid="asset644748469634"
+        size="64474846"
+        display-name="Max. 250 Characters"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Max. 250 Characters"
+        refid="2011_06_01_MeditationWorkshop.mov"
+        video-full-refid="asset644748469634"
+        active="TRUE">
+        <short-description>Students gathered at the Meditation/Mindfulness workshop on Thursday May 26 at 2pm.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Nate Sitton</tag>
+        <tag>Campus</tag>
+        <tag>Workshop</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

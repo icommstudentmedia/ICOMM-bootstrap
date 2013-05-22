@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="dav10010@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_2_STUDENT_CROSSROADS.mov"
+        refid="asset677024433868"
+        size="67702443"
+        display-name="Living Healthy, The Crossroads"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Living Healthy, The Crossroads"
+        refid="2011_06_2_STUDENT_CROSSROADS.mov"
+        video-full-refid="asset677024433868"
+        active="TRUE">
+        <short-description>Students in the Crossroads tell us their opinion on healthy living.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>crossroads</tag>
+        <tag>inews</tag>
+        <tag>healthy</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

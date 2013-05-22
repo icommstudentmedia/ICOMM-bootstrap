@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="her08013@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_03_11_IN_latinassociation.mov"
+        refid="asset3199421682259"
+        size="319942168"
+        display-name="Latin Association"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Latin Association"
+        refid="2011_03_11_IN_latinassociation.mov"
+        video-full-refid="asset3199421682259"
+        active="TRUE">
+        <short-description>This is the description of my video. Max. 250 Characters.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>campus</tag>
+        <tag>latin association</tag>
+        <tag>BYU-Idaho</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

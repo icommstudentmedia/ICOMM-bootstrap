@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="sit06002@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_07_05_IN_7weekbreak.mov"
+        refid="asset654049976604"
+        size="65404997"
+        display-name="7 Week Break"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="7 Week Break"
+        refid="2011_07_05_IN_7weekbreak.mov"
+        video-full-refid="asset654049976604"
+        active="FALSE">
+        <short-description>Students tell us what their plans are for the 7 week break!</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Nate Sitton</tag>
+        <tag>7 week break</tag>
+        <tag>campus</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

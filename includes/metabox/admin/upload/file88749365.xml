@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="mat09016@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_24_Biketheft.mov"
+        refid="asset887493651416"
+        size="88749365"
+        display-name="Bike Theft"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Bike Theft"
+        refid="2011_05_24_Biketheft.mov"
+        video-full-refid="asset887493651416"
+        active="TRUE">
+        <short-description>According to Rexburg Police, bike theft on the BYU-Idaho campus is on the rise.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>bike theft</tag>
+        <tag>morgan mathis</tag>
+        <tag>police</tag>
+        <tag>campus</tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

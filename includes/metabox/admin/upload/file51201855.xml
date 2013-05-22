@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="sit06002@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_27_Dance_IN.mov"
+        refid="asset512018554743"
+        size="51201855"
+        display-name="Dance Collegiate Showcase"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Dance Collegiate Showcase"
+        refid="2011_06_27_Dance_IN.mov"
+        video-full-refid="asset512018554743"
+        active="FALSE">
+        <short-description>Dancers perform many different routines at the Dance Collegiate Showcase over the weekend.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>dance</tag>
+        <tag>Nate Sitton</tag>
+        <tag>campus</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="redfearnk@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="brightcove_design2.psd"
+        refid="asset23206506047"
+        size="2320650"
+        display-name="tert"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="tert"
+        refid="brightcove_design2.psd"
+        video-full-refid="asset23206506047"
+        active="TRUE">
+        <short-description>erte</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>rwe</tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

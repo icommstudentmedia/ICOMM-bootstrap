@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="MAR06046@BYUI.EDU" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_07-09_FlagFB.mov"
+        refid="asset812141669569"
+        size="81214166"
+        display-name="I-News Sports Update"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Sports Update"
+        refid="2011_07-09_FlagFB.mov"
+        video-full-refid="asset812141669569"
+        active="FALSE">
+        <short-description>This week in campus sports: Flag Football! Can a journalist become a coach in a few minutes? Click to watch and find out!</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Sports</tag>
+        <tag>Dave Martinson</tag>
+        <tag>Flag Football</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

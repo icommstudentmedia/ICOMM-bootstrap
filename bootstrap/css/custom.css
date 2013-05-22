@@ -1,0 +1,1100 @@
+/* Image Alignment
+----------------------------------------------------------------------------------------*/
+img.alignnone {
+  display: block;
+  position: relative;
+}
+img.alignright {
+  float: right;
+  margin: 5px;
+  display: inline;
+}
+img.alignleft {
+  float: left;
+  margin: 5px;
+  display: inline;
+}
+img.aligncenter {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+/* Caption Styling
+----------------------------------------------------------------------------------------*/
+.wp-caption {
+  padding: 9px;
+}
+.wp-caption-text {
+  font-size: 10px;
+  line-height: 14px;
+}
+.gallery-caption {
+  padding: 9px;
+}
+/* Sticky Post Styles
+----------------------------------------------------------------------------------------*/
+.sticky {
+  padding: 4px;
+  border: 1px solid #DDD;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* Custom Elements Added
+----------------------------------------------------------------------------------------*/
+.masthead h2 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+/* Custom Class for Story thumnail captions
+-----------------------------------------------------------------------------------------*/
+a.thumbnail-wrapper {
+  max-width: 100%;
+  float: left;
+  position: relative;
+}
+a.thumbnail-wrapper img {
+  height: 155px;
+  width: 270px;
+}
+div.description {
+  position: absolute;
+
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.9;
+  filter:alpha(opacity=90); /*IE transparency */
+}
+p.description-content{
+  color: #ffffff;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* Custom Class for feature Stories, need a lot of text to align to the left
+--------------------------------------------------------------------------------------*/
+img.feature-img {
+  height: 150px;
+  width: 200px;
+  margin-top: 2.5%;
+}
+
+.feature {
+  text-align: left;
+  color: #333333;
+}
+
+.feature p {
+  text-align: left;
+}
+
+
+.feature h2 {
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.feature h3 {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.feature a {
+  color: #363636;
+}
+
+.feature img {
+  margin-top: 20px;
+}
+
+.feature-lead {
+  font-weight: bold;
+}
+.clear {
+  clear: both;
+}
+
+.marketing h2 {
+  padding-left: 0px;
+  color: #333333;
+  font-weight: bold;
+}
+.marketing p {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.author a {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #F89820 !important;
+}
+
+.author p {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.author li:first-child {
+  padding-left: 0;
+}
+
+
+/* Need a wrapper for the top navbar, mostly for the print page
+---------------------------------------------------------------------*/
+.navbar-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 0;
+  margin-bottom: -22px;
+}
+
+/* We want the Scroll Brand to be yellow!!!!
+---------------------------------------------------------------/
+  LOL NOT ANYMORE~
+
+
+.navbar-inverse .brand a {
+  color: #F7BC2F
+}
+
+.navbar-inverse .brand,
+.navbar-inverse .nav > a {
+  color: #F7BC2F;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > a:hover {
+  color: #F7E1AD;
+}
+---------------------------------------------------------------/
+
+/* make sure the carosel sits all the way to the left */
+#header-wrapper .nav,
+#header-wrapper .brand{
+  margin-bottom: -30px !important;
+
+}
+
+/* Need to make a class for the new navbar, also modify the
+ classes for bootstrap's navbar to fit our styleguide
+---------------------------------------------------------*/
+
+.topnav-wrapper {
+  background-color: #191919;
+  width: 100%;
+  font-size: 16px;
+}
+
+.topnav-wrapper hr {
+  margin: 10px 5px;
+  border-top: 0;
+  border-bottom:  1px solid #4A4A4A;
+}
+
+.navbar-inverse {
+  color: #FFFFFF;
+}
+
+.navbar .nav > li > a {
+  padding: 0;
+}
+
+.navbar .nav > li {
+  padding: 0 10px 0;
+}
+
+.navbar .brand {
+  padding: 0px 30px 10px;
+  font-size: 52px;
+  font-style: bold;
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+.front-search {
+  padding: 0;
+  margin: 0;
+}
+.navbar-inverse .navbar-search .search-query {
+  background-color: #FFFFFF;
+}
+
+/* Getting rid of the gradient was harder than I thought it would be... */
+
+.navbar-inner {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  min-height: 0;
+  margin-top: 20px;
+  text-align: left;
+  padding: 0;
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: #191919;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+.navbar-inverse .brand,
+.navbar-inverse .nav > li > a {
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar-inverse .brand:hover,
+.navbar-inverse .nav > li > a:hover {
+  color: #999999;
+}
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover {
+  background-color: transparent;
+  color: #999999;
+}
+.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a:hover,
+.navbar-inverse .nav .active > a:focus {
+  color: #999999;
+  background-color: #111111;
+}
+.navbar-inverse .navbar-link {
+  color: #999999;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #ffffff;
+}
+.navbar-inverse .divider-vertical {
+  border-left-color: #111111;
+  border-right-color: #222222;
+}
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: #111111;
+  color: #ffffff;
+}
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+
+.rightborder {
+  list-style-position: inside;
+  border-right: 1px solid white;
+}
+.rightborder-dark {
+  list-style-position: inside;
+  border-right: 1px solid #363636;
+}
+
+.login {
+  text-align: right;
+}
+
+
+
+
+
+/* CSS for the white custom Navbar that we no longer use. Feel free
+   to remove it, I'm just keeping it around as I'm working on the new full
+   menu.
+   ************************************************************************/
+
+.extranav-wrapper {
+  width: 100%;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+
+
+
+.extranav {
+  text-align: center;
+  padding: 15px 15px 0px 15px;
+}
+.extranav a {
+  color: #000000;
+  font-size: 18px;
+}
+.extranav a:hover {
+  color: #777777;
+}
+.extranavbar-inner {
+  min-height: 40px;
+  background-color: #FFFFFF;;
+  *zoom: 1;
+}
+.navbar-inner:before,
+.navbar-inner:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.navbar-inner:after {
+  clear: both;
+}
+
+
+/* Custom Classes for the Video section
+*******************************************/
+.videos {
+  border-left: 2px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.section-header {
+  background-color: #F7F7F7;
+  border-bottom: 2px solid #D9D9D9;
+  border-left: 2px solid #D9D9D9;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.video-content {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.video-content p {
+  font-size: 14px;
+  text-align: left;
+}
+.video {
+  padding-bottom: 10px;
+}
+
+.video p, a {
+  font-size: 10pt;
+  line-height: 1.3;
+  text-align: left;
+  color: black;
+}
+
+.first-video {
+  padding: 10px 0;
+}
+
+.crop100 {
+  float:left;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  width: 90px;
+  height: 70px;
+}
+
+.crop100 img {
+  position: absolute;
+  max-width: 1000px;
+  left: -50px;
+}
+
+/* Single Post style
+***********************************************/
+#post-content *{
+  /*Make sure no children get too wide */
+  max-width: 100% !important;
+}
+
+.postinfo {
+  padding-bottom: 30px;
+}
+
+.postinfo p {
+  margin: 0;
+  font-size: 12px;
+  color: #777777;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.postinfo h2 {
+  margin-bottom: 0;
+}
+/*Different border colors for each category*/
+.postinfo-box-top-campus {
+    border-top: 3px solid #FFCD67;
+}
+.postinfo-box-top-scroll-digital {
+    border-top: 3px solid #1EA1DC;
+}
+.postinfo-box-top-news {
+    border-top: 3px solid #1E77B3;
+}
+.postinfo-box-top-special {
+    border-top: 3px solid #B8B894;
+}
+.postinfo-box-top-photography {
+    border-top: 3px solid #42DBB5;
+}
+.postinfo-box-top-entertainment {
+    border-top: 3px solid #8D2D69;
+}
+.postinfo-box-top-lifestyle {
+    border-top: 3px solid #2DA701;
+}
+.postinfo-box-top-sports {
+    border-top: 3px solid #E64100;
+}
+.postinfo-box-top-opinion {
+    border-top: 3px solid #777777;
+}
+.postinfo-box-top-spanish {
+    border-top: 3px solid #001722;
+}
+/*******************************************/
+.postinfo-box-top .btn {
+  /*padding: 2px 5px;*/
+  font-size: 11px;
+  margin: 30px auto 40px;
+  font-weight: bold;
+}
+.postinfo-box {
+  border-left: 2px solid #D0D0D0;
+  border-bottom: 2px solid #D0D0D0;
+  padding-left: 20px;
+}
+.postinfo-box img {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.postinfo-box a {
+  font-size: 10px;
+  font-weight: bold;
+}
+.postinfo-box .role {
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.postinfo-box .date {
+  font-size: 10px;
+  color: #777777;
+}
+.postinfo-box .views {
+  font-size: 10px;
+  font-weight: bold;
+}
+.social-like {
+  margin: 10px 0;
+}
+.post-nav {
+  text-align: center;
+}
+.post-nav a{
+  color: #0088cc;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* below is every changes made to the contact page (LP) 
+***********************************************/
+.top-border {
+  border-top: 1px solid #eeeeee;
+}
+
+.contact p {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+}
+#map_canvas {
+  margin-bottom: 30px;
+}
+
+/* <ul></ul> (LP)
+***********************************************/
+/*I changed this part so it is a class that we can reuse, 
+instead of using the previous selector "ul" that could 
+not de reused. I also made the appropriate change in the contact.php. Isaac Andrade*/
+.ul-nostyle{
+list-style-type:none;
+}
+
+/* Social Icons (LP)
+***********************************************/
+#social-icons{
+  text-align:right;
+}
+
+/* content_box is a place holder for where the picture must go (LP)
+******************************************************************/
+.content_box{
+      height: 164px;
+      width: 120px;
+      background-color:black;
+      border: 1px solid green ;
+}
+.content_boxTwo{
+      height: 250px;
+      width: 250px;
+      background-color:black;
+      border: 1px solid green ;
+}
+
+/* Form (LP)
+******************************************************************
+
+form {
+  padding-left:100px;
+  padding-top:100px;
+}
+
+
+/* We found a need to make section headers be closer to the <hr> underneath them
+*********************************************************************************/
+
+.section-title {
+  margin-bottom: 0;
+}
+.no-margin {
+  margin: 0;
+}
+
+.author-about {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 11pt;
+  padding-top: 30px;
+}
+.thicker-hr {
+  border-color: #999999;
+}
+.container-narrow {
+  width: 95%;
+}
+
+/* Added class to give vertical padding to elements. Used for section headers etc when formatting is weird
+*****************************************************************************************************/
+.vert-padding {
+  padding: 10px 0;
+}
+.social-pics {
+  height: 60px;
+}
+.social-pics img {
+  height: 40px;
+  width: 40px;
+}
+
+
+/* Random addition to help the carousel captions
+**********************************************************************/
+.carousel-caption {
+  padding: 40px 70px;
+}
+
+/* Style for footer.php, please style the elements using the IDs that were given (footer_left , footer_right) 
+*************************************************************************************************************/
+/* So we want the footer to stick to the bottom of our page, so we need a wrapper for it and some other stuff */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -30px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 30px;
+}
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.footer {
+  background-color: #191919;
+  padding: 10px 0;
+  font-size: 10px;
+  font-family: Arial,sans-serif, 'Times New Roman',serif;
+}
+
+.footer a {
+  color: white;
+  font-family: Arial,sans-serif, 'Times New Roman',serif;
+  font-size: 10px;
+ }
+
+ .footer p {
+  color: white;
+ }
+
+.footer .align-right {
+  text-align: right;
+}
+
+/*************************************************************************************************************
+Override for the stylesheet of Google CSE (Custom Search) used in the search.php file.
+By Isaac Andrade
+***************************************************************************************************************/
+#search-results td.gsc-table-cell-snippet-close {
+  width: 70%;
+}
+
+#search-results .gs-web-image-box,
+.gs-promotion-image-box {
+  width: 100%;
+}
+
+#search-results .gs-web-image-box img.gs-image {
+  max-width: 218px; /* This is what the dimensions are for the parent div styled above with "width: 100%;" */
+  max-height: 106px;  /* Same as max-width above */
+  /* IE-specific hack to simulate max-width and max-height. */
+  /* For IE, image size will be a little different because various default
+   * values for margins and borders are different.
+   */
+  width: expression(this.width > 218 ? '218px': true);
+  height: expression(this.height > 106 ? '106px': true);
+}
+
+#search-results img.gs-image {
+  width: 90%;
+  height: auto;
+}
+
+#search-results .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+  color: #ffffff;
+}
+
+/*.gsc-cursor-page .gsc-cursor-current-page {
+  background-color:none;
+}*/
+
+
+/******************************************************
+Styling the Category Buttons
+by Isaac Andrade
+***********************************************************/
+.btn-campus {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #FFB767;
+  background-image: -moz-linear-gradient(top, #FFB767, #BF976A);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFB767), to(#BF976A));
+  background-image: -webkit-linear-gradient(top, #FFB767, #BF976A);
+  background-image: -o-linear-gradient(top,#FFB767, #BF976A);
+  background-image: linear-gradient(to bottom, #FFB767, #BF976A);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #BF976A #BF976A #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #BFA36A;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-campus:hover,
+.btn-campus:active,
+.btn-campus.active,
+.btn-campus.disabled,
+.btn-campus[disabled] {
+  color: #FFFFFF;
+  background-color: #BF976A;
+  *background-color: #df8505;
+}
+.btn-campus:active,
+.btn-campus.active {
+  background-color: #BF976A \9;
+}
+
+/**********************************/
+
+.btn-scroll-digital {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1EA1DC;
+  background-image: -moz-linear-gradient(top, #7DCBEE, #1182b2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7DCBEE), to(#1182b2));
+  background-image: -webkit-linear-gradient(top, #7DCBEE, #1182b2);
+  background-image: -o-linear-gradient(top, #7DCBEE, #1182b2);
+  background-image: linear-gradient(to bottom, #7DCBEE, #1182b2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7DCBEE', endColorstr='#ff1182b2', GradientType=0);
+  border-color: #1182b2 #1182b2 #074E6D;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #1182b2;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-scroll-digital:hover,
+.btn-scroll-digital:active,
+.btn-scroll-digital.active,
+.btn-scroll-digital.disabled,
+.btn-scroll-digital[disabled] {
+  color: #ffffff;
+  background-color: #1182b2;
+  *background-color: #54a6c9;
+}
+.btn-scroll-digital:active,
+.btn-scroll-digital.active {
+  background-color: #54a6c9 \9;
+}
+
+/***********************************/
+
+.btn-news {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1E77B3;
+  background-image: -moz-linear-gradient(top, #52A4D9, #3d8aba);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#52A4D9), to(#3d8aba));
+  background-image: -webkit-linear-gradient(top, #52A4D9, #3d8aba);
+  background-image: -o-linear-gradient(top, #52A4D9, #3d8aba);
+  background-image: linear-gradient(to bottom, #52A4D9, #3d8aba);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff52A4D9', endColorstr='#ff3d8aba', GradientType=0);
+  border-color: #3d8aba #3d8aba #3d8aba;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #3d8aba;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-news:hover,
+.btn-news:active,
+.btn-news.active,
+.btn-news.disabled,
+.btn-news[disabled] {
+  color: #ffffff;
+  background-color: #3d8aba;
+  *background-color: #3d8aba;
+}
+.btn-news:active,
+.btn-news.active {
+  background-color: #c67605 \9;
+}
+
+/************************************/
+
+.btn-special {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #B8B894;
+  background-image: -moz-linear-gradient(top, #DCDCBB, #999982);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DCDCBB), to(#999982));
+  background-image: -webkit-linear-gradient(top, #DCDCBB, #999982);
+  background-image: -o-linear-gradient(top, #DCDCBB, #999982);
+  background-image: linear-gradient(to bottom, #DCDCBB, #999982);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffDCDCBB', endColorstr='#ff999982', GradientType=0);
+  border-color: #999982 #999982 #999982;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #999982;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-special:hover,
+.btn-special:active,
+.btn-special.active,
+.btn-special.disabled,
+.btn-special[disabled] {
+  color: #ffffff;
+  background-color: #999982;
+  *background-color: #999982;
+}
+.btn-special:active,
+.btn-special.active {
+  background-color: #c67605 \9;
+}
+
+/**************************************/
+
+.btn-photography {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #42DBB5;
+  background-image: -moz-linear-gradient(top, #71EDCE, #4fc6a9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#71EDCE), to(#4fc6a9));
+  background-image: -webkit-linear-gradient(top, #71EDCE, #4fc6a9);
+  background-image: -o-linear-gradient(top, #71EDCE, #4fc6a9);
+  background-image: linear-gradient(to bottom, #71EDCE, #4fc6a9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff71EDCE', endColorstr='#ff4fc6a9', GradientType=0);
+  border-color: #4fc6a9 #4fc6a9 #4fc6a9;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #4fc6a9;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-photography:hover,
+.btn-photography:active,
+.btn-photography.active,
+.btn-photography.disabled,
+.btn-photography[disabled] {
+  color: #ffffff;
+  background-color: #4fc6a9;
+  *background-color: #4fc6a9;
+}
+.btn-photography:active,
+.btn-photography.active {
+  background-color: #4fc6a9 \9;
+}
+
+/**************************************/
+
+.btn-entertainment {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #8D2D69;
+  background-image: -moz-linear-gradient(top, #C661A0, #a54380);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C661A0), to(#a54380));
+  background-image: -webkit-linear-gradient(top, #C661A0, #a54380);
+  background-image: -o-linear-gradient(top, #C661A0, #a54380);
+  background-image: linear-gradient(to bottom, #C661A0, #a54380);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffC661A0', endColorstr='#ffa54380', GradientType=0);
+  border-color: #a54380 #a54380 #a54380;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #a54380;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-entertainment:hover,
+.btn-entertainment:active,
+.btn-entertainment.active,
+.btn-entertainment.disabled,
+.btn-entertainment[disabled] {
+  color: #ffffff;
+  background-color: #a54380;
+  *background-color: #a54380;
+}
+.btn-entertainment:active,
+.btn-entertainment.active {
+  background-color: #a54380 \9;
+}
+
+/*************************************/
+
+.btn-lifestyle {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2DA701;
+  background-image: -moz-linear-gradient(top, #60D336, #4faa2a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#60D336), to(#4faa2a));
+  background-image: -webkit-linear-gradient(top, #60D336, #4faa2a);
+  background-image: -o-linear-gradient(top, #60D336, #4faa2a);
+  background-image: linear-gradient(to bottom, #60D336, #4faa2a);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff60D336', endColorstr='#ff4faa2a', GradientType=0);
+  border-color: #4faa2a #4faa2a #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #4faa2a;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-lifestyle:hover,
+.btn-lifestyle:active,
+.btn-lifestyle.active,
+.btn-lifestyle.disabled,
+.btn-lifestyle[disabled] {
+  color: #ffffff;
+  background-color: #4faa2a;
+  *background-color: #4faa2a;
+}
+.btn-lifestyle:active,
+.btn-lifestyle.active {
+  background-color: #4faa2a \9;
+}
+
+/**************************************/
+
+.btn-sports {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #E64100;
+  background-image: -moz-linear-gradient(top, #F3936D, #F3703D);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F3936D), to(#F3703D));
+  background-image: -webkit-linear-gradient(top, #F3936D, #F3703D);
+  background-image: -o-linear-gradient(top, #F3936D, #F3703D);
+  background-image: linear-gradient(to bottom, #F3936D, #F3703D);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #F3936D #F3936D #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #E64100;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-sports:hover,
+.btn-sports:active,
+.btn-sports.active,
+.btn-sports.disabled,
+.btn-sports[disabled] {
+  color: #ffffff;
+  background-color: #F3703D;
+  *background-color: #F3703D;
+}
+.btn-sports:active,
+.btn-sports.active {
+  background-color: #F3703D \9;
+}
+
+/**************************************/
+
+.btn-opinion {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #777777;
+  background-image: -moz-linear-gradient(top, #BBBBBB, #777777);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BBBBBB), to(#777777));
+  background-image: -webkit-linear-gradient(top, #BBBBBB, #777777);
+  background-image: -o-linear-gradient(top, #BBBBBB, #777777);
+  background-image: linear-gradient(to bottom, #BBBBBB, #777777);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #777777 #777777 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #777777;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-opinion:hover,
+.btn-opinion:active,
+.btn-opinion.active,
+.btn-opinion.disabled,
+.btn-opinion[disabled] {
+  color: #ffffff;
+  background-color: #777777;
+  *background-color: #777777;
+}
+.btn-opinion:active,
+.btn-opinion.active {
+  background-color: #777777 \9;
+}
+
+/***************************************/
+
+.btn-spanish {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #001722;
+  background-image: -moz-linear-gradient(top, #001722, #000F16);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#001722), to(#000F16));
+  background-image: -webkit-linear-gradient(top, #001722, #000F16);
+  background-image: -o-linear-gradient(top, #001722, #000F16);
+  background-image: linear-gradient(to bottom, #001722, #000F16);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #001722 #001722 #000F16;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #001722;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-spanish:hover,
+.btn-spanish:active,
+.btn-spanish.active,
+.btn-spanish.disabled,
+.btn-spanish[disabled] {
+  color: #ffffff;
+  background-color: #001722;
+  *background-color: #000F16;
+}
+.btn-spanish:active,
+.btn-spanish.active {
+  background-color: #000F16 \9;
+}
+
+/****** Need newer class for category / page headers to have correct spacing **********************************
+//Classes below are not being used anymore in about.php and contact.php. Instead, we are using .vert-padding and .social-pics
+//to keep consistency. Isaac Andrade
+
+.page-title {
+  padding-top: 36px;
+}
+.page-title h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+/******* Comment Styles *************************/
+.comments p {
+  margin: 15px 40px;
+}
+.comment p {
+  font-size: 12px;
+}
+.comments h3 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+
+}
+.commentlist .reply {
+  margin-left: 40px;
+}
+
+#commentlist p {
+  font-size: 12px;
+}

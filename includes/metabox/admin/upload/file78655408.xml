@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="sit06002@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_09_IBC_BEHIND.mov"
+        refid="asset786554084968"
+        size="78655408"
+        display-name="IBC - Integrated Business Core"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="IBC - Integrated Business Core"
+        refid="2011_06_09_IBC_BEHIND.mov"
+        video-full-refid="asset786554084968"
+        active="TRUE">
+        <short-description>Students run their own business on campus.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>campus</tag>
+        <tag>IBC</tag>
+        <tag>business</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

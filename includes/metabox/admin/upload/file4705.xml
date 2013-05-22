@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="redfearnk@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="ICom.jpg"
+        refid="asset47059701"
+        size="4705"
+        display-name="wefsdf"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="wefsdf"
+        refid="ICom.jpg"
+        video-full-refid="asset47059701"
+        active="TRUE">
+        <short-description>sdfs</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>sdf</tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

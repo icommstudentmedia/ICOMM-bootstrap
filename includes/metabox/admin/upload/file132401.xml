@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="redfearnk@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="Screen shot 2011-05-23 at 4.08.04 PM.png"
+        refid="asset1324014285"
+        size="132401"
+        display-name="sdfsdfsdfsdfsdfsdfsdf"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="sdfsdfsdfsdfsdfsdfsdf"
+        refid="Screen shot 2011-05-23 at 4.08.04 PM.png"
+        video-full-refid="asset1324014285"
+        active="TRUE">
+        <short-description>sdfsdf</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>sd</tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

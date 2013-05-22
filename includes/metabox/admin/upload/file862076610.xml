@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="com09006@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_07_01_Friday Wrap-Up.mov"
+        refid="asset8620766101732"
+        size="862076610"
+        display-name="I-News Weekly Wrap-up, Friday July 1st, 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Weekly Wrap-up, Friday July 1st, 2011"
+        refid="2011_07_01_Friday Wrap-Up.mov"
+        video-full-refid="asset8620766101732"
+        active="FALSE">
+        <short-description>I-News Weekly Wrap-up, Friday July 1st, 2011</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>feature</tag>
+        <tag>BYU-Idaho</tag>
+        <tag>I-News</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

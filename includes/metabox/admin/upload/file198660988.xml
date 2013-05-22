@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ras07001@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_08_Daily_Update.mov"
+        refid="asset1986609882524"
+        size="198660988"
+        display-name="I~News Daily Update June 8th 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I~News Daily Update June 8th 2011"
+        refid="2011_06_08_Daily_Update.mov"
+        video-full-refid="asset1986609882524"
+        active="TRUE">
+        <short-description>Students recap devotional and Outdoor activities go to Rigby Lake.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>I-News Update </tag>
+        <tag>Devotional </tag>
+        <tag>Sports</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

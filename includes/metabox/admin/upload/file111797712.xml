@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="jdhernandezr@gmail.com" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2010_06_22_IN_DavidArchuleta.mov"
+        refid="asset1117977121168"
+        size="111797712"
+        display-name="David Achuleta - Autograph signing event in Rexburg, Idaho"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="David Achuleta - Autograph signing event in Rexburg, Idaho"
+        refid="2010_06_22_IN_DavidArchuleta.mov"
+        video-full-refid="asset1117977121168"
+        active="TRUE">
+        <short-description>David Achuleta - Autograph signing event in Rexburg, Idaho</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>Entertainment</tag>
+        <tag>David Archuleta</tag>
+        <tag>BYU-Idaho</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

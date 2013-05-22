@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="thompsonj@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_4_3_Making of ASC.mp4"
+        refid="asset560661914288"
+        size="56066191"
+        display-name="Making of ASC commercials"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Making of ASC commercials"
+        refid="2011_4_3_Making of ASC.mp4"
+        video-full-refid="asset560661914288"
+        active="TRUE">
+        <short-description>The I~Comm Video Production crew created 3 videos for the BYU-Idaho ASC group.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>byui</tag>
+        <tag>Icomm</tag>
+        <tag>academic support</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

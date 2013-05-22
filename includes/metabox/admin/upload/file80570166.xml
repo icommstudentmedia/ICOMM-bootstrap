@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ses10003@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_04_Doughnuts.mov"
+        refid="asset805701667226"
+        size="80570166"
+        display-name="Doughtnut Day!"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Doughtnut Day!"
+        refid="2011_06_04_Doughnuts.mov"
+        video-full-refid="asset805701667226"
+        active="TRUE">
+        <short-description>We went to a local doughnut shop for doughnut day.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>I-News</tag>
+        <tag>Doughtnuts</tag>
+        <tag>Feature</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

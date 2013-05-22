@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="com09006@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_19_Jujitsu_IN.mov"
+        refid="asset605732291077"
+        size="60573229"
+        display-name="Learning the Brazillian martial art of Jujitsu"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Learning the Brazillian martial art of Jujitsu"
+        refid="2011_06_19_Jujitsu_IN.mov"
+        video-full-refid="asset605732291077"
+        active="TRUE">
+        <short-description>We took a trip to the Hart to understand what exactly this martial art does to set it apart from the others.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>feature</tag>
+        <tag>I-News</tag>
+        <tag>jujistu</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="com09006@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_04_IN_OsamaBinLadendeath.mov"
+        refid="asset7439864911416"
+        size="743986491"
+        display-name="I-News Special Report: Osama bin Laden's death"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Special Report: Osama bin Laden's death"
+        refid="2011_05_04_IN_OsamaBinLadendeath.mov"
+        video-full-refid="asset7439864911416"
+        active="FALSE">
+        <short-description>I-News Special Report: Osama bin Laden's death</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>feature</tag>
+        <tag>I-News</tag>
+        <tag>BYU-Idaho</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

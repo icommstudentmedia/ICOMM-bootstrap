@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="mar06046@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_12_IN_JustinOsmond.mov"
+        refid="asset20911006956892"
+        size="2091100695"
+        display-name="Justin Osmond's recent visit to BYU-Idaho"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Justin Osmond's recent visit to BYU-Idaho"
+        refid="2011_05_12_IN_JustinOsmond.mov"
+        video-full-refid="asset20911006956892"
+        active="TRUE">
+        <short-description>Justin Osmond is an author, noted philanthropist and member of the famous Osmond family. He has overcome severe hearing loss to become an inspiration to everyone that he comes in contact with. He visited BYU-Idaho and talked with Dave Martinson about his life, goals and charity foundation. </short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>justin osmond</tag>
+        <tag>charity</tag>
+        <tag>author</tag>
+        <tag>Dave Martinson</tag>
+        <tag>Celebrity </tag>
+    </title>
+
+</publisher-upload-manifest>

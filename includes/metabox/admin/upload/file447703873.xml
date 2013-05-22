@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="ras07001@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_25 Friday Show.mov"
+        refid="asset4477038734251"
+        size="447703873"
+        display-name="I-News Weekly Wrap-Up May 13, 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Weekly Wrap-Up May 13, 2011"
+        refid="2011_05_25 Friday Show.mov"
+        video-full-refid="asset4477038734251"
+        active="TRUE">
+        <short-description>BYU Idaho Weekly Wrap-Up bring stories like Justin Osmond, updates on the SRC, and Devotional. </short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>I-News</tag>
+        <tag>Ryan Rasmussen</tag>
+        <tag>Friday Show</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

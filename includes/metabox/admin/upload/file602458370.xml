@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="agu09004@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_05_20_INEWS_ESPANOL SHOW.mov"
+        refid="asset6024583705578"
+        size="602458370"
+        display-name="Noticiero de I-news en Español "
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="Noticiero de I-news en Español "
+        refid="2011_05_20_INEWS_ESPANOL SHOW.mov"
+        video-full-refid="asset6024583705578"
+        active="TRUE">
+        <short-description>Edición de I-news en Español. Mayo 20 2011</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>inews en espanol</tag>
+        <tag>spanish</tag>
+        <tag>byu idaho</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

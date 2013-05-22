@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publisher-upload-manifest publisher-id="694915275001" preparer="David H." report-success="TRUE">
+  <notify email="com09006@byui.edu" />
+
+  <notify email="jdhernandezr@gmail.com" />
+
+    <asset filename="2011_06_03_IN_FULLSHOW.mov"
+        refid="asset7392420627613"
+        size="739242062"
+        display-name="I-News Weekly Wrap-Up, Friday June 3rd, 2011"
+        encode-to="MP4"
+        encode-multiple="TRUE"
+        type="VIDEO_FULL"/>
+
+    <title name="I-News Weekly Wrap-Up, Friday June 3rd, 2011"
+        refid="2011_06_03_IN_FULLSHOW.mov"
+        video-full-refid="asset7392420627613"
+        active="TRUE">
+        <short-description>Thanks for tuning into i-News, keeping you connected to campus, community and current events.  This is the full Weekly Wrap-Up show for June 3rd, 2011.</short-description>
+        <long-description></long-description>
+        <related-link-url></related-link-url>
+        <related-link-text></related-link-text>
+        <tag>i-news</tag>
+        <tag>feature</tag>
+        <tag>full show</tag>
+        <tag></tag>
+        <tag></tag>
+    </title>
+
+</publisher-upload-manifest>

@@ -1,0 +1,267 @@
+.my_meta_control {
+    background-color: #000000;
+    margin: auto;
+    padding: 41px;
+    position: relative;
+    width: 700px;
+    display: none;
+}
+@font-face {
+    font-family: 'TradeGothicLTStdBdCnNo.20';
+    src: url('../../fonts/tradegothicltstd-bdcn20-webfont.eot');
+    src: url('../../fonts/tradegothicltstd-bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'),
+         url('../../fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'),
+         url('../../fonts/tradegothicltstd-bdcn20-webfont.svg#TradeGothicLTStdBdCnNo.20') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.bc-brand{
+	background:url(images/logo-br.png) no-repeat 0 0 transparent;
+	width:195px;
+	height:55px;
+	margin: 10px auto;
+}
+.bc-upload{
+	background-color:#fff;
+	margin:15px auto;
+	border: solid 1px #ccc;
+}
+.upload{
+    height: 50px;
+    margin: 0 auto 20px;
+    width: 100px;
+}
+.upload_start{
+    background: url("images/up.png") no-repeat scroll center 0 transparent;
+	border: 1px solid #eee;
+    display: block;
+    float: left;
+    height: 20px;
+    padding-top: 35px;
+    text-align: center;
+    width: 110px;
+	cursor:pointer;
+}
+.upload_start:hover{
+	box-shadow:0px 0px 5px #ccc;
+	color:#21759B;
+	border-color:#ddd;
+}
+.login-head {
+    background: url("images/upload_meta.png") no-repeat scroll -4px 40px black;
+    height: 70px;
+    width: 100%;
+}
+.login-head h1 {
+	color: #0E82DB;
+	font-family: 'TradeGothicLTStdBdCnNo.20';
+	font-size: 38px;
+	font-style: normal;
+	font-weight: normal;
+	height: 41px;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+	width: 575px;
+}
+.upload_exist{
+    border-right: 1px dotted #CCCCCC;
+    display: block;
+    height: 36px;
+    text-align: center;
+    width: 100px;
+	float:left;
+}
+#content-upload{
+	width:260px;
+	float: left;
+}
+#content-upload #title-count, #bcid{
+    background-color: #494949;
+    border: 1px solid #494949;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 1px #171717 inset;
+    color: #999999;
+    font-size: 15px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 16px;
+    padding-left: 10px;
+   	width: 100%;
+}
+#file-button{
+	border: 0 none;
+    left: 45px;
+	opacity: 0;
+    position: absolute;
+	top: 240px;
+}
+#file_name{
+ 	background-color: #494949;
+    border: 1px solid #494949;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 1px #171717 inset;
+    color: #999999;
+    font-size: 15px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 16px;
+    padding-left: 10px;
+    width: 100%;
+}
+#content-upload textarea{
+    background-color: #494949;
+    border: 1px solid #494949;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 1px #171717 inset;
+    color: #999999;
+    font-size: 15px;
+    font-weight: normal;
+    height: 75px;
+    line-height: 16px;
+    padding-left: 10px;
+   	width: 100%;
+	padding-top: 5px;
+}
+#title-count_counter {
+    padding-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+#count_counter{
+	 padding-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+#f1_upload_process{
+   z-index:100;
+   visibility:hidden;
+   position:absolute;
+   text-align:center;
+   width:400px;
+}
+.login-logo {
+    background: url("images/icon.png") no-repeat scroll 0 center transparent;
+    height: 70px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+#content-upload .bt-primary, .bt-cancel, #add_id_btn {
+    background-color: #888888;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #F1F1F1;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 24px;
+    margin: 16px 10px 0 0;
+    width: 100%;
+}
+#content-upload .bt-primary:hover{
+	background-color:#0E82DB;
+	color:#fff;
+}
+#f1_upload_process, .msg{
+	color: #999999;
+	font-size:15px !important;
+	width: 700px;
+	top: 250px;
+}
+#div-or {
+	background: url("../../images/login-logo.png") no-repeat scroll 0 -62px black;
+	margin: 10% auto 0;
+	height: 20px;
+	width: 100px;
+}
+#update-id{
+    float: right;
+    margin-top: -30px;
+    width: 260px;
+}
+.bc-metadata{
+    /* height: 200px;
+    padding: 30px; */
+	min-height: 200px;
+	padding: 30px;
+	width: 700px;
+}
+.bc-metadata h2 {
+    font-family: Georgia,serif;
+    font-size: 30px !important;
+    line-height: 40px;
+}
+.bc-metadata p {
+    /* display: inline;
+    float: left; */
+    font-family: Georgia,serif;
+    font-size: 12px;
+    /* line-height: 18px;
+    margin-top: 15px;*/
+	line-height: 13px;
+}
+.bc-metadata-left{
+	/* float:left;
+	width: 520px; */
+	float: right;
+	width: 475px;
+}
+.bc-metadata-right{
+	/* float:right; */
+	float: left;
+}
+.current{
+	color:#ddd;
+}
+#clearvid{
+    /* left: 40px;
+    position: absolute;
+    top: 115px; */
+	float: right;
+	margin-top: -50px;
+	margin-right: 25px;
+}
+.bc-metadata-left #vinfo {
+	float: left;
+}
+#vinfo h2 {
+	margin-top: 0;
+}
+
+.close {
+	cursor: pointer;
+	float: right;
+	font-size: 20px;
+	margin-top: -135px;
+	margin-right: -20px;
+}
+
+#okay {
+    background-color: #888888;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #F1F1F1;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    height: 24px;
+	width: 75px;
+    margin: 16px auto 0 auto;
+}
+
+#remove_video {
+	border: #BBB solid 1px;
+	color: #464646;
+	background-color: #FFF;
+	border-radius: 3px 3px 3px 3px;
+	margin: 1px;
+	padding: 3px;
+	line-height: 15px;
+	float: right;
+	margin-right: 125px;
+	margin-top: -49px;
+}

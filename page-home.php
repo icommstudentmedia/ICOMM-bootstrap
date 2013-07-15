@@ -6,18 +6,12 @@
  * @package WP-Bootstrap
  * @since WP-Bootstrap 0.5
  *
- * Last Revised: July 16, 2012
- * I think that we are using rows wrong. I'm going to switch them to row-fluid and see what happens
  */
 
 
  get_header(); ?>
-<!--
-* This is the jumbotron as it appears on the main bootstrap page, I copied/pasted it in and added correct links to make sure I have the formatting right.
-* From here we just implement the loop.
-* For Clarification purposes, we want to grab the 5 most recent articles and their thumbnails for the carousel at the top right?
-* -Shane
--->
+
+ <!-- Begin Carousel -->
 
 <div id="myCarousel" class="carousel slide visible-desktop">
  <div class="carousel-inner">
@@ -119,16 +113,23 @@
 
         <h2 class="feature-lead">Latest Stories</h2>
           <?php
-            $args = array(
-                'posts_per_page' => 20
-              );
+
+            if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
+            elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
+            elseif ( isset($_GET['paged']) ) { $paged = $_GET['paged']; }
+            else { $paged = 1; }
+            $args = array('posts_per_page' => 20, 'paged' => $paged );
+
             $query = new WP_Query($args);
             if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
               // this way it can be included anywhere 
               include 'includes/latest-stories.php';
 
             endwhile; endif;
+
           ?>
+          <div class="pull-left"><?php previous_posts_link(); ?></div>
+          <div class="pull-right"><?php next_posts_link(); ?></div>
       </div>
     </div>
     <!-- Sidebar -->

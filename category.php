@@ -74,17 +74,23 @@
 
         <h2 class="feature-lead">Latest Stories</h2>
           <?php
-            $args = array(
-                'cat' => $current_cat,
-                'posts_per_page' => 20
-              );
+            if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
+            elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
+            elseif ( isset($_GET['paged']) ) { $paged = $_GET['paged']; }
+            else { $paged = 1; }
+            $args = array('posts_per_page' => 20, 
+              'paged' => $paged,
+              'cat' => $current_cat );
+
             $query = new WP_Query($args);
             if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
-      
+              // this way it can be included anywhere 
               include 'includes/latest-stories.php';
 
             endwhile; endif;
           ?>
+          <div class="pull-left"><?php previous_posts_link(); ?></div>
+          <div class="pull-right"><?php next_posts_link(); ?></div>
       </div>
     </div>
     <!-- Sidebar -->

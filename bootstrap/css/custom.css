@@ -723,6 +723,22 @@ By Isaac Andrade
   background-color:none;
 }*/
 
+/*************************************************************************************************************
+Style divs that wrap aroung Google Ads
+By Isaac Andrade
+***************************************************************************************************************/
+.ads-post {
+  background-color: rgb(238, 238, 238);
+  height: 250px;
+}
+
+.ads-post > ins {
+  display: block !important;
+  margin: 0 auto !important;
+}
+.ads-box {
+  background-color: #191919;
+}
 
 /******************************************************
 Styling the Category Buttons

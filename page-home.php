@@ -133,8 +133,11 @@
             } 
               
           ?>
-          <div class="pull-left"><?php previous_posts_link(); ?></div>
-          <div class="pull-right"><?php next_posts_link(); ?></div>
+
+          <!-- I am commenting pagination out for now, until I have time to fix it. If you want to work on it, please do! - Isaac Andrade -->
+          <!-- <div class="pull-left"><?php previous_posts_link(); ?></div>
+          <div class="pull-right"><?php next_posts_link(); ?></div> -->
+
       </div>
     </div>
     <!-- Sidebar -->

@@ -1,4 +1,144 @@
 <?php
+//Feedback Custom Post Type
+// Aug 20 , 2013
+// These are for Tester to send feedback to the developers
+// Only Developers should have admin access to the feedback. - Lyle Palagar, Isaac Andrade
+add_action( 'init','feedback_custom_type');
+function feedback_custom_type(){
+	register_post_type('feedback',
+		array(
+
+			'labels'=>array(
+						'name'=>'Feedback',
+						'singular'=>'Feedback',
+						'all_items'=>'All Feedback',
+						'add_new'=>'Add New',
+						'add_new_item'=>'New Feedback',
+						'edit_item'=>'Edit',
+						'new_item'=>'New Feedback',
+						'view_item'=>'View Feedback',
+						'search_items'=>'Search Feedback',
+						'not_found'=>'No Feedback Found',
+						'not_found_in_trash'=>'No feedback Found in Trash',
+						'parent'=>'Parent Feedback',
+						'menu_name'=>'Feedback',
+						),
+			'description' => 'These are for Beta-Testers to send feedback to the Developers.',
+			'public' => true, // keep the custom type shown on the wp-admin page
+			'menu_position' => 25,
+			
+
+
+			)
+		);
+}
+
+// Feedback Categories
+/* 	These are taxonomies that will be changed initially by the author,
+* 	but afterwards it will be changed ONLY by administrators
+*	They will be used to represent the status of the feedback, if it's been
+*	worked on, ignored, or still have pending work to do. - Isaac Andrade
+*/
+add_action('init', 'feedback_taxonomies', 0);
+function feedback_taxonomies() {
+	$labels = array(
+					'name' => 'Status',
+					'all_items' => 'All Statuses',
+					'menu_name' => 'Status',
+					'edit_item' => 'Edit Status',
+					'view_item' => 'View Status',
+					'update_item' => 'Update Status',
+					'add_new_item' => 'Create New Status',
+					'new_item_name' => 'New Status Name',
+					'search_items' => 'Search',
+					);
+	register_taxonomy('status', 'feedback', 
+		array(
+			'hierarchical' => true,
+			'labels' => $labels,
+			'query_var' => false,
+			'rewrite' => false,
+			));
+}
+
+
+// Feedback Dropdown Filter
+/* filter by status (taxonomy)
+*/
+
+add_action('restrict_manage_post', 'restrict_feedback_by_status');
+function restrict_feedback_by_status(){
+	global $typenow;
+	global $wp_query;
+	if($typenow=='feeback'){
+		$taxonomy='status';
+		$status_taxonomy= get_taxonomy($taxonomy);
+		wp_dropdown_categories(array(
+									'show_option_all' => __("Show All {$status_taxonomy->label}"),
+									'taxonomy' => $taxonomy,
+									'name' => 'status',
+									'orderby' => 'name',
+									'selected' => $wp_query->query['term'],
+									'hierarchical' => true,
+									'depth' => 3,
+									'show_count' => true,
+									'hide_empty' => true,
+									)
+								);
+	}
+}
+
+add_filter('parse_query','convert_status_id_to_taxonomy_term_in_query');
+function convert_status_id_to_taxonomy_term_in_query(){
+	global $pagenow;
+	$qv = &$query->query_vars;
+	if($pagenow=='edit.php' && 
+		isset($qv['taxonomy']) && $qv['taxonomy'] == 'status' &&
+		isset($qv['term']) && is_numeric($qv['term'])){
+		$term = get_term_by('id',$qv['term'],'status');
+		$qv['term'] =$term->slug;	
+	}
+	
+}
+
+add_action('manage_feedback_posts_columns', 'add_status_column_to_feedback_list');
+function add_status_column_to_feedback_list( $posts_columns ) {
+    if (!isset($posts_columns['author'])) {
+        $new_posts_columns = $posts_columns;
+    } else {
+        $new_posts_columns = array();
+        $index = 0;
+        foreach($posts_columns as $key => $posts_column) {
+            if ($key=='author')
+                $new_posts_columns['status'] = null;
+            $new_posts_columns[$key] = $posts_column;
+        }
+    }
+    $new_posts_columns['status'] = 'status';
+    return $new_posts_columns;
+}
+
+add_action('manage_feedback_custom_column', 'show_status_column_for_feedback_list',10,2);
+function show_status_column_for_feedback_list( $column_id,$post_id ) {
+    global $typenow;
+    if ($typenow=='feedback') {
+        $taxonomy = 'status';
+        switch ($column_name) {
+        case 'status':
+            $statuses = get_the_terms($post_id,$taxonomy);
+            if (is_array($statuses)) {
+                foreach($statuses as $key => $status) {
+                    $edit_link = get_term_link($status,$taxonomy);
+                    $statuses[$key] = '<a href="'.$edit_link.'">' . $status->name . '</a>';
+                }
+                //echo implode("<br/>",$statuses);
+                echo implode(' | ',$statuses);
+            }
+            break;
+        }
+    }
+}
+
 //Custom Post Type 
 add_action('init','portfolio_custom_type');
 function portfolio_custom_type(){

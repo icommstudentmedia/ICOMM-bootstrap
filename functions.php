@@ -441,7 +441,31 @@ function posts_custom_column_views($column_name, $id){
 }
 
 /*************************** FROM OLD FILE ***************/
+/*	** VOLATILE CODE START **
+	This code was deleted, I am adding some of them to get some backend functionality back,
+	so if it breaks, I'll remove them or comment them out. Isaac Andrade
+*/
 
+// disable the admin bar
+show_admin_bar(false);    
+//Metabox Script
+include (TEMPLATEPATH . '/includes/metabox/script.php');
+//Custom Post Types and Taxonomies Script
+include (TEMPLATEPATH . '/includes/post_type.php');
+//Ajax functions
+include (TEMPLATEPATH . '/includes/ajax.php');
+//Custom Members fields
+include (TEMPLATEPATH . '/includes/members.php');
+//Profile metaboxes
+include (TEMPLATEPATH . '/includes/metabox/profile-meta.php');
+//image attachment management metabox
+include (TEMPLATEPATH . '/includes/metabox/images-meta.php');
+//post visits counting functions
+include (TEMPLATEPATH . '/includes/visit-count.php');
+//Breaking news ticker
+include (TEMPLATEPATH . '/includes/ticker.php');
+
+//	** VOLATILE CODE END **
 
 /*-----------------Update LDP playlist on save------------------------------*/
 add_action('save_post','update_ldp_playlist');

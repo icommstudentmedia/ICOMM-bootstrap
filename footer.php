@@ -1,3 +1,12 @@
+<?php
+ /**
+ *   FOOTER.PHP
+ *   Date: 
+ *   @author
+ **/
+?>
+
+
 	</div> <!-- Container -->
 	<div id="push"></div>
 </div> <!-- #wrap -->

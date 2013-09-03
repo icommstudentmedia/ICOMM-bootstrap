@@ -1,4 +1,13 @@
-<!-- This is a Google Ad that is implemented after the 3rd Post in page-home.php -->
+<!--  PostGoogleAd.php
+
+      Description:
+	        This is a Google Ad that is implemented
+	        after the 3rd Post in page-home.php 
+
+      Authors: 
+
+
+  -->
 <div class="ads-post">
 	<script type="text/javascript"><!--
 		google_ad_client = "ca-pub-8066292357997211";

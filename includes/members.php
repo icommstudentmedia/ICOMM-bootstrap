@@ -1,7 +1,34 @@
 <?php
+
+/**
+* MEMBERS.PHP
+*
+* Description: (include where it is called)
+*
+*
+* 
+*
+*
+* 
+*
+* @author
+*
+*
+****/
+
+//
 add_action( 'show_user_profile', 'extra_user_profile_fields' );
 add_action( 'edit_user_profile', 'extra_user_profile_fields' );
  
+ /**
+* Extra User Profile Fields
+*
+*
+*
+* @author
+* @param
+* @return
+*/
 function extra_user_profile_fields( $user ) { ?>
 <h3><?php _e("Extra profile information", "blank"); ?></h3>
  
@@ -32,9 +59,20 @@ function extra_user_profile_fields( $user ) { ?>
 </table>
 <?php }
  
+ //
 add_action( 'personal_options_update', 'save_extra_user_profile_fields' );
 add_action( 'edit_user_profile_update', 'save_extra_user_profile_fields' );
  
+
+ /**
+* Save Extra User Profile Fields
+*
+*
+*
+* @author
+* @param
+* @return
+**/
 function save_extra_user_profile_fields( $user_id ) {
  
 if ( !current_user_can( 'edit_user', $user_id ) ) { return false; }

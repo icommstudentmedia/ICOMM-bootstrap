@@ -2,8 +2,8 @@
     /**
     *   Template Name: Advertise with Us
     *   Date: April 05,2013
-    *   Created: Isaac Andrade
-    */
+    *   @author Isaac Andrade
+    **/
     get_header();
     ?>
 

@@ -1,8 +1,8 @@
 <?php 
-/*
+/**
 *   Template Name: Search
 *   Date: April 17, 2013
-*	Created: Isaac Andrade
+*	@author Isaac Andrade
 */
 get_header();
 ?>

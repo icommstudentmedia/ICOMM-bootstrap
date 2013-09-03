@@ -1,11 +1,12 @@
 <?php
-/* This has to go on it to be a template page
-Template Name: About Us
+/**
+* This has to go on it to be a template page
+* Template Name: About Us
 *
-*
-*UPDATED : LYLE PALAGAR 03/20/2013 2:58pm
-*UPDATED : Justin Hamilton 03/20/2013 11:00pm
-*/	
+* @author 
+* UPDATED : LYLE PALAGAR 03/20/2013 2:58pm
+* UPDATED : Justin Hamilton 03/20/2013 11:00pm
+**/	
 get_header();
 ?>
 

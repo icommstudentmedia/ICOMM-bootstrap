@@ -3,6 +3,7 @@
  * This is the category page. Based off of the homepage layout.
  * _______ are changed from the homepage
  * 
+ * @author
  */
 
 

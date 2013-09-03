@@ -1,8 +1,32 @@
 <?php
-//Feedback Custom Post Type
-// Aug 20 , 2013
-// These are for Tester to send feedback to the developers
-// Only Developers should have admin access to the feedback. - Lyle Palagar, Isaac Andrade
+
+/**
+ * POST_TYPE.PHP
+ *
+ * Description: (include where it is called)
+ *
+ *
+ * 
+ *
+ *
+ * 
+ *
+ * @author (include e-mail)
+ *
+ */
+
+
+/**
+* Feedback Custom Post Type
+* Aug 20 , 2013
+*
+* These are for Tester to send feedback to the developers
+* Only Developers should have admin access to the feedback.
+*
+* @author Lyle Palagar, Isaac Andrade
+* @param
+* @return
+*/
 add_action( 'init','feedback_custom_type');
 function feedback_custom_type(){
 	register_post_type('feedback',
@@ -33,11 +57,16 @@ function feedback_custom_type(){
 		);
 }
 
-// Feedback Categories
-/* 	These are taxonomies that will be changed initially by the author,
+/**
+*   Feedback Categories
+* 	These are taxonomies that will be changed initially by the author,
 * 	but afterwards it will be changed ONLY by administrators
 *	They will be used to represent the status of the feedback, if it's been
-*	worked on, ignored, or still have pending work to do. - Isaac Andrade
+*	worked on, ignored, or still have pending work to do. 
+*
+*   @author Isaac Andrade
+*   @param
+*   @return
 */
 add_action('init', 'feedback_taxonomies', 0);
 function feedback_taxonomies() {
@@ -61,11 +90,14 @@ function feedback_taxonomies() {
 			));
 }
 
-
-// Feedback Dropdown Filter
-/* filter by status (taxonomy)
-*/
-
+/**
+* Feedback Dropdown Filter
+* filter by status (taxonomy)
+*
+* @author
+* @param
+* @return
+*****/
 add_action('restrict_manage_post', 'restrict_feedback_by_status');
 function restrict_feedback_by_status(){
 	global $typenow;
@@ -88,6 +120,15 @@ function restrict_feedback_by_status(){
 	}
 }
 
+
+/**
+*  Convert Status ID to Taxonomy Term in Query
+*
+*
+* @author
+* @param
+* @return
+*/
 add_filter('parse_query','convert_status_id_to_taxonomy_term_in_query');
 function convert_status_id_to_taxonomy_term_in_query(){
 	global $pagenow;
@@ -101,6 +142,15 @@ function convert_status_id_to_taxonomy_term_in_query(){
 	
 }
 
+
+/**
+*  Add Status Column To Feedback List
+*
+*
+* @author
+* @param
+* @return
+*/
 add_action('manage_feedback_posts_columns', 'add_status_column_to_feedback_list');
 function add_status_column_to_feedback_list( $posts_columns ) {
     if (!isset($posts_columns['author'])) {
@@ -118,6 +168,15 @@ function add_status_column_to_feedback_list( $posts_columns ) {
     return $new_posts_columns;
 }
 
+
+/**
+*  Show Status Column For Feedback List
+*
+*
+* @author
+* @param
+* @return
+**/
 add_action('manage_feedback_custom_column', 'show_status_column_for_feedback_list',10,2);
 function show_status_column_for_feedback_list( $column_id,$post_id ) {
     global $typenow;
@@ -139,6 +198,15 @@ function show_status_column_for_feedback_list( $column_id,$post_id ) {
     }
 }
 
+
+/**
+*  Portfolio Custom Type 
+*
+*
+* @author
+* @param
+* @return
+*/
 //Custom Post Type 
 add_action('init','portfolio_custom_type');
 function portfolio_custom_type(){
@@ -167,6 +235,15 @@ function portfolio_custom_type(){
 	);
 }
 
+
+/**
+*  Portfolio Taxonomies
+*
+*
+* @author
+* @param
+* @return
+**/
 //Taxonomy Hierarchical
 add_action('init','portfolio_taxonomies');
 function portfolio_taxonomies(){
@@ -191,9 +268,17 @@ function portfolio_taxonomies(){
 }
 
 
+
+/**
+*  DevPress Edit Portfolio Columns
+*
+*
+* @author
+* @param
+* @return
+*/
 //Custome Columns
 add_filter( 'manage_edit-portfolio_columns', 'devpress_edit_portfolio_columns' ) ;
-
 function devpress_edit_portfolio_columns( $columns ) {
 
 	$columns = array(
@@ -207,8 +292,16 @@ function devpress_edit_portfolio_columns( $columns ) {
 	return $columns;
 }
 
-add_action( 'manage_portfolio_posts_custom_column', 'devpress_manage_portfolio_columns', 10, 2 );
 
+/**
+*  DevPress Manage Portfolio Columns 
+*
+*
+* @author
+* @param
+* @return
+**/
+add_action( 'manage_portfolio_posts_custom_column', 'devpress_manage_portfolio_columns', 10, 2 );
 function devpress_manage_portfolio_columns( $column, $post_id ) {
 	global $post;
 
@@ -250,6 +343,14 @@ function devpress_manage_portfolio_columns( $column, $post_id ) {
 	}
 }
 
+/**
+* ldpShow Custom Type
+*
+*
+* @author
+* @param
+* @return
+**/
 //Custome Post Type 
 add_action('init','ldpshow_custom_type');
 function ldpshow_custom_type(){
@@ -278,6 +379,14 @@ function ldpshow_custom_type(){
 	);
 }
 
+/**
+*  ldpShow Taxonomies
+*
+*
+* @author
+* @param
+* @return
+**/
 //Taxonomy Hierarchical
 add_action('init','ldpshow_taxonomies');
 function ldpshow_taxonomies(){
@@ -301,9 +410,16 @@ function ldpshow_taxonomies(){
 	);
 }
 
+/**
+*  DevPress Edit ldpShow Columns
+*
+*
+* @author
+* @param
+* @return
+**/
 //Custome Columns
 add_filter( 'manage_edit-ldpshow_columns', 'devpress_edit_ldpshow_columns' ) ;
-
 function devpress_edit_ldpshow_columns( $columns_ldpshow ) {
 
 	$columns_ldpshow = array(
@@ -317,8 +433,15 @@ function devpress_edit_ldpshow_columns( $columns_ldpshow ) {
 	return $columns_ldpshow;
 }
 
+/**
+*  DevPress Manage ldpShowColumns 
+*
+*
+* @author
+* @param
+* @return
+*/
 add_action( 'manage_ldpshow_posts_custom_column', 'devpress_manage_ldpshow_columns', 10, 2 );
-
 function devpress_manage_ldpshow_columns( $column_ldpshow, $post_id ) {
 	global $post;
 
@@ -360,6 +483,15 @@ function devpress_manage_ldpshow_columns( $column_ldpshow, $post_id ) {
 	}
 }
 
+
+/**
+* Blogs Custom Type
+*
+*
+* @author
+* @param
+* @return
+**/
 //Custome Post Type 
 add_action('init','blogs_custom_type');
 function blogs_custom_type(){
@@ -387,6 +519,16 @@ function blogs_custom_type(){
 		)
 	);
 }
+
+
+/**
+*  Blogs Taxonomies
+*
+*
+* @author
+* @param
+* @return
+**/
 //Taxonomy Hierarchical
 add_action('init','blogs_taxonomies');
 function blogs_taxonomies(){
@@ -409,6 +551,15 @@ function blogs_taxonomies(){
 		)
 	);
 }
+
+/**
+*  PathwayPost Custom Type
+*
+*
+* @author
+* @param
+* @return
+**/
 //Custome Post Type 
 add_action('init','pathwaypost_custom_type');
 function pathwaypost_custom_type(){
@@ -437,6 +588,15 @@ function pathwaypost_custom_type(){
 	);
 }
 
+
+/**
+*  PathwayPost Taxonomies
+*
+*
+* @author
+* @param
+* @return
+*/
 //Taxonomy Hierarchical
 add_action('init','pathwaypost_taxonomies');
 function pathwaypost_taxonomies(){
@@ -460,9 +620,17 @@ function pathwaypost_taxonomies(){
 	);
 }
 
+
+/**
+*  DevPress Edit PathwayPost Columns
+*
+*
+* @author
+* @param
+* @return
+**/
 //Custome Columns
 add_filter( 'manage_edit-pathwaypost_columns', 'devpress_edit_pathwaypost_columns' ) ;
-
 function devpress_edit_pathwaypost_columns( $columns_pathwaypost ) {
 
 	$columns_pathwaypost = array(
@@ -476,8 +644,16 @@ function devpress_edit_pathwaypost_columns( $columns_pathwaypost ) {
 	return $columns_pathwaypost;
 }
 
-add_action( 'manage_pathwaypost_posts_custom_column', 'devpress_manage_pathwaypost_columns', 10, 2 );
 
+/**
+*  DevPress Manage PathwayPost Columns
+*
+*
+* @author
+* @param
+* @return
+**/
+add_action( 'manage_pathwaypost_posts_custom_column', 'devpress_manage_pathwaypost_columns', 10, 2 );
 function devpress_manage_pathwaypost_columns( $column_pathwaypost, $post_id ) {
 	global $post;
 

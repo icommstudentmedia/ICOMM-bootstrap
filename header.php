@@ -1,3 +1,11 @@
+<?php
+ /**
+ *   HEADER.PHP
+ *   Date: 
+ *   @author
+ **/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 

@@ -2,7 +2,7 @@
 /**
  * Template Name: Home-Page + Carousel
  *
- *
+ * @author
  * @package WP-Bootstrap
  * @since WP-Bootstrap 0.5
  *

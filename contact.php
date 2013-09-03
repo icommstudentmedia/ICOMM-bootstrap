@@ -2,10 +2,8 @@
     /**
     *   Template Name: Contact Us
     *   Date: March 09,2013
-    *   Created: Lyle Palagar
-    */
-
-
+    *   @author Lyle Palagar
+    **/
 
     get_header(); ?>
 

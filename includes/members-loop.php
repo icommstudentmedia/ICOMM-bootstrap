@@ -1,4 +1,23 @@
-<?php            
+<?php    
+
+/**
+* @ MEMBERS-LOOP.PHP
+*
+* Description: (include where it is called)
+*
+*
+* 
+*
+*
+* 
+*
+* @author
+*
+*
+*
+**/
+
+
 // prepare arguments
         $args  = array(
         // search only for Authors role

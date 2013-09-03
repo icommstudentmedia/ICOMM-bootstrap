@@ -1,15 +1,45 @@
 <?php 
-/********************************
- * Register the script
- *******************************/
+
+/**
+* @ TICKER.PHP
+*
+* Description: (include where it is called)
+*
+*
+* 
+*
+*
+* 
+*
+* @author
+*
+*
+*
+*
+***/
+
+/**
+ * Enque Ticker Script
+ *    Register the script
+ *
+ * @author
+ * @param
+ * @return
+**/
 function enqueue_ticker_script(){	
 	wp_register_script('ticker', get_template_directory_uri() . '/js/ticker.js', array('jquery'));
 	//improved scroll effects
 	wp_register_script('jquery-ticker', get_template_directory_uri() . '/js/gistfile1.js', array('jquery'));
 }
-/**************************************
- * get the content, give it to js
- **************************************/
+
+/**
+ * Query Ticker Post
+ *     get the content, give it to js
+ *
+ * @author
+ * @param
+ * @return
+ */
 function query_ticker_post(){
 	$query = new WP_Query(array('posts_per_page' => 1,
 								'orderby' => 'date',
@@ -40,12 +70,29 @@ function query_ticker_post(){
 			
 	}
 }
-/**************************************
- * metabox functions
- **************************************/
+
+//Metabox functions
+
+/**
+ *  Add Ticker Box
+ *     
+ *
+ * @author
+ * @param
+ * @return
+ */
 function add_ticker_box(){
 	add_meta_box('ticker-box','News Ticker','create_ticker_box', '', 'side');
 }
+
+/**
+ *  Create Ticker Box
+ *     
+ *
+ * @author
+ * @param
+ * @return
+ **/
 function create_ticker_box($post){
 	//see if it's already set for this post
 	$ticker_value = get_post_meta($post->ID, '_ticker_value', true);
@@ -62,6 +109,16 @@ function create_ticker_box($post){
 	
 	<?
 }
+
+
+/**
+ *  Save Ticker Box
+ *     
+ *
+ * @author
+ * @param
+ * @return
+ **/
 function save_ticker_box($post_id){
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
 	  return;
@@ -83,10 +140,10 @@ function save_ticker_box($post_id){
 	}
 } 
  
+
 /**************************************
  * hooks
  **************************************/
-
 
 add_action('wp_enqueue_scripts', 'enqueue_ticker_script');
 

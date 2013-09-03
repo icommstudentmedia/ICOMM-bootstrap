@@ -2,6 +2,8 @@
 /**
  * Template Name: Home-Page + Carousel OLD
  * Last Revised: July 16, 2012
+ *
+ * @author
  */
  get_header(); ?>
 <!--

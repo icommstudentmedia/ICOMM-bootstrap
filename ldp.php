@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Template Name: Latter-Day Profiles
+ *
+ * @author
+ **/
+
 	/* Template Name: Latter-Day Profiles */
 	get_header();
 ?>

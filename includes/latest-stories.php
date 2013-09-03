@@ -1,4 +1,24 @@
 <?php 
+
+/****************************************************
+* @ LATEST-STORIES.PHP
+*
+* Description: (include where it is called)
+*
+*
+* 
+*
+*
+* 
+*
+* @Authors: (include e-mail)
+*
+*
+*
+*
+***************************************************/
+
+
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
   //$url = $thumb[0];
   $url = get_template_directory_uri().'/includes/timthumb.php?src='.$thumb[0].'&h=150&w=270&zc=1';

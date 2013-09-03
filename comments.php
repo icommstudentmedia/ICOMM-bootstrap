@@ -7,10 +7,11 @@
  * handled by a callback to twentyeleven_comment() which is
  * located in the functions.php file.
  *
+ * @author 
  * @package WordPress
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
- */
+*/
 ?>
 	<div class="container container-narrow comments">
 		<?php if (have_comments() ) : echo "<h3>Comments</h3>"; endif; ?>

@@ -1,5 +1,30 @@
 <?php 
 
+/**
+* FUNCTIONS.PHP
+*
+* Description: (include where it is called)
+*
+*
+* 
+*
+*
+* 
+*
+* @author (include e-mail)
+*
+*
+**/
+
+
+/**
+* WP BootStrap Scripts with JQuery
+*
+*
+* @author
+* @param
+* @return
+**/
 function wpbootstrap_scripts_with_jquery() 
 {
 
@@ -14,6 +39,10 @@ function wpbootstrap_scripts_with_jquery()
 	// For either a plugin or a theme, you can then enqueue the script: 
 	wp_enqueue_script( 'bootstrap' ); 
 } 
+
+/****************************************************
+* 
+***************************************************/
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' ); 
 
 /****************************************************
@@ -22,6 +51,16 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 /* Front Page Dynamic Sidebar */
 add_action("widgets_init", "register_my_sidebars");
 
+
+/**
+* Register My SideBars
+*
+*
+*
+* @author
+* @param
+* @return
+**/
 function register_my_sidebars(){
 	/******FRONT PAGE**************/
 	$args = array( 'name' => 'Front Page',
@@ -53,9 +92,23 @@ function register_my_sidebars(){
 	register_sidebar($args);
 }
 
+
+/****************************************************
+* Register Widgets here
+***************************************************/
 /* Recent Videos Sidebar */
 wp_register_sidebar_widget('latest-videos', 'Latest Videos', 'latest_videos_content');
 
+
+/**
+* Latest Videos Content
+*
+*
+*
+* @author
+* @param
+* @return
+**/
 function latest_videos_content($args){
 	extract($args);
 	echo $before_widget;
@@ -90,10 +143,24 @@ function latest_videos_content($args){
 	echo $after_widget;
 }
 
+
+/****************************************************
+* Register Widgets here
+***************************************************/
 /* Custom Menu Wiget 
    I do apologize for the bit of nazty code, if you think you can straighten it up, feel free */
 wp_register_sidebar_widget('custom-menu', 'Custom Menu', 'custom_menu_content');
 
+
+/**
+* Custom Menu Content
+*
+*
+*
+* @author
+* @param
+* @return
+*/
 function custom_menu_content(){
 	echo '<div class="navbar-wrapper" data-spy="affix" data-offset-top="450">
       <div class="extranavbar-inner">
@@ -158,7 +225,6 @@ function my_custom_menus() {
 /*************************************************************
 * Walker Nav built to better implement Bootstrap Menus in WP
 **************************************************************/
-
 add_action( 'after_setup_theme', 'bootstrap_setup' );
  
 if ( ! function_exists( 'bootstrap_setup' ) ):
@@ -271,9 +337,16 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
  
 endif;
 
-/***************************
-* allow custom user profile pictures
-*********************************/
+
+/**
+* Get Profile Pictures
+*    allow custom user profile pictures
+*
+*
+* @author
+* @param
+* @return
+*****/
 //size is an array (width,height)
 function get_profile_picture($id, $size){
     $image = get_user_meta($id, 'profile_picture', true);
@@ -284,6 +357,17 @@ function get_profile_picture($id, $size){
     }
 }
 
+
+
+/**
+* Add Custom User Profile Fields
+*
+*
+*
+* @author
+* @param
+* @return
+**/
 //add additional fields to profile page in the dashboard
 function add_custom_user_profile_fields( $user ) {
 ?>
@@ -312,6 +396,16 @@ function add_custom_user_profile_fields( $user ) {
 	</script>
 <?php }
 
+
+/**
+* Save Custom User Profile Fields
+*
+*
+*
+* @author
+* @param
+* @return
+**/
 function save_custom_user_profile_fields( $user_id ) {
 	if ( !current_user_can( 'edit_user', $user_id ) )
 		return FALSE;
@@ -379,6 +473,8 @@ function save_custom_user_profile_fields( $user_id ) {
 
 }
 
+
+// ????
 add_action( 'show_user_profile', 		'add_custom_user_profile_fields' );
 add_action( 'edit_user_profile', 		'add_custom_user_profile_fields' );
 add_action( 'personal_options_update', 	'save_custom_user_profile_fields' );
@@ -387,19 +483,27 @@ add_action( 'edit_user_profile_update', 'save_custom_user_profile_fields' );
 //hide the default wp-admin bar from the front-end
 show_admin_bar( false );
 
-/*************************************************************************************
+/**
 * Get the author's role
-************************************************************************************/
+*
+* @author
+* @param
+* @return
+**/
 // get author role
 function get_user_role($id) {
 	$user = new WP_User($id);
 	return array_shift($user->roles);
 }
 
-/****************************************************************************************
-* Function that will allow us to see post views
-****************************************************************************************/
 
+/**
+* Function that will allow us to see post views
+*
+* @author
+* @param
+* @return
+**/
 // function to display number of posts.
 function getPostViews($postID){
     $count_key = 'post_views_count';
@@ -412,6 +516,14 @@ function getPostViews($postID){
     return $count.' Views';
 }
 
+
+/**
+* Set Post Views
+*
+* @author
+* @param
+* @return
+*/
 // function to count views.
 function setPostViews($postID) {
     $count_key = 'post_views_count';
@@ -427,6 +539,13 @@ function setPostViews($postID) {
 }
 
 
+/**
+* Posts (Custom) Column Views
+*
+* @author
+* @param
+* @return
+**/
 // Add it to a column in WP-Admin
 add_filter('manage_posts_columns', 'posts_column_views');
 add_action('manage_posts_custom_column', 'posts_custom_column_views',5,2);
@@ -444,7 +563,7 @@ function posts_custom_column_views($column_name, $id){
 /*	** VOLATILE CODE START **
 	This code was deleted, I am adding some of them to get some backend functionality back,
 	so if it breaks, I'll remove them or comment them out. Isaac Andrade
-*/
+
 
 // disable the admin bar
 show_admin_bar(false);    
@@ -465,9 +584,16 @@ include (TEMPLATEPATH . '/includes/visit-count.php');
 //Breaking news ticker
 include (TEMPLATEPATH . '/includes/ticker.php');
 
-//	** VOLATILE CODE END **
+//	** VOLATILE CODE END ** */
 
-/*-----------------Update LDP playlist on save------------------------------*/
+
+/**
+* Update LDP playlist on save
+*
+* @author
+* @param
+* @return
+*/
 add_action('save_post','update_ldp_playlist');
 function update_ldp_playlist(){
     
@@ -507,7 +633,14 @@ function update_ldp_playlist(){
         //wp_die($error);
     }
 }
-/*-----------------Update video playlist on save------------------------------*/
+
+/**
+* Update video playlist on save
+*
+* @author
+* @param
+* @return
+**/
 add_action('save_post','update_video_playlist');
 function update_video_playlist(){
     

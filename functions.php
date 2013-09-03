@@ -563,26 +563,34 @@ function posts_custom_column_views($column_name, $id){
 /*	** VOLATILE CODE START **
 	This code was deleted, I am adding some of them to get some backend functionality back,
 	so if it breaks, I'll remove them or comment them out. Isaac Andrade
+*/
 
 
 // disable the admin bar
 show_admin_bar(false);    
-//Metabox Script
-include (TEMPLATEPATH . '/includes/metabox/script.php');
+//Metabox Script -------- Where is the metabox folder??
+//include (TEMPLATEPATH . '/includes/metabox/script.php');
+
 //Custom Post Types and Taxonomies Script
 include (TEMPLATEPATH . '/includes/post_type.php');
-//Ajax functions
-include (TEMPLATEPATH . '/includes/ajax.php');
+
+//Ajax functions -------- There is only an ajax.js
+//include (TEMPLATEPATH . '/includes/ajax.php');
+
 //Custom Members fields
 include (TEMPLATEPATH . '/includes/members.php');
-//Profile metaboxes
-include (TEMPLATEPATH . '/includes/metabox/profile-meta.php');
-//image attachment management metabox
-include (TEMPLATEPATH . '/includes/metabox/images-meta.php');
-//post visits counting functions
-include (TEMPLATEPATH . '/includes/visit-count.php');
-//Breaking news ticker
-include (TEMPLATEPATH . '/includes/ticker.php');
+
+//Profile metaboxes  ------- Where is the metabox folder??
+//include (TEMPLATEPATH . '/includes/metabox/profile-meta.php');
+
+//image attachment management metabox  ------- Where is the metabox folder??
+//include (TEMPLATEPATH . '/includes/metabox/images-meta.php');
+
+//post visits counting functions  ------- Where is visit-count.php
+//include (TEMPLATEPATH . '/includes/visit-count.php');
+
+//Breaking news ticker ------------ ticker.php apparently needs debugging
+//include (TEMPLATEPATH . '/includes/ticker.php');
 
 //	** VOLATILE CODE END ** */
 

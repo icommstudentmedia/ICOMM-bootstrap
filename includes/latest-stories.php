@@ -1,7 +1,7 @@
 <?php 
 
-/****************************************************
-* @ LATEST-STORIES.PHP
+/**
+* LATEST-STORIES.PHP
 *
 * Description: (include where it is called)
 *
@@ -11,12 +11,12 @@
 *
 * 
 *
-* @Authors: (include e-mail)
+* @author
 *
 *
 *
 *
-***************************************************/
+**/
 
 
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );

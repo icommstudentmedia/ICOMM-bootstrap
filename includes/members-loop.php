@@ -4,9 +4,9 @@
 * @ MEMBERS-LOOP.PHP
 *
 * Description: (include where it is called)
-*
-*
-* 
+*               Gizmo = I'm not sure this file
+*               is currently being used cause
+*               I didn't find a call to include it
 *
 *
 * 

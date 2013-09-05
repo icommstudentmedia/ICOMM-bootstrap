@@ -4,12 +4,13 @@
 * @ TICKER.PHP
 *
 * Description: (include where it is called)
-*
-*
-* 
-*
-*
-* 
+*         Gizmo: This function is one of the
+*         functions called in the "VOLATILE" 
+*         section of functions.php, but it's
+*         commented out. When not, it breaks
+*         the website, cause it has calls to
+*         non-existent .js files.
+*         
 *
 * @author
 *

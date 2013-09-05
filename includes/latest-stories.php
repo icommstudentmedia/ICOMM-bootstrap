@@ -3,11 +3,10 @@
 /**
 * LATEST-STORIES.PHP
 *
-* Description: (include where it is called)
-*
-*
+* Description: Called in category.php line 89
+*                        page-home.php line 129
 * 
-*
+*              - HTML code to display the latest stories.
 *
 * 
 *

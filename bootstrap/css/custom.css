@@ -1,3 +1,10 @@
+/* Import Font Optima Benjamin Bryce
+----------------------------------------------------------------------------------------*/
+@font-face { 
+    font-family: ScrollBrand;
+    src: url('optima.ttf');
+}
+
 /* Image Alignment  Guilherme Bentim
 ----------------------------------------------------------------------------------------*/
 img.alignnone {
@@ -230,6 +237,7 @@ img.feature-img {
 
 .navbar .brand {
   padding: 0px 30px 10px;
+  font-family: 'ScrollBrand', 'Optima', sans-serif;
   font-size: 52px;
   font-style: bold;
 }

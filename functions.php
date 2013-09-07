@@ -102,12 +102,15 @@ wp_register_sidebar_widget('latest-videos', 'Latest Videos', 'latest_videos_cont
 
 /**
 * Latest Videos Content
-*
-*
+*   WIDGET
+*   This customized widget (Dashboard -> Appearance -> Widgets)
+*   displays on the side bar the latest posts 
+*   that cointains videos, starting with most recent
+*   up to 8 posts
 *
 * @author
-* @param
-* @return
+* @param $args 
+* @return 
 **/
 function latest_videos_content($args){
 	extract($args);
@@ -209,9 +212,15 @@ function custom_menu_content(){
   	</div><!-- /.navbar-wrapper -->';
 }
 
-/****************************************************
+/**
 * Register Navigation
-***************************************************/
+*    Dashboard -> Appearences -> Menus
+*    Under Menu Settings, under Theme Locations
+*    2 more options are displayed: 
+*            Primary Menu
+*            Secondary Menu
+*    
+**/
 add_action( 'init', 'my_custom_menus' );
 function my_custom_menus() {
     register_nav_menus(

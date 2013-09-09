@@ -157,8 +157,13 @@ wp_register_sidebar_widget('custom-menu', 'Custom Menu', 'custom_menu_content');
 
 /**
 * Custom Menu Content
-*
-*
+*    This menu is a horizontal menu, similar to the one
+*    in the header, that is implemented as a widget. This 
+*    is currently running on the beta version, under
+*    dashboard -> appearences -> widgets 
+*    Inside of "Custom Menu", right underneath "Front Page"
+*    But it appears that this function is unused, for this 
+*    horizontal menu is nowhere to be found.
 *
 * @author
 * @param

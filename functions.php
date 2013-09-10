@@ -3,9 +3,9 @@
 /**
 * FUNCTIONS.PHP
 *
-* Description: (include where it is called)
-*
-*
+* Description: This is wordpress default to store functions for the backend
+*              These functions can include calls to other files.
+*              
 * 
 *
 *
@@ -29,12 +29,13 @@ function wpbootstrap_scripts_with_jquery()
 {
 
     wp_enqueue_script("jquery");
-
+    //(Gizmo) js/custom.js is missing 
     wp_register_script( 'custom', get_template_directory_uri() . '/bootstrap/js/custom.js', array( 'jquery' ) ); 
 	// For either a plugin or a theme, you can then enqueue the script: 
 	wp_enqueue_script( 'custom' );
 
-	 // Register the script like this for a theme: 
+	 // Register the script like this for a theme:
+	 //(Gizmo) js/bootstrap.js is missing 
 	wp_register_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ) ); 
 	// For either a plugin or a theme, you can then enqueue the script: 
 	wp_enqueue_script( 'bootstrap' ); 
@@ -47,6 +48,7 @@ add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
 /****************************************************
 * Register Widgets here
+    Related to function register_my_sidebars()
 ***************************************************/
 /* Front Page Dynamic Sidebar */
 add_action("widgets_init", "register_my_sidebars");
@@ -54,8 +56,12 @@ add_action("widgets_init", "register_my_sidebars");
 
 /**
 * Register My SideBars
-*
-*
+*    These are found on dashboard -> appearences -> widgets
+*    This function currently defines 4 sidebars (to add widgets) named:
+*       - Front Page
+*       - Custom Menu
+*       - Post Page
+*       - Facebook Activity
 *
 * @author
 * @param
@@ -63,6 +69,10 @@ add_action("widgets_init", "register_my_sidebars");
 **/
 function register_my_sidebars(){
 	/******FRONT PAGE**************/
+	//the front page side bar puts widgets on the right corner of the front page
+	//in fact, the widgets here seem to be showing up on every page, so this sidebar 
+	//could either change name or functionality
+	//it currently has latest videos on it
 	$args = array( 'name' => 'Front Page',
 				   'id'   => 'front-page',
 				   'before_widget' => "<div class='row-fluid'>",
@@ -70,11 +80,15 @@ function register_my_sidebars(){
 				   'before_title' => "<div class='section-header span12'>",
 				   'after_title' => '</div> </div> <div class="container-fluid videos">');
 	register_sidebar($args);
+	//this custom menu sidebar apparently was created for the custom menu widget
+	//but it's unclear where this sidebar takes place. No evidence that this is currently being used
 	$args = array( 'name' => 'Custom Menu',
 					'id'  =>  'custom-menu',
 					'description' => "Custom Menu With Campus, Video, etc");
 	register_sidebar($args);
 	/******SINGLE POST*************/
+	//this sidebar is apparently supposed to show up exclusively on post pages, but it's
+	//not showing up anywhere
 	$args = array( 'name' => 'Post Page',
 				   'id'   => 'single-page',
 				   'before_widget' => "<div class='row-fluid'>",
@@ -83,6 +97,8 @@ function register_my_sidebars(){
 				   'after_title' => '</div>');
 	register_sidebar($args);
 	/*****FACEBOOK ACTIVITY*******/
+	//the functions or widgets related to this sidebar are wither missing, ommited or not functioning
+	//this currently appears on the beta version post pages with just a title, under latest videos
 	$args = array( 'name' => 'Facebook Activity',
 				   'id'   => 'facebook',
 				   'before_widget' => "<div class='row-fluid'>",
@@ -95,6 +111,7 @@ function register_my_sidebars(){
 
 /****************************************************
 * Register Widgets here
+*    Related to function latest_videos_content($args)
 ***************************************************/
 /* Recent Videos Sidebar */
 wp_register_sidebar_widget('latest-videos', 'Latest Videos', 'latest_videos_content');
@@ -165,8 +182,8 @@ wp_register_sidebar_widget('custom-menu', 'Custom Menu', 'custom_menu_content');
 *    But it appears that this function is unused, for this 
 *    horizontal menu is nowhere to be found.
 *
-* @author
-* @param
+* @author 
+* @param 
 * @return
 */
 function custom_menu_content(){
@@ -224,6 +241,7 @@ function custom_menu_content(){
 *    2 more options are displayed: 
 *            Primary Menu
 *            Secondary Menu
+*    (It is unclear why this functionality was added)
 *    
 **/
 add_action( 'init', 'my_custom_menus' );
@@ -358,7 +376,7 @@ endif;
 *
 *
 * @author
-* @param
+* @param   $id, $size
 * @return
 *****/
 //size is an array (width,height)

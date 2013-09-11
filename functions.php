@@ -299,7 +299,7 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
 				$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
  
 				//I'm ghetto-rigging this code so I can add a class to all but the last list item, feel free to fix / improve
-				//Essentually I'm just checking to see if the item ID is that of the 'Pathway' page
+				//Essentially I'm just checking to see if the item ID is that of the 'Pathway' page
 
 				$item->ID == 33102 ? $output .= $indent . '<li' . $id . $value . $class_names . $li_attributes . '>' : $output .= $indent . '<li class="rightborder"' . $id . $value . $class_names . $li_attributes . '>';
  
@@ -393,11 +393,13 @@ function get_profile_picture($id, $size){
 
 /**
 * Add Custom User Profile Fields
-*
-*
+*     dashboard -> user -> Your Profile
+*     New item under "About User" section
+*     called "Profile Picture"
+*     (the beta version has this under "Extra Profile Information" probably on members.php)
 *
 * @author
-* @param
+* @param $user - current user profile
 * @return
 **/
 //add additional fields to profile page in the dashboard
@@ -410,6 +412,7 @@ function add_custom_user_profile_fields( $user ) {
             </th>
             <td>
                 <input type="file" id="profile_picture" name="profile_picture">
+                <!-- message after form field -->
                 <span class="description"><?php _e('Upload a picture of yourself', 'your_textdomain'); ?></span>
             </td>
         </tr>
@@ -431,11 +434,11 @@ function add_custom_user_profile_fields( $user ) {
 
 /**
 * Save Custom User Profile Fields
-*
+*      Save the profile picture, checking for supported image formats
 *
 *
 * @author
-* @param
+* @param  $user_id
 * @return
 **/
 function save_custom_user_profile_fields( $user_id ) {
@@ -516,10 +519,11 @@ add_action( 'edit_user_profile_update', 'save_custom_user_profile_fields' );
 show_admin_bar( false );
 
 /**
-* Get the author's role
+* Get User Role
+*    Get the author's role
 *
 * @author
-* @param
+* @param $id
 * @return
 **/
 // get author role
@@ -530,7 +534,8 @@ function get_user_role($id) {
 
 
 /**
-* Function that will allow us to see post views
+* Get Post Views
+*     Function that will allow us to see post views
 *
 * @author
 * @param

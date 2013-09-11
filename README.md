@@ -1,4 +1,4 @@
-Brigham Young University I~Comm Student Media new website project.
+LyleBrigham Young University I~Comm Student Media new website project.
 This site focuses on:
 
 1. Simple design

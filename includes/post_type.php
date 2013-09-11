@@ -3,15 +3,15 @@
 /**
  * POST_TYPE.PHP
  * 
- * Description: (include where it is called)
- *
+ * Description: Called in functions.php line 619
+ *              This file will add customized post-types to the back-end.
+ *              They are visible in the left column all preceded by the 
+ *              drawing of a pinpoint. Posts from customized post-types
+ *              will not automatically be on the website.
  *
  * 
  *
- *
- * 
- *
- * @author (include e-mail)
+ * @author Lyle Palagar (), Isaac Andrade (), Gizmo (guilherme.guizmo@gmail.com)
  *
  */
 
@@ -31,7 +31,7 @@ add_action( 'init','feedback_custom_type');
 function feedback_custom_type(){
 	register_post_type('feedback',
 		array(
-
+            //customize all labels for a post-type with correspondent values
 			'labels'=>array(
 						'name'=>'Feedback',
 						'singular'=>'Feedback',
@@ -47,19 +47,17 @@ function feedback_custom_type(){
 						'parent'=>'Parent Feedback',
 						'menu_name'=>'Feedback',
 						),
+			'supports'=>array('title','editor','author','thumbnail','trackbacks','custom-fields','revision', 'comments'),
 			'description' => 'These are for Beta-Testers to send feedback to the Developers.',
 			'public' => true, // keep the custom type shown on the wp-admin page
 			'menu_position' => 25,
-			
-
-
 			)
 		);
 }
 
 /**
 *   Feedback Categories
-* 	These are taxonomies that will be changed initially by the author,
+* 	These are taxonomies(jargon used by wp to refer to 'categories') that will be changed initially by the author,
 * 	but afterwards it will be changed ONLY by administrators
 *	They will be used to represent the status of the feedback, if it's been
 *	worked on, ignored, or still have pending work to do. 
@@ -70,6 +68,7 @@ function feedback_custom_type(){
 */
 add_action('init', 'feedback_taxonomies', 0);
 function feedback_taxonomies() {
+	//customize all labels
 	$labels = array(
 					'name' => 'Status',
 					'all_items' => 'All Statuses',
@@ -81,6 +80,7 @@ function feedback_taxonomies() {
 					'new_item_name' => 'New Status Name',
 					'search_items' => 'Search',
 					);
+	//this taxonomy is called status
 	register_taxonomy('status', 'feedback', 
 		array(
 			'hierarchical' => true,
@@ -92,17 +92,17 @@ function feedback_taxonomies() {
 
 /**
 *  DevPress Edit Feedback Columns
+*      This function will edit what information will be displayed in the tab "All Feedback"
 *
-*
-* @author
-* @param
-* @return
+* @author Isaac & Gizmo
+* @param $columns_feedback (the columns currently under post-type 'feedback')
+* @return $columns_feedback (the edited new columns)
 **/
-//Custome Columns
+//Custom Columns
 add_filter( 'manage_edit-feedback_columns', 'devpress_edit_feedback_columns' ) ;
 function devpress_edit_feedback_columns( $columns_feedback ) {
 
-	$columns_feedback = array(
+	$columns_feedback += array(
 		'cb'=>__('<input type="checkbox" />'),
 		'title' => __( 'Title' ),
 		'status' => __( 'Status' ),
@@ -115,48 +115,39 @@ function devpress_edit_feedback_columns( $columns_feedback ) {
 
 /**
 *  DevPress Manage Feedback Columns 
+*     This function will manage what information will be inside each collumn displayed in the tab "All Feedback"
 *
-*
-* @author
-* @param
+* @author Isaac & Gizmo
+* @param $column_feedback (edited columns), &post_id (current)
 * @return
 */
 add_action( 'manage_feedback_posts_custom_column', 'devpress_manage_feedback_columns', 10, 2 );
 function devpress_manage_feedback_columns( $column_feedback, $post_id ) {
 	global $post;
-
 	switch( $column_feedback ) {
-
-		/* If displaying the 'genre' column. */
+		/* If displaying the 'status' column. */
 		case 'status' :
-
-			/* Get the genres for the post. */
+			/* Get the status for the post. */
 			$terms_feedback = get_the_terms( $post_id, 'status' );
-
 			/* If terms were found. */
 			if ( !empty( $terms_feedback ) ) {
-
 				$out = array();
-
 				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
+				//allows more than one status(taxonomy) per post
 				foreach ( $terms_feedback as $term_feedback ) {
 					$out[] = sprintf( '<a href="%s">%s</a>',
 						esc_url( add_query_arg( array( 'post_type' => $post->post_type, 'status' => $term_feedback->slug ), 'edit.php' ) ),
 						esc_html( sanitize_term_field( 'name', $term_feedback->name, $term_feedback->term_id, 'status', 'display' ) )
 					);
 				}
-
 				/* Join the terms, separating them with a comma. */
 				echo join( ', ', $out );
 			}
-
 			/* If no terms were found, output a default message. */
 			else {
 				_e( 'No Status' );
 			}
-
 			break;
-
 		/* Just break out of the switch statement for everything else. */
 		default :
 			break;
@@ -169,8 +160,8 @@ function devpress_manage_feedback_columns( $column_feedback, $post_id ) {
 
 /**
 *  Portfolio Custom Type 
-*
-*
+*     Portfolio is a custom type that is currently defined in the left column
+*     as Agency
 * @author
 * @param
 * @return
@@ -206,7 +197,7 @@ function portfolio_custom_type(){
 
 /**
 *  Portfolio Taxonomies
-*
+*    Taxonomy will be labeled 'Categories'
 *
 * @author
 * @param
@@ -235,17 +226,15 @@ function portfolio_taxonomies(){
 	);
 }
 
-
-
 /**
 *  DevPress Edit Portfolio Columns
-*
+*    Edit the information columns displayed in 'All Portfolios'
 *
 * @author
-* @param
-* @return
+* @param $columns (current columns)
+* @return &columns (update columns)
 */
-//Custome Columns
+//Custom Columns
 add_filter( 'manage_edit-portfolio_columns', 'devpress_edit_portfolio_columns' ) ;
 function devpress_edit_portfolio_columns( $columns ) {
 
@@ -260,32 +249,25 @@ function devpress_edit_portfolio_columns( $columns ) {
 	return $columns;
 }
 
-
 /**
 *  DevPress Manage Portfolio Columns 
-*
+*    Manage the information inside the columns under 'All Portfolios'
 *
 * @author
-* @param
+* @param &column, $post_id (edited columns and current post)
 * @return
 **/
 add_action( 'manage_portfolio_posts_custom_column', 'devpress_manage_portfolio_columns', 10, 2 );
 function devpress_manage_portfolio_columns( $column, $post_id ) {
 	global $post;
-
 	switch( $column ) {
-
-		/* If displaying the 'genre' column. */
+		/* If displaying the 'group' column. */
 		case 'group' :
-
-			/* Get the genres for the post. */
+			/* Get the groups for the post. */
 			$terms = get_the_terms( $post_id, 'group' );
-
 			/* If terms were found. */
 			if ( !empty( $terms ) ) {
-
 				$out = array();
-
 				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
 				foreach ( $terms as $term ) {
 					$out[] = sprintf( '<a href="%s">%s</a>',
@@ -293,18 +275,14 @@ function devpress_manage_portfolio_columns( $column, $post_id ) {
 						esc_html( sanitize_term_field( 'name', $term->name, $term->term_id, 'group', 'display' ) )
 					);
 				}
-
 				/* Join the terms, separating them with a comma. */
 				echo join( ', ', $out );
 			}
-
 			/* If no terms were found, output a default message. */
 			else {
 				_e( 'No Category' );
 			}
-
 			break;
-
 		/* Just break out of the switch statement for everything else. */
 		default :
 			break;
@@ -313,18 +291,18 @@ function devpress_manage_portfolio_columns( $column, $post_id ) {
 
 /**
 * ldpShow Custom Type
-*
-*
+*     Latter-Day Profiles were custom post-types used in the old version.
+*     It is still uknown if a page will be created for them in the new version
 * @author
 * @param
 * @return
 **/
-//Custome Post Type 
+//Custom Post Type 
 add_action('init','ldpshow_custom_type');
 function ldpshow_custom_type(){
 	register_post_type('ldpshow',
 		array(
-			
+			 //customize labels
 			'labels'=>array(
 						'name'=>'Latter-day Profiles',
 						'singular'=>'Latter-day Profile',
@@ -340,7 +318,7 @@ function ldpshow_custom_type(){
 						'parent'=>'Parent Episode',
 						'menu_name'=>'Latter-day Profiles',
 						),
-			'supports'=>array('title','editor','author','thumbnail','trackbacks','custom-fields','revision'),
+			'supports'=>array('title','editor','author','thumbnail','trackbacks','custom-fields','revision', 'comments'),
 			'public'=>true,
 			'rewrite'=>array('slug'=>'ldp','with_front'=>true),
 		)
@@ -349,7 +327,7 @@ function ldpshow_custom_type(){
 
 /**
 *  ldpShow Taxonomies
-*
+*     Taxonomy will be called 'Seasons'
 *
 * @author
 * @param
@@ -380,13 +358,13 @@ function ldpshow_taxonomies(){
 
 /**
 *  DevPress Edit ldpShow Columns
-*
+*     Edit the information columns displayed in 'All Episodes'
 *
 * @author
-* @param
-* @return
+* @param $columns_ldpshow (information columns)
+* @return &columns_ldpshow (updated columns)
 **/
-//Custome Columns
+//Custom Columns
 add_filter( 'manage_edit-ldpshow_columns', 'devpress_edit_ldpshow_columns' ) ;
 function devpress_edit_ldpshow_columns( $columns_ldpshow ) {
 
@@ -403,29 +381,23 @@ function devpress_edit_ldpshow_columns( $columns_ldpshow ) {
 
 /**
 *  DevPress Manage ldpShowColumns 
-*
+*     Manage the information inside the columns displayed in 'All Episodes'
 *
 * @author
-* @param
+* @param &column_ldpshow, $post_id (edited columns and current post)
 * @return
 */
 add_action( 'manage_ldpshow_posts_custom_column', 'devpress_manage_ldpshow_columns', 10, 2 );
 function devpress_manage_ldpshow_columns( $column_ldpshow, $post_id ) {
 	global $post;
-
 	switch( $column_ldpshow ) {
-
-		/* If displaying the 'genre' column. */
+		/* If displaying the 'seasons' column. */
 		case 'ldpseason' :
-
-			/* Get the genres for the post. */
+			/* Get the seasons for the post. */
 			$terms_ldpshow = get_the_terms( $post_id, 'ldpseason' );
-
 			/* If terms were found. */
 			if ( !empty( $terms_ldpshow ) ) {
-
 				$out = array();
-
 				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
 				foreach ( $terms_ldpshow as $term_ldpshow ) {
 					$out[] = sprintf( '<a href="%s">%s</a>',
@@ -433,18 +405,14 @@ function devpress_manage_ldpshow_columns( $column_ldpshow, $post_id ) {
 						esc_html( sanitize_term_field( 'name', $term_ldpshow->name, $term_ldpshow->term_id, 'ldpseason', 'display' ) )
 					);
 				}
-
 				/* Join the terms, separating them with a comma. */
 				echo join( ', ', $out );
 			}
-
 			/* If no terms were found, output a default message. */
 			else {
 				_e( 'No Seasons' );
 			}
-
 			break;
-
 		/* Just break out of the switch statement for everything else. */
 		default :
 			break;
@@ -460,7 +428,7 @@ function devpress_manage_ldpshow_columns( $column_ldpshow, $post_id ) {
 * @param
 * @return
 **/
-//Custome Post Type 
+//Custom Post Type 
 add_action('init','blogs_custom_type');
 function blogs_custom_type(){
 	register_post_type('blogs',
@@ -559,7 +527,7 @@ function pathwaypost_custom_type(){
 
 /**
 *  PathwayPost Taxonomies
-*
+*        Taxonomy will be called 'Locations'
 *
 * @author
 * @param
@@ -597,7 +565,7 @@ function pathwaypost_taxonomies(){
 * @param
 * @return
 **/
-//Custome Columns
+//Custom Columns
 add_filter( 'manage_edit-pathwaypost_columns', 'devpress_edit_pathwaypost_columns' ) ;
 function devpress_edit_pathwaypost_columns( $columns_pathwaypost ) {
 
@@ -624,20 +592,14 @@ function devpress_edit_pathwaypost_columns( $columns_pathwaypost ) {
 add_action( 'manage_pathwaypost_posts_custom_column', 'devpress_manage_pathwaypost_columns', 10, 2 );
 function devpress_manage_pathwaypost_columns( $column_pathwaypost, $post_id ) {
 	global $post;
-
 	switch( $column_pathwaypost ) {
-
-		/* If displaying the 'genre' column. */
+		/* If displaying the 'location' column. */
 		case 'pathwayloc' :
-
-			/* Get the genres for the post. */
+			/* Get the locations for the post. */
 			$terms_pathwaypost = get_the_terms( $post_id, 'pathwayloc' );
-
 			/* If terms were found. */
 			if ( !empty( $terms_pathwaypost ) ) {
-
 				$out = array();
-
 				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
 				foreach ( $terms_pathwaypost as $term_pathwaypost ) {
 					$out[] = sprintf( '<a href="%s">%s</a>',
@@ -645,18 +607,14 @@ function devpress_manage_pathwaypost_columns( $column_pathwaypost, $post_id ) {
 						esc_html( sanitize_term_field( 'name', $term_pathwaypost->name, $term_pathwaypost->term_id, 'pathwayloc', 'display' ) )
 					);
 				}
-
 				/* Join the terms, separating them with a comma. */
 				echo join( ', ', $out );
 			}
-
 			/* If no terms were found, output a default message. */
 			else {
 				_e( 'No Locations' );
 			}
-
 			break;
-
 		/* Just break out of the switch statement for everything else. */
 		default :
 			break;

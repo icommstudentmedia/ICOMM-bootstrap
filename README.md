@@ -1,4 +1,5 @@
-IsaacBrigham Young University I~Comm Student Media new website project.
+Brigham Young University I~Comm Student Media new website project.
+
 This site focuses on:
 
 1. Simple design

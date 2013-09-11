@@ -533,21 +533,26 @@ function get_user_role($id) {
 }
 
 
+// the next three functions were apparently taken from here
+// http://wp-snippets.com/post-views-without-plugin/
+// for further reference
+
 /**
 * Get Post Views
 *     Function that will allow us to see post views
 *
-* @author
-* @param
-* @return
+* @author http://wp-snippets.com/post-views-without-plugin/
+* @param $postID
+* @return $count (number of views) + string with message
 **/
-// function to display number of posts.
+// function to display number of views of a post.
 function getPostViews($postID){
     $count_key = 'post_views_count';
     $count = get_post_meta($postID, $count_key, true);
     if($count==''){
         delete_post_meta($postID, $count_key);
         add_post_meta($postID, $count_key, '0');
+        //View in singular for 0
         return "0 View";
     }
     return $count.' Views';
@@ -556,12 +561,14 @@ function getPostViews($postID){
 
 /**
 * Set Post Views
+*    This function will keep track of how many people have
+*    viewed a certain post
 *
-* @author
-* @param
+* @author http://wp-snippets.com/post-views-without-plugin/
+* @param $postID
 * @return
 */
-// function to count views.
+// function to count views of a post.
 function setPostViews($postID) {
     $count_key = 'post_views_count';
     $count = get_post_meta($postID, $count_key, true);
@@ -579,8 +586,8 @@ function setPostViews($postID) {
 /**
 * Posts (Custom) Column Views
 *
-* @author
-* @param
+* @author http://wp-snippets.com/post-views-without-plugin/
+* @param 
 * @return
 **/
 // Add it to a column in WP-Admin

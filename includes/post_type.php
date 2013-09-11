@@ -91,112 +91,80 @@ function feedback_taxonomies() {
 }
 
 /**
-* Feedback Dropdown Filter
-* filter by status (taxonomy)
-*
-* @author
-* @param
-* @return
-*****/
-add_action('restrict_manage_post', 'restrict_feedback_by_status');
-function restrict_feedback_by_status(){
-	global $typenow;
-	global $wp_query;
-	if($typenow=='feeback'){
-		$taxonomy='status';
-		$status_taxonomy= get_taxonomy($taxonomy);
-		wp_dropdown_categories(array(
-									'show_option_all' => __("Show All {$status_taxonomy->label}"),
-									'taxonomy' => $taxonomy,
-									'name' => 'status',
-									'orderby' => 'name',
-									'selected' => $wp_query->query['term'],
-									'hierarchical' => true,
-									'depth' => 3,
-									'show_count' => true,
-									'hide_empty' => true,
-									)
-								);
-	}
-}
-
-
-/**
-*  Convert Status ID to Taxonomy Term in Query
-*
-*
-* @author
-* @param
-* @return
-*/
-add_filter('parse_query','convert_status_id_to_taxonomy_term_in_query');
-function convert_status_id_to_taxonomy_term_in_query(){
-	global $pagenow;
-	$qv = &$query->query_vars;
-	if($pagenow=='edit.php' && 
-		isset($qv['taxonomy']) && $qv['taxonomy'] == 'status' &&
-		isset($qv['term']) && is_numeric($qv['term'])){
-		$term = get_term_by('id',$qv['term'],'status');
-		$qv['term'] =$term->slug;	
-	}
-	
-}
-
-
-/**
-*  Add Status Column To Feedback List
-*
-*
-* @author
-* @param
-* @return
-*/
-add_action('manage_feedback_posts_columns', 'add_status_column_to_feedback_list');
-function add_status_column_to_feedback_list( $posts_columns ) {
-    if (!isset($posts_columns['author'])) {
-        $new_posts_columns = $posts_columns;
-    } else {
-        $new_posts_columns = array();
-        $index = 0;
-        foreach($posts_columns as $key => $posts_column) {
-            if ($key=='author')
-                $new_posts_columns['status'] = null;
-            $new_posts_columns[$key] = $posts_column;
-        }
-    }
-    $new_posts_columns['status'] = 'status';
-    return $new_posts_columns;
-}
-
-
-/**
-*  Show Status Column For Feedback List
+*  DevPress Edit Feedback Columns
 *
 *
 * @author
 * @param
 * @return
 **/
-add_action('manage_feedback_custom_column', 'show_status_column_for_feedback_list',10,2);
-function show_status_column_for_feedback_list( $column_id,$post_id ) {
-    global $typenow;
-    if ($typenow=='feedback') {
-        $taxonomy = 'status';
-        switch ($column_name) {
-        case 'status':
-            $statuses = get_the_terms($post_id,$taxonomy);
-            if (is_array($statuses)) {
-                foreach($statuses as $key => $status) {
-                    $edit_link = get_term_link($status,$taxonomy);
-                    $statuses[$key] = '<a href="'.$edit_link.'">' . $status->name . '</a>';
-                }
-                //echo implode("<br/>",$statuses);
-                echo implode(' | ',$statuses);
-            }
-            break;
-        }
-    }
+//Custome Columns
+add_filter( 'manage_edit-feedback_columns', 'devpress_edit_feedback_columns' ) ;
+function devpress_edit_feedback_columns( $columns_feedback ) {
+
+	$columns_feedback = array(
+		'cb'=>__('<input type="checkbox" />'),
+		'title' => __( 'Title' ),
+		'status' => __( 'Status' ),
+		'author'=>__('Author'),
+		'date' => __( 'Date' )
+	);
+
+	return $columns_feedback;
 }
+
+/**
+*  DevPress Manage Feedback Columns 
+*
+*
+* @author
+* @param
+* @return
+*/
+add_action( 'manage_feedback_posts_custom_column', 'devpress_manage_feedback_columns', 10, 2 );
+function devpress_manage_feedback_columns( $column_feedback, $post_id ) {
+	global $post;
+
+	switch( $column_feedback ) {
+
+		/* If displaying the 'genre' column. */
+		case 'status' :
+
+			/* Get the genres for the post. */
+			$terms_feedback = get_the_terms( $post_id, 'status' );
+
+			/* If terms were found. */
+			if ( !empty( $terms_feedback ) ) {
+
+				$out = array();
+
+				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
+				foreach ( $terms_feedback as $term_feedback ) {
+					$out[] = sprintf( '<a href="%s">%s</a>',
+						esc_url( add_query_arg( array( 'post_type' => $post->post_type, 'status' => $term_feedback->slug ), 'edit.php' ) ),
+						esc_html( sanitize_term_field( 'name', $term_feedback->name, $term_feedback->term_id, 'status', 'display' ) )
+					);
+				}
+
+				/* Join the terms, separating them with a comma. */
+				echo join( ', ', $out );
+			}
+
+			/* If no terms were found, output a default message. */
+			else {
+				_e( 'No Status' );
+			}
+
+			break;
+
+		/* Just break out of the switch statement for everything else. */
+		default :
+			break;
+	}
+}
+
+
+
 
 
 /**

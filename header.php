@@ -12,6 +12,7 @@
   <meta charset="utf-8"> 
   <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
 
   <!-- Le styles --> 
   <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet"> 
@@ -45,7 +46,7 @@
                         <a href=" http://beta.byuicomm.net/about/">I~Comm Student Media</a>
                       </li>
                       <li class="rightborder">
-                        <a href="http://byuidaho.edu">BYU-Idaho</a>
+                        <a href="http://www.byui.edu/">BYU-Idaho</a>
                       </li>
                       <li class="dropdown">
                         <a  class="dropdown-toggle"

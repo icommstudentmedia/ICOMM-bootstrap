@@ -15,15 +15,18 @@ get_header();
 		<!-- Social Networking Links -->
 		<div class="span2 row-fluid social-pics">
 			<div class="row-fluid social-pics">
-				<div class="span4">
+				<div class="span3">
 					<a href="https://www.facebook.com/icomm.student.media?fref=ts"><img src="http://beta.byuicomm.net/wp-content/themes/icomm-bootstrap/img/f_logo.png"></a>
 				</div>
-				<div class="span4">
+				<div class="span3">
 					<a href="https://twitter.com/byuicomm"><img src="http://beta.byuicomm.net/wp-content/themes/icomm-bootstrap/img/twitter_logo.png"></a>
 				</div>
-				<div class="span4">
+				<div class="span3">
 					<a href="http://pinterest.com/byuicomm/"><img src="http://beta.byuicomm.net/wp-content/themes/icomm-bootstrap/img/pinterest_logo.png"></a>
 				</div>
+				 <div class="span3">
+          <a href="http://instagram.com/byuiscroll/"><img src="<?php bloginfo( 'template_url' ); ?>/img/instagram_icon_large.png"></a>
+        </div>
 			</div>
 		</div> <!-- End of Social Networking Links -->
 	</div>

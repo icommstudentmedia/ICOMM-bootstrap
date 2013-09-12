@@ -48,7 +48,7 @@ function feedback_custom_type(){
 						'menu_name'=>'Feedback',
 						),
 			'supports'=>array('title','editor','author','thumbnail','trackbacks','custom-fields','revision', 'comments'),
-			'description' => 'These are for Beta-Testers to send feedback to the Developers.',
+			'description' => 'These are for Beta-Testers to send feedback to the Developers, they should be able to see only their own feedback. While Developers (and Admins) will be able to see and modify all of the feedback created.',
 			'public' => true, // keep the custom type shown on the wp-admin page
 			'menu_position' => 25,
 			)

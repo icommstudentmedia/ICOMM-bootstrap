@@ -492,7 +492,7 @@ function blogs_taxonomies(){
 *  DevPress Edit Blogs Columns
 *      This function will edit what information will be displayed in the tab "All Portfolios"
 *
-* @author Isaac & Gizmo
+* @author Gizmo
 * @param $columns_blogs (the columns currently under post-type 'blogs')
 * @return $columns_blogs (the edited new columns)
 **/
@@ -515,7 +515,7 @@ function devpress_edit_blogs_columns( $columns_blogs ) {
 *  DevPress Manage Blogs Columns 
 *     This function will manage what information will be inside each collumn displayed in the tab "All Portfolio"
 *
-* @author Isaac & Gizmo
+* @author Gizmo
 * @param $column_blogs (edited columns), &post_id (current)
 * @return
 */
@@ -554,7 +554,7 @@ function devpress_manage_blogs_columns( $column_blogs, $post_id ) {
 
 /**
 *  PathwayPost Custom Type
-*
+*      Posts related to the Pathway program (online study)
 *
 * @author
 * @param
@@ -623,11 +623,11 @@ function pathwaypost_taxonomies(){
 
 /**
 *  DevPress Edit PathwayPost Columns
-*
+*       This function will edit what information will be displayed in the tab "All Stories"
 *
 * @author
-* @param
-* @return
+* @param $columns_pathwaypost (the columns currently under post-type 'blogs')
+* @return $columns_pathwaypost (updated columns)
 **/
 //Custom Columns
 add_filter( 'manage_edit-pathwaypost_columns', 'devpress_edit_pathwaypost_columns' ) ;
@@ -647,10 +647,10 @@ function devpress_edit_pathwaypost_columns( $columns_pathwaypost ) {
 
 /**
 *  DevPress Manage PathwayPost Columns
-*
+*      
 *
 * @author
-* @param
+* @param $column_pathwaypost, $post_id
 * @return
 **/
 add_action( 'manage_pathwaypost_posts_custom_column', 'devpress_manage_pathwaypost_columns', 10, 2 );

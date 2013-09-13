@@ -422,7 +422,7 @@ function devpress_manage_ldpshow_columns( $column_ldpshow, $post_id ) {
 
 /**
 * Blogs Custom Type
-*
+*     (Not sure how to define this post-type)    
 *
 * @author
 * @param
@@ -459,7 +459,7 @@ function blogs_custom_type(){
 
 /**
 *  Blogs Taxonomies
-*
+*      Post-type 'blogs' taxonomies will be called Categories
 *
 * @author
 * @param
@@ -486,6 +486,70 @@ function blogs_taxonomies(){
 						)
 		)
 	);
+}
+
+/**
+*  DevPress Edit Blogs Columns
+*      This function will edit what information will be displayed in the tab "All Portfolios"
+*
+* @author Isaac & Gizmo
+* @param $columns_blogs (the columns currently under post-type 'blogs')
+* @return $columns_blogs (the edited new columns)
+**/
+//Custom Columns
+add_filter( 'manage_edit-blogs_columns', 'devpress_edit_blogs_columns' ) ;
+function devpress_edit_blogs_columns( $columns_blogs ) {
+
+	$columns_blogs += array(
+		'cb'=>__('<input type="checkbox" />'),
+		'title' => __( 'Title' ),
+		'blogscat' => __( 'Category' ),
+		'author'=>__('Author'),
+		'date' => __( 'Date' )
+	);
+
+	return $columns_blogs;
+}
+
+/**
+*  DevPress Manage Blogs Columns 
+*     This function will manage what information will be inside each collumn displayed in the tab "All Portfolio"
+*
+* @author Isaac & Gizmo
+* @param $column_blogs (edited columns), &post_id (current)
+* @return
+*/
+add_action( 'manage_blogs_posts_custom_column', 'devpress_manage_blogs_columns', 10, 2 );
+function devpress_manage_blogs_columns( $column_blogs, $post_id ) {
+	global $post;
+	switch( $column_blogs ) {
+		/* If displaying the 'blogscar' column. */
+		case 'blogscat' :
+			/* Get the blogscar for the post. */
+			$terms_blogs = get_the_terms( $post_id, 'blogscat' );
+			/* If terms were found. */
+			if ( !empty( $terms_blogs ) ) {
+				$out = array();
+				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
+				//allows more than one blogscat(taxonomy) per post
+				foreach ( $terms_blogs as $term_blogs ) {
+					$out[] = sprintf( '<a href="%s">%s</a>',
+						esc_url( add_query_arg( array( 'post_type' => $post->post_type, 'blogscar' => $term_blogs->slug ), 'edit.php' ) ),
+						esc_html( sanitize_term_field( 'name', $term_blogs->name, $term_blogs->term_id, 'blogscat', 'display' ) )
+					);
+				}
+				/* Join the terms, separating them with a comma. */
+				echo join( ', ', $out );
+			}
+			/* If no terms were found, output a default message. */
+			else {
+				_e( 'No Category' );
+			}
+			break;
+		/* Just break out of the switch statement for everything else. */
+		default :
+			break;
+	}
 }
 
 /**

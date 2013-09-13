@@ -16,143 +16,143 @@
  */
 
 
-/**
-* Feedback Custom Post Type
-* Aug 20 , 2013
-*
-* These are for Tester to send feedback to the developers
-* Only Developers should have admin access to the feedback.
-*
-* @author Lyle Palagar, Isaac Andrade
-* @param
-* @return
-*/
-add_action( 'init','feedback_custom_type');
-function feedback_custom_type(){
-	register_post_type('feedback',
-		array(
-            //customize all labels for a post-type with correspondent values
-			'labels'=>array(
-						'name'=>'Feedback',
-						'singular'=>'Feedback',
-						'all_items'=>'All Feedback',
-						'add_new'=>'Add New',
-						'add_new_item'=>'New Feedback',
-						'edit_item'=>'Edit',
-						'new_item'=>'New Feedback',
-						'view_item'=>'View Feedback',
-						'search_items'=>'Search Feedback',
-						'not_found'=>'No Feedback Found',
-						'not_found_in_trash'=>'No feedback Found in Trash',
-						'parent'=>'Parent Feedback',
-						'menu_name'=>'Feedback',
-						),
-			'supports'=>array('title','editor','author','thumbnail','trackbacks','custom-fields','revision', 'comments'),
-			'description' => 'These are for Beta-Testers to send feedback to the Developers, they should be able to see only their own feedback. While Developers (and Admins) will be able to see and modify all of the feedback created.',
-			'public' => true, // keep the custom type shown on the wp-admin page
-			'menu_position' => 25,
-			)
-		);
-}
+// /**
+// * Feedback Custom Post Type
+// * Aug 20 , 2013
+// *
+// * These are for Tester to send feedback to the developers
+// * Only Developers should have admin access to the feedback.
+// *
+// * @author Lyle Palagar, Isaac Andrade
+// * @param
+// * @return
+// */
+// add_action( 'init','feedback_custom_type');
+// function feedback_custom_type(){
+// 	register_post_type('feedback',
+// 		array(
+//             //customize all labels for a post-type with correspondent values
+// 			'labels'=>array(
+// 						'name'=>'Feedback',
+// 						'singular'=>'Feedback',
+// 						'all_items'=>'All Feedback',
+// 						'add_new'=>'Add New',
+// 						'add_new_item'=>'New Feedback',
+// 						'edit_item'=>'Edit',
+// 						'new_item'=>'New Feedback',
+// 						'view_item'=>'View Feedback',
+// 						'search_items'=>'Search Feedback',
+// 						'not_found'=>'No Feedback Found',
+// 						'not_found_in_trash'=>'No feedback Found in Trash',
+// 						'parent'=>'Parent Feedback',
+// 						'menu_name'=>'Feedback',
+// 						),
+// 			'supports'=>array('title','editor','author','thumbnail','trackbacks','custom-fields','revision', 'comments'),
+// 			'description' => 'These are for Beta-Testers to send feedback to the Developers, they should be able to see only their own feedback. While Developers (and Admins) will be able to see and modify all of the feedback created.',
+// 			'public' => true, // keep the custom type shown on the wp-admin page
+// 			'menu_position' => 25,
+// 			)
+// 		);
+// }
 
-/**
-*   Feedback Categories
-* 	These are taxonomies(jargon used by wp to refer to 'categories') that will be changed initially by the author,
-* 	but afterwards it will be changed ONLY by administrators
-*	They will be used to represent the status of the feedback, if it's been
-*	worked on, ignored, or still have pending work to do. 
-*
-*   @author Isaac Andrade
-*   @param
-*   @return
-*/
-add_action('init', 'feedback_taxonomies', 0);
-function feedback_taxonomies() {
-	//customize all labels
-	$labels = array(
-					'name' => 'Status',
-					'all_items' => 'All Statuses',
-					'menu_name' => 'Status',
-					'edit_item' => 'Edit Status',
-					'view_item' => 'View Status',
-					'update_item' => 'Update Status',
-					'add_new_item' => 'Create New Status',
-					'new_item_name' => 'New Status Name',
-					'search_items' => 'Search',
-					);
-	//this taxonomy is called status
-	register_taxonomy('status', 'feedback', 
-		array(
-			'hierarchical' => true,
-			'labels' => $labels,
-			'query_var' => false,
-			'rewrite' => false,
-			));
-}
+// /**
+// *   Feedback Categories
+// * 	These are taxonomies(jargon used by wp to refer to 'categories') that will be changed initially by the author,
+// * 	but afterwards it will be changed ONLY by administrators
+// *	They will be used to represent the status of the feedback, if it's been
+// *	worked on, ignored, or still have pending work to do. 
+// *
+// *   @author Isaac Andrade
+// *   @param
+// *   @return
+// */
+// add_action('init', 'feedback_taxonomies', 0);
+// function feedback_taxonomies() {
+// 	//customize all labels
+// 	$labels = array(
+// 					'name' => 'Status',
+// 					'all_items' => 'All Statuses',
+// 					'menu_name' => 'Status',
+// 					'edit_item' => 'Edit Status',
+// 					'view_item' => 'View Status',
+// 					'update_item' => 'Update Status',
+// 					'add_new_item' => 'Create New Status',
+// 					'new_item_name' => 'New Status Name',
+// 					'search_items' => 'Search',
+// 					);
+// 	//this taxonomy is called status
+// 	register_taxonomy('status', 'feedback', 
+// 		array(
+// 			'hierarchical' => true,
+// 			'labels' => $labels,
+// 			'query_var' => false,
+// 			'rewrite' => false,
+// 			));
+// }
 
-/**
-*  DevPress Edit Feedback Columns
-*      This function will edit what information will be displayed in the tab "All Feedback"
-*
-* @author Isaac & Gizmo
-* @param $columns_feedback (the columns currently under post-type 'feedback')
-* @return $columns_feedback (the edited new columns)
-**/
-//Custom Columns
-add_filter( 'manage_edit-feedback_columns', 'devpress_edit_feedback_columns' ) ;
-function devpress_edit_feedback_columns( $columns_feedback ) {
+// /**
+// *  DevPress Edit Feedback Columns
+// *      This function will edit what information will be displayed in the tab "All Feedback"
+// *
+// * @author Isaac & Gizmo
+// * @param $columns_feedback (the columns currently under post-type 'feedback')
+// * @return $columns_feedback (the edited new columns)
+// **/
+// //Custom Columns
+// add_filter( 'manage_edit-feedback_columns', 'devpress_edit_feedback_columns' ) ;
+// function devpress_edit_feedback_columns( $columns_feedback ) {
 
-	$columns_feedback += array(
-		'cb'=>__('<input type="checkbox" />'),
-		'title' => __( 'Title' ),
-		'status' => __( 'Status' ),
-		'author'=>__('Author'),
-		'date' => __( 'Date' )
-	);
+// 	$columns_feedback += array(
+// 		'cb'=>__('<input type="checkbox" />'),
+// 		'title' => __( 'Title' ),
+// 		'status' => __( 'Status' ),
+// 		'author'=>__('Author'),
+// 		'date' => __( 'Date' )
+// 	);
 
-	return $columns_feedback;
-}
+// 	return $columns_feedback;
+// }
 
-/**
-*  DevPress Manage Feedback Columns 
-*     This function will manage what information will be inside each collumn displayed in the tab "All Feedback"
-*
-* @author Isaac & Gizmo
-* @param $column_feedback (edited columns), &post_id (current)
-* @return
-*/
-add_action( 'manage_feedback_posts_custom_column', 'devpress_manage_feedback_columns', 10, 2 );
-function devpress_manage_feedback_columns( $column_feedback, $post_id ) {
-	global $post;
-	switch( $column_feedback ) {
-		/* If displaying the 'status' column. */
-		case 'status' :
-			/* Get the status for the post. */
-			$terms_feedback = get_the_terms( $post_id, 'status' );
-			/* If terms were found. */
-			if ( !empty( $terms_feedback ) ) {
-				$out = array();
-				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
-				//allows more than one status(taxonomy) per post
-				foreach ( $terms_feedback as $term_feedback ) {
-					$out[] = sprintf( '<a href="%s">%s</a>',
-						esc_url( add_query_arg( array( 'post_type' => $post->post_type, 'status' => $term_feedback->slug ), 'edit.php' ) ),
-						esc_html( sanitize_term_field( 'name', $term_feedback->name, $term_feedback->term_id, 'status', 'display' ) )
-					);
-				}
-				/* Join the terms, separating them with a comma. */
-				echo join( ', ', $out );
-			}
-			/* If no terms were found, output a default message. */
-			else {
-				_e( 'No Status' );
-			}
-			break;
-		/* Just break out of the switch statement for everything else. */
-		default :
-			break;
-	}
-}
+// /**
+// *  DevPress Manage Feedback Columns 
+// *     This function will manage what information will be inside each collumn displayed in the tab "All Feedback"
+// *
+// * @author Isaac & Gizmo
+// * @param $column_feedback (edited columns), &post_id (current)
+// * @return
+// */
+// add_action( 'manage_feedback_posts_custom_column', 'devpress_manage_feedback_columns', 10, 2 );
+// function devpress_manage_feedback_columns( $column_feedback, $post_id ) {
+// 	global $post;
+// 	switch( $column_feedback ) {
+// 		/* If displaying the 'status' column. */
+// 		case 'status' :
+// 			/* Get the status for the post. */
+// 			$terms_feedback = get_the_terms( $post_id, 'status' );
+// 			/* If terms were found. */
+// 			if ( !empty( $terms_feedback ) ) {
+// 				$out = array();
+// 				/* Loop through each term, linking to the 'edit posts' page for the specific term. */
+// 				//allows more than one status(taxonomy) per post
+// 				foreach ( $terms_feedback as $term_feedback ) {
+// 					$out[] = sprintf( '<a href="%s">%s</a>',
+// 						esc_url( add_query_arg( array( 'post_type' => $post->post_type, 'status' => $term_feedback->slug ), 'edit.php' ) ),
+// 						esc_html( sanitize_term_field( 'name', $term_feedback->name, $term_feedback->term_id, 'status', 'display' ) )
+// 					);
+// 				}
+// 				/* Join the terms, separating them with a comma. */
+// 				echo join( ', ', $out );
+// 			}
+// 			/* If no terms were found, output a default message. */
+// 			else {
+// 				_e( 'No Status' );
+// 			}
+// 			break;
+// 		/* Just break out of the switch statement for everything else. */
+// 		default :
+// 			break;
+// 	}
+// }
 
 
 
@@ -492,7 +492,7 @@ function blogs_taxonomies(){
 *  DevPress Edit Blogs Columns
 *      This function will edit what information will be displayed in the tab "All Portfolios"
 *
-* @author Isaac & Gizmo
+* @author Gizmo
 * @param $columns_blogs (the columns currently under post-type 'blogs')
 * @return $columns_blogs (the edited new columns)
 **/
@@ -515,7 +515,7 @@ function devpress_edit_blogs_columns( $columns_blogs ) {
 *  DevPress Manage Blogs Columns 
 *     This function will manage what information will be inside each collumn displayed in the tab "All Portfolio"
 *
-* @author Isaac & Gizmo
+* @author Gizmo
 * @param $column_blogs (edited columns), &post_id (current)
 * @return
 */
@@ -554,7 +554,7 @@ function devpress_manage_blogs_columns( $column_blogs, $post_id ) {
 
 /**
 *  PathwayPost Custom Type
-*
+*      Posts related to the Pathway program (online study)
 *
 * @author
 * @param
@@ -623,11 +623,11 @@ function pathwaypost_taxonomies(){
 
 /**
 *  DevPress Edit PathwayPost Columns
-*
+*       This function will edit what information will be displayed in the tab "All Stories"
 *
 * @author
-* @param
-* @return
+* @param $columns_pathwaypost (the columns currently under post-type 'blogs')
+* @return $columns_pathwaypost (updated columns)
 **/
 //Custom Columns
 add_filter( 'manage_edit-pathwaypost_columns', 'devpress_edit_pathwaypost_columns' ) ;
@@ -647,10 +647,10 @@ function devpress_edit_pathwaypost_columns( $columns_pathwaypost ) {
 
 /**
 *  DevPress Manage PathwayPost Columns
-*
+*      
 *
 * @author
-* @param
+* @param $column_pathwaypost, $post_id
 * @return
 **/
 add_action( 'manage_pathwaypost_posts_custom_column', 'devpress_manage_pathwaypost_columns', 10, 2 );

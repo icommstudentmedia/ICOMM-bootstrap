@@ -94,7 +94,7 @@
 
               <div class="row-fluid">
                 <div class="span12">
-                  <a class="brand" href="<?php echo site_url(); ?>">SCROLL</a>
+                  <a class="brand" href="<?php echo site_url(); ?>">Scroll</a>
                 </div>
               </div>
               

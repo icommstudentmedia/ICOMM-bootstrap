@@ -7,5 +7,6 @@ Description: Sample custom theme built with bootstrap
  */
 
  @import url('bootstrap/css/bootstrap.css');
- @import url('bootstrap/css/bootstrap-responsive.css');
+/* @import url('bootstrap/css/bootstrap-responsive.css');*/
  @import url('bootstrap/css/custom.css');
+ @import url('bootstrap/css/custom-responsive.css');

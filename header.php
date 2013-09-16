@@ -15,7 +15,7 @@
   
 
   <!-- Le styles --> 
-  <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet"> 
+  <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet" media:"screen"> 
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements --> 
   <!--[if lt IE 9]> 

@@ -1,0 +1,23 @@
+/*   
+*
+*
+*Author: Lyle Palagar & Isaac Andrade;
+*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+	/* Styles */
+	.nav{
+		float:left;
+		width:50%;
+	}
+	.right-border .rightborder-dark{
+		border-right-style:none; /* in custom.css find .right-border,address in next meeting */
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+

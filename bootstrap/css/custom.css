@@ -327,14 +327,14 @@ img.feature-img {
 }
 
 
-.rightborder {
+/*.rightborder {
   list-style-position: inside;
   border-right: 1px solid white;
 }
 .rightborder-dark {
   list-style-position: inside;
   border-right: 1px solid #363636;
-}
+}*/
 
 .login {
   text-align: right;

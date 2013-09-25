@@ -202,13 +202,13 @@ img.feature-img {
 }
 ---------------------------------------------------------------/
 
-/* make sure the carosel sits all the way to the left */
+/* make sure the carosel sits all the way to the left 
 #header-wrapper .nav,
 #header-wrapper .brand{
   margin-bottom: -30px !important;
 
 }
-
+*/
 /* Need to make a class for the new navbar, also modify the
  classes for bootstrap's navbar to fit our styleguide
 ---------------------------------------------------------*/
@@ -586,12 +586,10 @@ list-style-type:none;
       border: 1px solid green ;
 }
 
-/* Form (LP)
-******************************************************************
-
-form {
-  padding-left:100px;
-  padding-top:100px;
+/* Search Form (LP)
+***************************************************************** */
+.line-height{
+  padding-top: 4%;
 }
 
 

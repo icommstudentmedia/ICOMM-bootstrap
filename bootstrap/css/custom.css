@@ -671,6 +671,17 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  /*Mobile responsive done by Benjamin Bryce*/
+  .vert-padding{
+    display:none !important;
+  }
+  .marketing p{
+    display:none !important;
+  }
+  hr{
+    display:none !important;
+  }
 }
 
 .footer {

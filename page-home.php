@@ -49,7 +49,7 @@
 <!-- End Carousel -->
 
 
-<div class="container container-narrow marketing">
+<div class="container container-narrow marketing mobile-body">
   <!-- main content -->
   <div class="row-fluid vert-padding">
     <div class="span10">

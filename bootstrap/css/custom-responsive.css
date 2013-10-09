@@ -7,18 +7,47 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (min-width : 320px) and (max-width : 480px) {
 	/* Styles */
-	.nav{
+	.nav {
 		float:left;
 		width:50%;
 	}
-	.right-border .rightborder-dark{
-		border-right-style:none; /* in custom.css find .right-border,address in next meeting */
+	.right-border .rightborder-dark {
+		border-right-style:none; /* in custom.css find .right-border */
 	}
 	.vert-padding{
 		display:none !important;
 	}
-
+	.ads-post {
+		display: none;
+	}
 	
+	/* Make "Latest Stories" center horizontaly - Isaac Andrade */
+	div.feature {
+		text-align: center;
+	}
+
+	/* This class is styled only in this file. 
+	 * Make body take the full width of its parent.  - Isaac Andrade */
+	.mobile-body {
+		width: 100%;
+	}
+
+	/* This class is defined by the bootstrap framework. Here I am just overriding float property.
+	 * Post thumbnails will now get centered on the screen - Isaac Andrade */
+	.pull-left {
+		float: none;
+	}
+
+	/* Override <body>'s padding so the page takes full display width - Isaac Andrade */
+	body {
+		padding: 0;
+	}
+
+	/* Style how title and author below each post thumbnail - Isaac Andrade*/
+	.feature .row-fluid .span8 {
+		border-left: solid 10px black;
+		padding-left: 5px;
+	}
 }
 
 /* iPads (portrait and landscape) ----------- */

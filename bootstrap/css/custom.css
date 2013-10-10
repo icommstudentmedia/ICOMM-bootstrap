@@ -663,47 +663,6 @@ body {
 #footer {
   height: 30px;
 }
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /*Mobile responsive done by Benjamin Bryce*/
-  .vert-padding{
-    display:none !important;
-  }
-  .marketing p{
-    display:none !important;
-  }
-  hr{
-    display:none !important;
-  }
-}
-
-.footer {
-  background-color: #191919;
-  padding: 10px 0;
-  font-size: 10px;
-  font-family: Arial,sans-serif, 'Times New Roman',serif;
-}
-
-.footer a {
-  color: white;
-  font-family: Arial,sans-serif, 'Times New Roman',serif;
-  font-size: 10px;
- }
-
- .footer p {
-  color: white;
- }
-
-.footer .align-right {
-  text-align: right;
-}
 
 /*************************************************************************************************************
 Override for the stylesheet of Google CSE (Custom Search) used in the search.php file.

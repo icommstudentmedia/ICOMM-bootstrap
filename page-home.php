@@ -53,7 +53,7 @@
   <!-- main content -->
   <div class="row-fluid vert-padding">
     <div class="span10">
-      <h2 class="feature-lead pull-left">Top Stories</h2>
+      <h2 class="feature-lead pull-left visible-desktop">Top Stories</h2>
     </div>
     <div class="span2 pull-right visible-desktop">
       <div class="row-fluid social-pics">

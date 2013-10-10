@@ -93,21 +93,7 @@
               <hr class="visible-desktop">
 
               <div class="row-fluid">
-                <div class="span8">
-                  <a class="brand" href="<?php echo site_url(); ?>">Scroll</a>
-                </div>
-            <div class="span4">
-
-                  <form class="form-search line-height pull-right front-search" method="get" action="http://beta.byuicomm.net/search/">
-                            <div class="input-append">
-                              <input type="text" class="span9 search-query" name="q" placeholder="Search...">
-                              <button type="submit" class="btn"><i class="icon-search"></i></button>
-                            </div>
-                          </form>
-              </div>
-                </div>
-             
-                  <div class="navbar-inner">
+                <div class="navbar-inner">
                     <div class="container" style="width: auto">
                     <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -133,6 +119,21 @@
                         </div><!--/.nav-collapse -->
                       </div>
                     </div>
+                <!-- <div class="span8"> -->
+                  <a class="brand" href="<?php echo site_url(); ?>">Scroll</a>
+                <!--/div>-->
+            <!-- div class="span4"-->
+
+                  <form class="form-search line-height pull-right front-search" method="get" action="http://beta.byuicomm.net/search/">
+                            <div class="input-append">
+                              <input type="text" class="span9 search-query" name="q" placeholder="Search...">
+                              <button type="submit" class="btn"><i class="icon-search"></i></button>
+                            </div>
+                          </form>
+              <!-- /div -->
+                </div>
+             
+                  
             </div><!-- /.navbar -->
         </div> <!-- /.container -->
       </div>

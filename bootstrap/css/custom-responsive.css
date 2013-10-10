@@ -5,7 +5,7 @@
 */
 
 /* Smartphones (portrait and landscape) ----------- */
-@media screen and (min-width : 320px) and (max-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 1024px) {
 	/* Styles */
 	.nav {
 		float:left;
@@ -43,15 +43,15 @@
 		padding: 0;
 	}
 
-	/* Style how title and author below each post thumbnail - Isaac Andrade*/
-	.feature .row-fluid .span8 {
+	.navbar .span8 .row-fluid {
+		text-align: center;
+	}
+
+	/* Style how title and author below each post thumbnail - Isaac Andrade */
+	.feature .row-fluid .span8 { 
 		border-left: solid 10px black;
 		padding-left: 5px;
 	}
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
 

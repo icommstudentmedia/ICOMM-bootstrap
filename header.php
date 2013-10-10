@@ -93,8 +93,8 @@
               <hr class="visible-desktop">
 
               <div class="row-fluid">
-                <div class="navbar-inner">
-                    <div class="container" style="width: auto">
+                <!-- div class="navbar-inner" -->
+                    <!-- div class="container" style="width: auto" -->
                     <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                       <span class="icon-bar"></span>
@@ -117,8 +117,8 @@
                             <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                           </ul>
                         </div><!--/.nav-collapse -->
-                      </div>
-                    </div>
+                      <!-- /div -->
+                    <!-- /div -->
                 <!-- <div class="span8"> -->
                   <a class="brand" href="<?php echo site_url(); ?>">Scroll</a>
                 <!--/div>-->

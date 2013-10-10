@@ -42,10 +42,12 @@
 	body {
 		padding: 0;
 	}
-
-	.navbar .span8 .row-fluid {
-		text-align: center;
-	}
+ 
+    .navbar .btn-navbar {
+        	float: none;
+    	
+        width: 12px;
+    }
 
 	/* Style how title and author below each post thumbnail - Isaac Andrade */
 	.feature .row-fluid .span8 { 

@@ -106,19 +106,47 @@
 * Hidden on the desktop version
 -->
 
-            <div class="row-fluid  mobile-desktop-head"> <!-- mobile-desktop-head is found in the custom.css -->
+            <div class="row-fluid mobile-desktop-head"> <!-- mobile-desktop-head is found in the custom.css -->
               <div class="span12">
-                             <div class="mobile_leftcollpase">
-                                             
-                              </div>
+                             <div class="mobile_leftcollapse">
+                               <div class="navbar-inner"> 
+                          <div class="container" style="width: auto">
+                            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </a>
+                            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                            <div class="nav-collapse collapse">
+                              <ul class="nav">
+                                <li class="rightborder">
+                                  <a href="<?php echo site_url(); ?>"><i class="icon-home icon-white"></i></a>
+                                </li>
+                                <?php wp_nav_menu (array( 'theme_location' => 'top-bar', 
+                                  'depth' => 2,
+                                  'container' => false,
+                                  'menu_class' => 'nav',
+                                  'walker' => new Bootstrap_Walker_Nav_Menu()
+                                  ));
+                                  ?>
+                                  <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                                </ul>
+                              </div><!--/.nav-collapse -->
+                            </div>
+                          </div>   
+                        </div>  <!-- /nav collapse collapse -->
+<!-- end of collapse nav  ( mobile left collapse) -->
+
+                              
                                 <div class="mobiletitle"> 
                                 <a class="brand" href="<?php echo site_url(); ?>"> Scroll</a>
-                                </div>
-                                <div class="mobile_rightcollpase_bar">
+                                </div> <!-- / mobiletitle -->
+                                <div class="mobile_rightcollapse_bar">
                                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".search-collapse">
                                     <i class="icon-search icon-white"></i>
                                   </a>
-                                  </div>
+                                  </div> <!-- mobile_rightcollapse_bar -->
                                   <div class="search-collapse collapse">
                                     <form class="form-search line-height pull-right front-search" method="get" action="http://beta.byuicomm.net/search/">
                                       <div class="input-append">
@@ -126,7 +154,7 @@
                                        <button type="submit" class="btn"><i class="icon-search"></i></button>
                                      </div>
                                    </form>
-                                  </div>
+                                  </div> <!-- search-collapse -->
                             </div>
                            </div> 
 

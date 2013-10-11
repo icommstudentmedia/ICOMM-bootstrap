@@ -95,6 +95,19 @@
 	.desktop-header{
 		display:none;
 	}
+
+	.mobile_leftcollapse{
+		float: left !important;
+	}
+
+	.mobiletitle {
+		float: center !important;
+	}
+
+	.mobile_rightcollapse_bar {
+		float: right !important;
+		padding-top: 4%;
+	}
 }
 
 

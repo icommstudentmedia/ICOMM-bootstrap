@@ -130,7 +130,7 @@
                   <div class="navbar-inner"> 
                     <div class="container" style="width: auto">
                       <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                      <a class="btn btn-navbar mobile-menu-button-correct-width" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -157,23 +157,28 @@
                 <!-- end of collapse nav  ( mobile left collapse) -->
 
                 <div class="mobiletitle"> 
-                  <a class="brand" href="<?php echo site_url(); ?>"> Scroll</a>
+                  <a class="brand" href="<?php echo site_url(); ?>">Scroll</a>
                 </div> <!-- / mobiletitle -->
 
                 <div class="mobile_rightcollapse_bar">
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".search-collapse">
-                    <i class="icon-search icon-white"></i>
-                  </a>
-                </div> <!-- mobile_rightcollapse_bar -->
+                  <div class="navbar-inner"> 
+                    <div class="container" style="width: auto">
+                      <a id="mobile-search-button" class="btn btn-navbar" data-toggle="collapse" data-target=".search-collapse">
+                        <span class="icon-search icon-white"></span>
+                      </a>
 
-                <div class="search-collapse collapse">
-                  <form class="form-search line-height mobileposition front-search" method="get" action="http://beta.byuicomm.net/search/">
-                    <div class="input-append">
-                      <input type="text" class="span9 search-query mobile-searchbar" name="q" placeholder="Search...">
-                      <button type="submit" class="btn"><i class="icon-search"></i></button>
+                      <div class="search-collapse collapse">
+                        <form class="form-search line-height mobileposition front-search" method="get" action="http://beta.byuicomm.net/search/">
+                          <div class="input-append">
+                            <input type="text" class="span9 search-query mobile-searchbar" name="q" placeholder="Search...">
+                            <button type="submit" class="btn"><i class="icon-search"></i></button>
+                            <div class="mobile-searchform-height"></div>
+                          </div>
+                        </form>
+                      </div> <!-- search-collapse -->
                     </div>
-                  </form>
-                </div> <!-- search-collapse -->
+                  </div>
+                </div> <!-- mobile_rightcollapse_bar -->
               </div>
             </div> <!-- Mobile View End-->
 

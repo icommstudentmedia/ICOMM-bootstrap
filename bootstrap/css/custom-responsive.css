@@ -113,18 +113,50 @@
 	}
 
 	.mobile_leftcollapse{
+		position: relative;
 		float: left !important;
-		width:150px;
+		width: 115px;
+	}
+
+	.mobile-menu-button-correct-width{
+		width: 17px !important;
 	}
 
 	.mobiletitle {
-		float: center !important;
+		/*float: center !important;*/
+		position: absolute;
+		margin-left: 25%;
+		margin-right: 35%;
 	}
 
 	.mobile_rightcollapse_bar {
+		position: relative;
 		float: right !important;
-		padding-top:2%;
 	}
+
+	#mobile-search-button {
+		position: absolute;
+		right: 5px;
+		height: 13px;
+		width: 17px;
+		padding: 5px 10px 9px;
+	}
+
+	.search-collapse {
+		position: relative;
+		top: 40px;
+		left: -60px;
+	}
+
+	.mobile-searchform-height {
+		height: 40px;
+		z-index: -1;
+	}
+
+	.search-collapse .in .collapse {
+		height: 80px;
+	}
+
 	.mobileposition{
 		float:center!important;
 	}

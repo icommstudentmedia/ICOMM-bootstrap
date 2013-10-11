@@ -633,6 +633,10 @@ list-style-type:none;
 #mobile-social {
   display:none;
 }
+.mobile-desktop-head{
+  display:none;
+}
+
 
 /* Random addition to help the carousel captions
 **********************************************************************/

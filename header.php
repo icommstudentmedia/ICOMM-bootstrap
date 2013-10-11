@@ -85,9 +85,9 @@
 
             <hr class="visible-desktop">
 
-            <div class="row-fluid">
+            <div class="row-fluid desktop-header"> <!-- desktop header is found in the custom-responsive.css -->
 
-              <div class="span8"> 
+              <div class="span8 "> 
                 <a class="brand" href="<?php echo site_url(); ?>">Scroll</a>
               </div>
               <div class="span4">
@@ -101,38 +101,38 @@
               </div>
             </div>
 <!--
-* Mobile version of the social bar
+* Mobile version of the navigation, title, and search bar
 * 
 * Hidden on the desktop version
 -->
 
-            <div class="row-fluid">
-                               <div class="span12">
-                                <div class="mobile_leftcallpse_bar">
-                                  
-
-                                </div>
+            <div class="row-fluid  mobile-desktop-head"> <!-- mobile-desktop-head is found in the custom.css -->
+              <div class="span12">
+                             <div class="mobile_leftcollpase">
+                                             
+                              </div>
                                 <div class="mobiletitle"> 
+                                <a class="brand" href="<?php echo site_url(); ?>"> Scroll</a>
                                 </div>
-
-                                <div class="mobile_rightcallpase_bar">
-                                  <!-- input callpse search code-->
-                                </div>
-                               </div>
+                                <div class="mobile_rightcollpase_bar">
+                                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".search-collapse">
+                                    <i class="icon-search icon-white"></i>
+                                  </a>
+                                  </div>
+                                  <div class="search-collapse collapse">
+                                    <form class="form-search line-height pull-right front-search" method="get" action="http://beta.byuicomm.net/search/">
+                                      <div class="input-append">
+                                       <input type="text" class="span9 search-query mobile-searchbar" name="q" placeholder="Search...">
+                                       <button type="submit" class="btn"><i class="icon-search"></i></button>
+                                     </div>
+                                   </form>
+                                  </div>
                             </div>
+                           </div> 
 
 <!-- end -->
 
-            <div class="navbar-inner"> 
-              <div class="container" style="width: auto">
-                <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </a>
-                <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-                <div class="nav-collapse collapse">
+            <div class="navbar-inner desktop-navbar"> <!--desktop navbar is found in the custom-responsive.css --> 
                   <ul class="nav">
                     <li class="rightborder">
                       <a href="<?php echo site_url(); ?>"><i class="icon-home icon-white"></i></a>
@@ -147,8 +147,6 @@
                       <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                     </ul>
                   </div><!--/.nav-collapse -->
-                </div>
-              </div>
             </div><!-- /.navbar -->
           </div> <!-- /.container -->
         </div>

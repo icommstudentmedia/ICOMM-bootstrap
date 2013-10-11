@@ -32,7 +32,7 @@
 * Hidden on the desktop version
 */
 ?>
-<div id="mobile-social" class="span2">
+<div id="mobile-social" class="span2"> <!-- mobile-social is found in the custom.css -->
 	<div class="row-fluid social-pics">
 			<a href="https://www.facebook.com/icomm.student.media?fref=ts"><img src="<?php bloginfo( 'template_url' ); ?>/img/mobile-social-icons/facebook-mobile.png"></a>
 			<a href="https://twitter.com/byuiscroll"><img src="<?php bloginfo( 'template_url' ); ?>/img/mobile-social-icons/twitter-mobile.png"></a>

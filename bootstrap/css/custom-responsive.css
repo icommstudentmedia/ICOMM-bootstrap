@@ -84,6 +84,17 @@
 		border-left: solid 10px black;
 		padding-left: 5px;
 	}
+
+	/* this affects the desktop title into being hidden*/
+	.mobile-desktop-head {
+		display: block;
+	}
+	.desktop-navbar{
+		display:none;
+	}
+	.desktop-header{
+		display:none;
+	}
 }
 
 

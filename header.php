@@ -138,5 +138,3 @@
           </div> <!-- /.container -->
         </div>
     </div><!-- /.navbar-wrapper -->
-
-    <?php include_once "social-menu.php"; ?>

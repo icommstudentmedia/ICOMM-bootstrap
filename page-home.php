@@ -10,7 +10,6 @@
 
 
  get_header(); ?>
-
  <!-- Begin Carousel -->
 
 <div id="myCarousel" class="carousel slide visible-desktop">
@@ -48,7 +47,7 @@
 
 <!-- End Carousel -->
 
-
+ <?php include_once "social-menu.php"; ?>
 <div class="container container-narrow marketing mobile-body">
   <!-- main content -->
   <div class="row-fluid vert-padding">

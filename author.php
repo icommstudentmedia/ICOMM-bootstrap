@@ -17,22 +17,9 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) :
     <div class="span10">
       <h2 class="feature">Author</h2>
     </div>
-    <div class="span2 pull-right">
-      <div class="row-fluid social-pics">
-        <div class="span3">
-          <a href="https://www.facebook.com/icomm.student.media?fref=ts"><img src="<?php bloginfo( 'template_url' ); ?>/img/f_logo.png"></a>
-        </div>
-        <div class="span3">
-          <a href="https://twitter.com/byuicomm"><img src="<?php bloginfo( 'template_url' ); ?>/img/twitter_logo.png"></a>
-        </div>
-        <div class="span3">
-          <a href="http://pinterest.com/byuicomm/"><img src="<?php bloginfo( 'template_url' ); ?>/img/pinterest_logo.png"></a>
-        </div>
-         <div class="span3">
-          <a href="http://instagram.com/byuiscroll/"><img src="<?php bloginfo( 'template_url' ); ?>/img/instagram_icon_large.png"></a>
-        </div>
-      </div>
-    </div>
+   <!-- This file contains the social media icons for the desktop version and also 
+      the mobile version of the website -->
+      <?php include_once "social-menu.php"; ?>
   </div>
 
 	<hr class="no-margin">

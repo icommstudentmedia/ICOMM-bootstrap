@@ -19,21 +19,10 @@ get_header();
 			<h2 class="feature"> About I~Comm </h2>
 		</div> 						  
 		<!-- Social networks -->
-		<div class="row-fluid social-pics span2">
-			<div class="span3">
-				<a href="https://www.facebook.com/icomm.student.media?fref=ts"><img src="http://beta.byuicomm.net/wp-content/themes/icomm-bootstrap/img/f_logo.png"></a>
-			</div>
-			<div class="span3">
-				<a href="https://twitter.com/byuicomm"><img src="http://beta.byuicomm.net/wp-content/themes/icomm-bootstrap/img/twitter_logo.png"></a>
-			</div>
-			<div class="span3">
-				<a href="http://pinterest.com/byuicomm/"><img src="http://beta.byuicomm.net/wp-content/themes/icomm-bootstrap/img/pinterest_logo.png"></a>
-			</div>
-			 <div class="span3">
-          <a href="http://instagram.com/byuiscroll/"><img src="<?php bloginfo( 'template_url' ); ?>/img/instagram_icon_large.png"></a>
-        </div>
-
-		</div>
+		
+    <!-- This file contains the social media icons for the desktop version and also 
+      the mobile version of the website -->
+      <?php include_once "social-menu.php"; ?>
 	</div>
 </div>
 	<hr/>

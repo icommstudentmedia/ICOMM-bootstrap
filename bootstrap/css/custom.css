@@ -1,11 +1,76 @@
 /*
-* Import Font Optima
+* Import Font Optima & Minion Pro (respectively)
 * author Benjamin Bryce
 ----------------------------------------------------------------------------------------*/
 @font-face { 
-    font-family: ScrollBrand;
+    font-family: Heading;
     src: url('optima.ttf');
 }
+
+@font-face { 
+    font-family: Text;
+    src: url('MinionPro-Regular.otf');
+}
+
+/*
+* Font Application
+* author Benjamin Bryce
+----------------------------------------------------------------------------------------*/
+
+/*Banner nav categories*/
+ul {
+  font-family: 'Heading', 'Optima', sans-serif;
+  font-size: 13px;
+}
+
+/*Carousel titles*/
+.carousel-caption h4 {
+  font-family: 'Heading', 'Optima', sans-serif;
+}
+
+/*Carousel descriptions*/
+.carousel-caption {
+  font-family: 'Text', 'MinionPro-Regular', serif;
+  font-size: 15px;
+}
+
+/*Category titles*/
+h2 {
+  font-family: 'Heading', 'Optima', sans-serif;
+}
+
+/*Video titles*/
+div.description {
+  font-family: 'Heading', 'Optima', sans-serif;
+  font-size: 13px;
+}
+
+/*Article titles*/
+h3 {
+  font-family: 'Heading', 'Optima', sans-serif;
+  font-size: 18px;
+}
+
+/*Article authors*/
+
+/*Article post dates*/
+
+/*Article descriptions*/
+.feature p{
+  font-family: 'Text', 'MinionPro-Regular', serif;
+  font-size: 15px;
+}
+
+/*Latest Videos nav header*/
+.section-header {
+  font-family: 'Heading', 'Optima', sans-serif;
+}
+
+/*Latest Videos nav video titles*/
+.row-fluid {
+  font-family: 'Heading', 'Optima', sans-serif;
+}
+
 
 /* Image Alignment  Guilherme Bentim
 ----------------------------------------------------------------------------------------*/
@@ -119,9 +184,9 @@ img.feature-img {
 }
 
 .feature h3 {
-  font-family: arial;
+  /*font-family: arial;*/
   font-weight: bold;
-  font-size: 18px;
+  /*font-size: 18px;*/
   margin-top: 15px;
   margin-bottom: 10px;
   line-height: 1.3;
@@ -148,15 +213,15 @@ img.feature-img {
   font-weight: bold;
 }
 .marketing p {
-  font-family: Arial;
-  font-size: 12px;
+  /*font-family: Arial;*/
+  /*font-size: 12px;*/
   line-height: 1.5;
 }
 
 .author a {
-  font-family: Arial;
+  /*font-family: Arial;*/
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 11pt;
   color: #F89820 !important;
 }
 
@@ -239,7 +304,7 @@ img.feature-img {
 
 .navbar .brand {
   padding: 0px 30px 10px;
-  font-family: 'ScrollBrand', 'Optima', sans-serif;
+  font-family: 'Heading', 'Optima', sans-serif;
   font-size: 52px;
   font-style: bold;
 }
@@ -417,7 +482,7 @@ img.feature-img {
 }
 
 .video p, a {
-  font-size: 10pt;
+  font-size: 11pt;
   line-height: 1.3;
   text-align: left;
   color: black;

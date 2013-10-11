@@ -16,18 +16,17 @@
 
 ?>
 
+  
+      <!-- This file contains the social media icons for the desktop version and also 
+      the mobile version of the website -->
+      <?php include_once "social-menu.php"; ?>
+      
 <div class="container container-narrow marketing">
   <!-- main content -->
   <div class="row-fluid vert-padding">
     <div class="span10">
-      <h2 class="feature"><?php echo ucwords($current_cat_name); ?> Top Stories</h2>
-      
+      <h2 class="feature"><?php echo ucwords($current_cat_name); ?> Top Stories</h2>      
     </div>
-
-    <!-- This file contains the social media icons for the desktop version and also 
-      the mobile version of the website -->
-      <?php include_once "social-menu.php"; ?>
-
   </div>
 
   <div class="row-fluid">
@@ -61,7 +60,7 @@
                     endwhile; endif; 
                   ?>
         </div>
-  
+
       <hr>
       <!-- Latest stories, Endless content, one story per line -->
       <div class="feature">

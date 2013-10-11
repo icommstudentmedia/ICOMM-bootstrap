@@ -11,6 +11,10 @@
 get_header();
 ?>
 
+    <!-- This file contains the social media icons for the desktop version and also 
+      the mobile version of the website -->
+      <?php include_once "social-menu.php"; ?>
+      
 <div class="container container-narrow">
 	<div class="row-fluid vert-padding">
 		<!-- todo -->
@@ -18,13 +22,9 @@ get_header();
 			<!-- change and style -->
 			<h2 class="feature"> About I~Comm </h2>
 		</div> 						  
-		<!-- Social networks -->
-		
-    <!-- This file contains the social media icons for the desktop version and also 
-      the mobile version of the website -->
-      <?php include_once "social-menu.php"; ?>
 	</div>
 </div>
+
 	<hr/>
 
 	<div class="row-fluid">

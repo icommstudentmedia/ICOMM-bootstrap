@@ -11,15 +11,16 @@
 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) :
 	get_userdata(intval($author));
  ?>
- 
+    
+    <!-- This file contains the social media icons for the desktop version and also 
+      the mobile version of the website -->
+      <?php include_once "social-menu.php"; ?>
+      
 <div class="container-fluid">	
   <div class="row-fluid vert-padding">
     <div class="span10">
       <h2 class="feature">Author</h2>
     </div>
-   <!-- This file contains the social media icons for the desktop version and also 
-      the mobile version of the website -->
-      <?php include_once "social-menu.php"; ?>
   </div>
 
 	<hr class="no-margin">

@@ -51,10 +51,6 @@ h3 {
   font-size: 18px;
 }
 
-/*Article authors*/
-
-/*Article post dates*/
-
 /*Article descriptions*/
 .feature p{
   font-family: 'Text', 'MinionPro-Regular', serif;
@@ -69,6 +65,10 @@ h3 {
 /*Latest Videos nav video titles*/
 .row-fluid {
   font-family: 'Heading', 'Optima', sans-serif;
+}
+
+#post-content {
+  font-family: 'Text', 'MinionPro-Regular', serif;
 }
 
 

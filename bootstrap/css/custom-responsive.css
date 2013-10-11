@@ -114,6 +114,7 @@
 
 	.mobile_leftcollapse{
 		float: left !important;
+		width:150px;
 	}
 
 	.mobiletitle {
@@ -122,7 +123,10 @@
 
 	.mobile_rightcollapse_bar {
 		float: right !important;
-		padding-top: 4%;
+		padding-top:2%;
+	}
+	.mobileposition{
+		float:center!important;
 	}
 }
 

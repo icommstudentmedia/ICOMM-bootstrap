@@ -148,7 +148,7 @@
                                   </a>
                                   </div> <!-- mobile_rightcollapse_bar -->
                                   <div class="search-collapse collapse">
-                                    <form class="form-search line-height pull-right front-search" method="get" action="http://beta.byuicomm.net/search/">
+                                    <form class="form-search line-height mobileposition front-search" method="get" action="http://beta.byuicomm.net/search/">
                                       <div class="input-append">
                                        <input type="text" class="span9 search-query mobile-searchbar" name="q" placeholder="Search...">
                                        <button type="submit" class="btn"><i class="icon-search"></i></button>

@@ -30,18 +30,18 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) :
 			<div class="container">
 				<h3><?php echo ucwords($curauth->first_name.' '.$curauth->last_name); ?></h3>
 			</div>
-			<h4 class='author-about section-title'>ABOUT</h4>
+			<h4 class='author-about section-title responsive-about-title'>ABOUT</h4>
 			<hr class="no-margin">
-			<p><?php echo $curauth->user_description; ?></p>
-			<h4 class='author-about section-title'>OTHER SITES</h4>
+			<p class="responsive-author"><?php echo $curauth->user_description; ?></p>
+			<h4 class='author-about section-title responsive-about-title'>OTHER SITES</h4>
 			<hr class="no-margin">
 			<a href="<?php echo $curauth->user_url; ?>"<p><?php echo $curauth->user_url; ?></p></a>
-			<h4 class='author-about section-title'>DATE JOINED</h4>
+			<h4 class='author-about section-title responsive-about-title'>DATE JOINED</h4>
 			<hr class="no-margin">
-			<p><?php echo date("n/j/Y", strtotime($curauth->user_registered)); ?></p>
-			<h4 class='author-about section-title'>POSTS</h4>
+			<p class="responsive-author"><?php echo date("n/j/Y", strtotime($curauth->user_registered)); ?></p>
+			<h4 class='author-about section-title responsive-about-title'>POSTS</h4>
 			<hr class="no-margin">
-			<p><?php the_author_posts(); ?></p>
+			<p class="responsive-author"><?php the_author_posts(); ?></p>
 
 
 

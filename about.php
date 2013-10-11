@@ -49,13 +49,7 @@ get_header();
 				Together Scroll and Scroll Digital are more than just a print newspaper; they are on the verge of becoming a multimedia news outlet comparable to the current strides being made in the media industry.
 				Scroll Digital is a student-run news program produced by students using today’s latest broadcast equipment including high-definition cameras, video-editing tools and the broadcast industry standard Associated Press, ENPS, news content management system.
 			<p/>
-		</div>	
-		<div class="span3">
-                    <figure>
-                    	<div class="content_boxTwo"> <img src="" width="250" height="250"/> </div>
-                    	<p> <small> little info </small> </p>
-                    </figure>
-		</div>								<!-- End Content -->
+		</div>						<!-- End Content -->
 	</div>
 
 	<div class="row-fluid"></div> <!-- I added this div so that I can push the footer on the bottom (LP) -->

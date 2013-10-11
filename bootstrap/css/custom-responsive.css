@@ -1,22 +1,36 @@
 /*   
 *
 *
-*Author: Lyle Palagar & Isaac Andrade;
+*Authors: Lyle Palagar, Isaac Andrade, Gizmo Bentim;
 */
 
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (min-width : 320px) and (max-width : 979px) {
 	/* Styles */
 
+	/*  Resizes the margins for the informations about the author, making it more compressed - Gizmo Bentim */
+	.responsive-about-title {
+		margin:0% !important;
+		padding:0% !important;
+	}
+
+    /*  Aligns the information about the author in the center - Gizmo Bentim*/
+	.responsive-author {
+		text-align:center !important;
+	}
+    
+    /*  Aligns the social media icons in the midlle - Gizmo Bentim */
     #mobile-social {
     	display:block;
     	text-align: center;
     } 
-
+    
+    /*  Hides the title Top Stories from the mobile version - Gizmo Bentim */
     .vert-padding {
     	display: none;
     }
     
+
 	.marketing p, hr, .ads-post {
 		display:none !important;
 	}

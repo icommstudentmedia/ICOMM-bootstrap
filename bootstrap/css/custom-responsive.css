@@ -52,10 +52,12 @@
 
 	.footer p {
 		color: white;
+		padding-left: 3%;
 	}
 
 	.footer .align-right {
-		text-align: right;
+	/*	text-align: right;*/
+	padding-left: 55%;
 	}
 
 	.nav {

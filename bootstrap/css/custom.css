@@ -629,6 +629,9 @@ list-style-type:none;
   width: 40px;
 }
 
+#mobile-social {
+  dislay:none;
+}
 
 /* Random addition to help the carousel captions
 **********************************************************************/

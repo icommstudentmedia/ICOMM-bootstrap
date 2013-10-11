@@ -7,6 +7,10 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (min-width : 320px) and (max-width : 1024px) {
 	/* Styles */
+    #mobile-social {
+    	display:block;
+    }
+
 	.marketing p, hr, .ads-post {
 		display:none !important;
 	}

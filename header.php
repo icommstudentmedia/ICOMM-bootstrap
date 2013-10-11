@@ -1,10 +1,3 @@
-<?php
- /**
- *   HEADER.PHP
- *   Date: 
- *   @author
- **/
- ?>
 
  <!DOCTYPE html>
  <html lang="en">
@@ -107,6 +100,28 @@
                 </form>
               </div>
             </div>
+<!--
+* Mobile version of the social bar
+* 
+* Hidden on the desktop version
+-->
+
+            <div class="row-fluid">
+                               <div class="span12">
+                                <div class="mobile_leftcallpse_bar">
+                                  
+
+                                </div>
+                                <div class="mobiletitle"> 
+                                </div>
+
+                                <div class="mobile_rightcallpase_bar">
+                                  <!-- input callpse search code-->
+                                </div>
+                               </div>
+                            </div>
+
+<!-- end -->
 
             <div class="navbar-inner"> 
               <div class="container" style="width: auto">

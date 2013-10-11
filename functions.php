@@ -625,13 +625,13 @@ include (TEMPLATEPATH . '/includes/post_type.php');
 include (TEMPLATEPATH . '/includes/members.php');
 
 //Metabox Script
-include (TEMPLATEPATH . '/includes/metabox/script.php');
+//include (TEMPLATEPATH . '/includes/metabox/script.php');
 
 //Profile metaboxes  ------- Where is the metabox folder??
-include (TEMPLATEPATH . '/includes/metabox/profile-meta.php');
+//include (TEMPLATEPATH . '/includes/metabox/profile-meta.php');
 
 //image attachment management metabox  ------- Where is the metabox folder??
-include (TEMPLATEPATH . '/includes/metabox/images-meta.php');
+//include (TEMPLATEPATH . '/includes/metabox/images-meta.php');
 
 //post visits counting functions  ------- Where is visit-count.php
 //include (TEMPLATEPATH . '/includes/visit-count.php');

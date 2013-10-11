@@ -623,6 +623,7 @@ list-style-type:none;
 }
 .social-pics {
   height: 60px;
+  margin-top: 10px;
 }
 .social-pics img {
   height: 40px;

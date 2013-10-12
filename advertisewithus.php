@@ -28,7 +28,7 @@
 
         <!-- Page Aside -->
         <aside class="span4">
-          <img src="/wp-content/themes/icomm-bootstrap/img/placeholder_352_300.jpg" alt="Advertise With Us Image">
+          <img src="<?php echo content_url();?>/themes/icomm-bootstrap/img/icomm.png" alt="Advertise With Us Image">
 
           <h3>I~Comm Student Media</h3>
           <h4>Contact Information</h4>

@@ -27,7 +27,7 @@ get_header();
 
 	<hr/>
 
-	<div class="row-fluid">
+	<div class="row-fluid responsive-about">
 		<div class="span3">	<!-- Left Sidebar-->
 			<figure>
 		<img src="/wp-content/themes/icomm-bootstrap/img/icomm.png" width="120" height="164"/>

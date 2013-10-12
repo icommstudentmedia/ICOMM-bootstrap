@@ -8,6 +8,16 @@
 @media screen and (min-width : 320px) and (max-width : 979px) {
 	/* Styles */
 
+    /*  Resizes the width ofthe text in the about page - Gizmo Bentim */
+    .responsive-about {
+    	width:auto;
+    }
+
+    /*  Resizes the margins for the content in the about and contact pages - Gizmo Bentim */
+	.responsive-contact, .responsive-about {
+		margin:2% 10%;
+	}
+
 	/*  Resizes the margins for the informations about the author, making it more compressed - Gizmo Bentim */
 	.responsive-about-title {
 		margin:0% !important;

@@ -30,17 +30,18 @@
         <div class="row-fluid">
             <div class="span8">
 
-                <p> 
+                <p class="responsive-contact"> 
                     For more information on how we can assist in developing a program that 
                     will help meet your marketing needs and objectives,please contact:
                 </p>
-                <p>
+                <p class="responsive-contact">
                     <strong>Kristina Miller</strong> or <strong>John Thompson</strong> at: <br> 
                     (208) 496-3737 or icomm@byui.edu 
                 </p>
 
-                <p>
-                    When e-mailing, please include the words "byuicomm.net Ad Agency Questions" in the subject line.</p>
+                <p class="responsive-contact">
+                    When e-mailing, please include the words "byuicomm.net Ad Agency Questions" in the subject line.
+                </br></br>
                     Or submit your information below and an Ad Sales representative will
                     contact you. 
                 </p>
@@ -53,10 +54,10 @@
 
         <!-- form is starting -->
 
-        <div class="container">
+        <div class="container responsive-contact">
           <form id="contact-form" name="contact-form" method="post" action=" # ">
              <h3 class="feature-lead"> Drop us a line! </h3>
-             <div class="row-fluid">
+             <div class="row-fluid ">
               <label for="name">Name</label>
               <input class="span3" type="text" name="name" id="name" value="" />
               <p class="formError name"></p>
@@ -106,7 +107,7 @@
 <!--right - side bar  -->
 <div class="span5">
     <hr>
-    <div class="sidebar_container">
+    <div class="sidebar_container responsive-contact">
         <!-- Google Map  code -->
         <h3 class="feature-lead"> Our Location</h3>
         <div id="map_canvas" style="width:300px; height:350px"></div>

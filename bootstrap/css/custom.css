@@ -778,17 +778,10 @@ By Isaac Andrade
 Style divs that wrap aroung Google Ads
 By Isaac Andrade
 ***************************************************************************************************************/
-.ads-post {
-  background-color: rgb(238, 238, 238);
-  height: 250px;
-}
-
-.ads-post > ins {
-  display: block !important;
-  margin: 0 auto !important;
-}
-.ads-box {
-  background-color: #191919;
+.ad-box {
+  background-color: #F5F5F5;
+  box-shadow: 0 0 30px 3px rgba(153, 153, 153, 0.16);
+  text-align: center;
 }
 
 /******************************************************

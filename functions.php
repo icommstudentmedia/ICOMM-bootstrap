@@ -606,7 +606,9 @@ function posts_custom_column_views($column_name, $id){
 /*************************** FROM OLD FILE ***************/
 /*	** VOLATILE CODE START **
 	This code was deleted, I am adding some of them to get some backend functionality back,
-	so if it breaks, I'll remove them or comment them out. Isaac Andrade
+	so if it breaks, I'll remove them or comment them out. (Feel free to do the same if you know what you're doing)
+
+	Isaac Andrade
 */
 
 
@@ -639,8 +641,9 @@ include (TEMPLATEPATH . '/includes/members.php');
 //Breaking news ticker ------------ ticker.php apparently needs debugging
 //include (TEMPLATEPATH . '/includes/ticker.php');
 
-//	** VOLATILE CODE END ** */
 
+//	** VOLATILE CODE END ** */
+/*****************************************************************************/
 
 /**
 * Update LDP playlist on save
@@ -733,4 +736,51 @@ function update_video_playlist(){
     } catch(Exception $error) {
         //wp_die($error);
     }
+}
+
+/**
+* Google Ads Function
+*   Displays (echo) Google Ad on page
+*
+*	The HTML and JavaScript snippets were provided by the IComm Google AdSense account
+* 	All the ads, dimensions, and respective HTML and JavaScript code can be found by
+*	loging into the Google AdSense account with the IComm credentials.
+*
+* @author  Isaac Andrade
+* @param   string $type, "sidebar" or " among_posts", the type (dimensions) of the ad to be displayed
+* @return  void
+*****/
+//size is an array (width,height)
+function google_ad($type) {
+
+	switch ($type) {
+		case "sidebar" :
+			$width = 250;
+			$height = 250;
+			$ad_slot_id = "7984789204";
+		
+			break;
+
+		case "among_posts" :
+			$width = 728;
+			$height = 90;
+			$ad_slot_id = "3736185607";
+
+			break;
+	}
+
+	echo 
+		'<div class="ad-box"><script type="text/javascript"><!--
+		google_ad_client = "ca-pub-8066292357997211";
+		/* 250x250 */
+		google_ad_slot =' . $ad_slot_id . ';' .
+		'google_ad_width =' . $width . ';' .
+		'google_ad_height =' . $height . ';' .
+		'//-->
+		</script>
+		<script type="text/javascript"
+		src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script></div>';
+
+	echo '<hr>';
 }

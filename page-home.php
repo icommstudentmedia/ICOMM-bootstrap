@@ -112,7 +112,8 @@
               while ( $query->have_posts() ) {
                 // add a Google Ad after the 3rd post
                 if ($i == 3){
-                  include 'includes/postGoogleAd.php';
+                  google_ad("among_posts");
+                  // include 'includes/postGoogleAd.php';
                 } else {
                   $query->the_post();
                   // this way it can be included anywhere 
@@ -135,17 +136,7 @@
 
       <!-- Google Ads - 1st test by Isaac Andrade -->
       <div class="ads-box">
-        <script type="text/javascript"><!--
-          google_ad_client = "ca-pub-8066292357997211";
-          /* Play-MedRec */
-          google_ad_slot = "5585609185";
-          google_ad_width = 300;
-          google_ad_height = 250;
-          //-->
-        </script>
-        <script type="text/javascript"
-          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-        </script>
+        <?php google_ad("sidebar"); ?>
       </div>
         <!-- END Google Ads -->
         

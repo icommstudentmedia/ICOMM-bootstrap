@@ -95,12 +95,12 @@
 	</div>
 	<div class="row-fluid">
 		<!-- left sidebar -->
-		<div class="span2">
+		<div class="span2 mobile-social-box">
 			<!-- category -->
-			<div class="postinfo-box postinfo-box-top postinfo-box-top-<?php echo $cat_class; ?>">
+			<div class="postinfo-box postinfo-box-top postinfo-box-top-<?php echo $cat_class; ?> mobile-social-pos2">
 				<a class="btn btn-<?php echo $cat_class; ?>" href="<?php echo get_category_link($cat_id)?>"><?php echo strtoupper($cat_name); ?></a>
 			</div>
-			<div class="postinfo-box">
+			<div class="postinfo-box mobile-social-pos1">
 				<!-- author -->
 				<a href="<?php echo $author_link; ?>" title="More from this author">
 					<?php 
@@ -118,19 +118,21 @@
 				<p class="views">
 					<?php echo getPostViews(get_the_ID()); ?>
 				</p>
-				<div class="row-fluid">
-					<div class="span12 social-like">
-						<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
+				<div class="mobile-social-likes">
+					<div class="row-fluid">
+						<div class="span12 social-like">
+							<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
+						</div>
 					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="span12 social-like">
-						<div class="g-plusone" data-size="tall"></div>
+					<div class="row-fluid">
+						<div class="span12 social-like">
+							<div class="g-plusone" data-size="tall"></div>
+						</div>
 					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="span12 social-like">
-						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="vertical">Tweet</a>
+					<div class="row-fluid">
+						<div class="span12 social-like">
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="vertical">Tweet</a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -42,7 +42,7 @@
     }
     
 
-	.marketing p, hr, .ads-post {
+	.marketing p, hr, .ad-box {
 		display:none !important;
 	}
 
@@ -68,7 +68,7 @@
 
 	.footer .align-right {
 	/*	text-align: right;*/
-	padding-left: 55%;
+		padding-left: 55%;
 	}
 
 	.nav {
@@ -116,10 +116,8 @@
 	.mobile-desktop-head {
 		display: block;
 	}
-	.desktop-navbar{
-		display:none;
-	}
-	.desktop-header{
+	
+	.desktop-navbar, .desktop-header{
 		display:none;
 	}
 
@@ -170,6 +168,34 @@
 
 	.mobileposition{
 		float:center!important;
+	}
+
+	/***************************************************
+		Social-like links and Category from single.php
+	*****************************************************/
+	/* Make the Social-like links of single.php a box so I can rearrange its elements - Isaac Andrade */
+	.mobile-social-box {
+		border-top: solid #ddd;
+		border-bottom: solid #ddd;
+	}
+
+	.mobile-social-box * {
+		text-align: center;
+		border: none;
+	}
+
+	.mobile-social-likes {
+		position: absolute;
+		top: 260px;
+		right: 40px;
+	}
+
+	.mobile-social-box .mobile-social-pos1 * {
+		font-size: 1rem;
+	}
+
+	.postinfo-box {
+		padding-right: 50%;
 	}
 }
 

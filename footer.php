@@ -20,8 +20,8 @@
 		  		</div>
 		  		<div class="span6 pull-right align-right">
 		  			<p>
-		  				<a href = "../terms-of-use">Terms of Use</a> | 
-		  				<a href = "../privacy-policy">Privacy Policy</a>
+		  				<a href = "<?php echo content_url(); ?>/terms-of-use">Terms of Use</a> | 
+		  				<a href = "<?php echo content_url(); ?>/privacy-policy">Privacy Policy</a>
 		  			</p>
 			</div>
 		</div>

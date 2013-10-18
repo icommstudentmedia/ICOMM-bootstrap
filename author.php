@@ -16,7 +16,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) :
       the mobile version of the website -->
       <?php include_once "social-menu.php"; ?>
       
-<div class="container-fluid">	
+<div class="container-fluid mobile-margin">	
   <div class="row-fluid vert-padding">
     <div class="span10">
       <h2 class="feature">Author</h2>

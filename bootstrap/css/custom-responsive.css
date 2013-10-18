@@ -87,7 +87,8 @@
 	/* This class is styled only in this file. 
 	* Make body take the full width of its parent.  - Isaac Andrade */
 	.mobile-body {
-		width: 100%;
+		/*width: 100%;*/
+		width: 92%;
 	}
 
 	/* This class is defined by the bootstrap framework. Here I am just overriding float property.
@@ -172,6 +173,10 @@
 
 	.nav-collapse, .nav-collapse.collapse {
 		width: 113px;
+	}
+
+	.mobile-margin {
+		margin: 0 4% !important;
 	}
 
 	/***************************************************

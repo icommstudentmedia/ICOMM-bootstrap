@@ -69,7 +69,9 @@
 		fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 
-<div class="container container-narrow">
+<?php include_once "social-menu.php"; ?>
+
+<div class="container container-narrow mobile-margin">
 
 <div class="container-fluid">	
   <div class="row-fluid vert-padding">

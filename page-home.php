@@ -51,7 +51,7 @@
       the mobile version of the website -->
  <?php include_once "social-menu.php"; ?>
 
-<div class="container container-narrow marketing mobile-body">
+<div class="container container-narrow marketing mobile-body mobile-margin">
   <!-- main content -->
   <div class="row-fluid vert-padding">
     <div class="span10">

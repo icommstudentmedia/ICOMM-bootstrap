@@ -1,10 +1,9 @@
 <?php
-/**
-* This has to go on it to be a template page
-* Template Name: Terms of Use
-*
-* @author Guilherme Bentim <guilherme.guizmo@gmail.com>
-**/	
+   /**
+    *   Template Name: Terms Of Use
+    *   Date: October 16,2013
+    *   @author Guilherme Bentim
+    **/	
 get_header();
 ?>
 

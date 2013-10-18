@@ -24,9 +24,10 @@ get_header();
 	<hr/>
 
 	<div class="row-fluid responsive-about" >
-		<div id="post-content" class="span12">
-			
+		<div id="post-content" class="span6">
+					
 			<?php 
+				google_ad("sidebar");
 				if(have_posts() ) : while (have_posts() ) : the_post();
 				the_content();
 				endwhile; endif;

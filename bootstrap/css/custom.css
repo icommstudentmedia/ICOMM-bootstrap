@@ -816,8 +816,6 @@ Style divs that wrap aroung Google Ads
 By Isaac Andrade
 ***************************************************************************************************************/
 .ad-box {
-  background-color: #F5F5F5;
-  box-shadow: 0 0 30px 3px rgba(153, 153, 153, 0.16);
   text-align: center;
 }
 

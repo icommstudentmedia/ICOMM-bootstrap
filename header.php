@@ -35,7 +35,7 @@
                   <div class="navbar-inner">
                     <ul class="nav">
                       <li class="rightborder">
-                        <a href=" http://beta.byuicomm.net/about/">I~Comm Student Media</a>
+                        <a href=" ../about/">I~Comm Student Media</a>
                       </li>
                       <li class="rightborder">
                         <a href="http://www.byui.edu/">BYU-Idaho</a>
@@ -52,7 +52,7 @@
                           <a href="http://www.soapboxagency.net/">Agency</a>
                         </li>
                         <li>
-                          <a href="http://beta.byuicomm.net/advertise-with-us/">Advertise with Us</a>
+                          <a href="../advertise-with-us/">Advertise with Us</a>
                         </li>
                       </ul>
                     </li>
@@ -74,7 +74,7 @@
                     ?>
 
                     <li>
-                      <a href="http://beta.byuicomm.net/contact/">Contact</a>
+                      <a href="../contact/">Contact</a>
                     </li>
                   </ul>
                 </div>

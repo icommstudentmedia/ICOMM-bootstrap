@@ -20,8 +20,8 @@
 		  		</div>
 		  		<div class="span6 pull-right align-right">
 		  			<p>
-		  				<a href = "http://beta.byuicomm.net/terms-use">Terms of Use</a> | 
-		  				<a href = "http://beta.byuicomm.net/privacy-policy">Privacy Policy</a>
+		  				<a href = "../terms-of-use">Terms of Use</a> | 
+		  				<a href = "../privacy-policy">Privacy Policy</a>
 		  			</p>
 			</div>
 		</div>

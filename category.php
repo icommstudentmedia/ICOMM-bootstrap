@@ -88,6 +88,7 @@
     </div>
     <!-- Sidebar -->
     <div class="span3 visible-desktop">
+      <?php google_ad("sidebar"); ?>
       <?php dynamic_sidebar('front-page'); ?>
     </div>
     

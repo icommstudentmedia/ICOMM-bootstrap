@@ -135,9 +135,7 @@
     <div class="span3 visible-desktop videos">
 
       <!-- Google Ads - 1st test by Isaac Andrade -->
-      <div class="ads-box">
         <?php google_ad("sidebar"); ?>
-      </div>
         <!-- END Google Ads -->
         
       <?php dynamic_sidebar('front-page'); ?>

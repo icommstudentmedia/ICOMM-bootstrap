@@ -92,11 +92,11 @@
 
             <div class="navbar-inner desktop-navbar"> <!--desktop navbar is found in the custom-responsive.css --> 
               <ul class="nav">
-                <li class="rightborder">
+                <!-- <li class="rightborder">
                   <a href="<?php echo site_url(); ?>">
                     <i class="icon-home icon-white"></i>
                   </a>
-                </li>
+                </li> -->
                 <?php wp_nav_menu (array( 'theme_location' => 'top-bar', 
                   'depth' => 2,
                   'container' => false,

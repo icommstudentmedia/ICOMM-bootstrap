@@ -23,18 +23,38 @@ get_header();
 
 	<hr/>
 
+	<!-- Page Aside -->
+        <aside class="span3">
+          <img src="<?php echo content_url();?>/themes/icomm-bootstrap/img/icomm.png" alt="Advertise With Us Image">
+
+          <h3 class="iComm">I~Comm Student Media</h3>
+          <h5>Contact Information</h5>
+          <hr class="line-height-no-margins">
+          <p><strong>Scroll Advertising Sales</strong></p>
+          <ul class="ul-nostyle">
+            <li><a href="mailto:scrollads@byui.edu">scrollads@byui.edu</a></li> <!-- This enables the user to send an email by clicking on it. -->
+            <li>Office: <span class="office-number">208-496-3730</span></li>
+            <li>Fax: <span class="fax-number">208-496-5411</span></li>
+          </ul>   
+        </aside>
+
 	<div class="row-fluid responsive-about" >
-		<div id="post-content" class="span6">
+		<div id="post-content" class="span5">
 					
 			<?php 
-				google_ad("sidebar");
 				if(have_posts() ) : while (have_posts() ) : the_post();
 				the_content();
 				endwhile; endif;
 			?>
 			
 		</div>
+		<div class ="span4">
+		<?php google_ad("sidebar"); ?>
+
 	</div>
+	</div>
+
+
 
 	<div class="row-fluid"></div> <!-- I added this div so that I can push the footer on the bottom (LP) -->
 

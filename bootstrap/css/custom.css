@@ -666,6 +666,15 @@ list-style-type:none;
   padding-top: 4%;
 }
 
+/*Line hr with no margin for the page-info template*/
+.line-height-no-margins{
+  margin:0;
+}
+
+/*title under image in page-info template*/
+.iComm{
+  padding-left: 5%;
+}
 
 /* We found a need to make section headers be closer to the <hr> underneath them
 *********************************************************************************/

@@ -4916,6 +4916,7 @@ a.badge:hover {
 .visible-desktop {
   display: inherit !important;
 }
+
 @media (min-width: 768px) and (max-width: 979px) {
   .hidden-desktop {
     display: inherit !important;
@@ -5266,6 +5267,7 @@ a.badge:hover {
     margin-left: 0;
   }
 }
+
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
     margin-left: -20px;

@@ -124,7 +124,7 @@
 	.mobile_leftcollapse{
 		position: relative;
 		float: left !important;
-		width: 115px;
+		width: 54px;
 	}
 
 	.mobile-menu-button-correct-width{
@@ -134,8 +134,8 @@
 	.mobiletitle {
 		/*float: center !important;*/
 		position: absolute;
-		margin-left: 25%;
-		margin-right: 35%;
+		margin-left: -88px;
+		left: 50%;
 	}
 
 	.mobile_rightcollapse_bar {
@@ -154,7 +154,7 @@
 	.search-collapse {
 		position: relative;
 		top: 40px;
-		left: -60px;
+		left: -11px;
 	}
 
 	.mobile-searchform-height {
@@ -168,6 +168,10 @@
 
 	.mobileposition{
 		float:center!important;
+	}
+
+	.nav-collapse, .nav-collapse.collapse {
+		width: 113px;
 	}
 
 	/***************************************************

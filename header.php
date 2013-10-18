@@ -172,9 +172,9 @@
                           <div class="input-append">
                             <input type="text" class="span9 search-query mobile-searchbar" name="q" placeholder="Search...">
                             <button type="submit" class="btn"><i class="icon-search"></i></button>
-                            <div class="mobile-searchform-height"></div>
                           </div>
                         </form>
+                        <div class="mobile-searchform-height"></div>
                       </div> <!-- search-collapse -->
                     </div>
                   </div>

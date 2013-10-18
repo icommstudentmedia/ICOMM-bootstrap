@@ -7,9 +7,9 @@
 
 /*	Tablet (portrait and landscape) ---------------*/
 @media screen and (min-width : 980px) and (max-width : 1200px) {
-	.mobile-pull-right {
+	#footer .row-fluid .mobile-pull-right {
 		/*for footer privacy and terms of use*/
-  		width: 22% !important;
+  		width: 23% !important;
 	}
 }
 
@@ -215,7 +215,7 @@
 		padding-right: 50%;
 	}
 
-	.mobile-center {
+	#footer .row-fluid .mobile-center {
 		/*for footer privacy and terms of use*/
 		text-align: center !important;
 		width: 100% !important;

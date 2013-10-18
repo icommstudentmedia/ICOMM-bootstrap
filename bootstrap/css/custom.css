@@ -754,8 +754,9 @@ body {
     Solution: created a new div for "Terms of Use" and "Privacy Policy" and positioned accordingly
     author Benjamin Bryce
 --------------------------------------------------------------------------------------------------------------*/
-.pull-right {
+#footer .row-fluid .desktop-pull-right {
   width: 18% !important;
+  float: right;
 }
 
 

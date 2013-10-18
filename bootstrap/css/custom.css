@@ -72,7 +72,7 @@ h3 {
 }
 
 
-/* Image Alignment  Guilherme Bentim, Benjamin Bryce
+/* Image Alignment  Guilherme Bentim
 ----------------------------------------------------------------------------------------*/
 img.alignnone {
   display: block;
@@ -93,6 +93,13 @@ img.aligncenter {
   text-align: center;
   margin: auto;
 }
+
+
+/*  Social Media Icon Fix
+*   Issue:    social media icons were changing width as the page width changed
+*   Solution: fix makes the icons retain aspect ratio regardless of page resize
+*   author Benjamin Bryce
+----------------------------------------------------------------------------------------*/
 .social-icons {
   width: 23% !important;
 }
@@ -191,9 +198,7 @@ img.feature-img {
 }
 
 .feature h3 {
-  /*font-family: arial;*/
   font-weight: bold;
-  /*font-size: 18px;*/
   margin-top: 15px;
   margin-bottom: 10px;
   line-height: 1.3;
@@ -220,13 +225,10 @@ img.feature-img {
   font-weight: bold;
 }
 .marketing p {
-  /*font-family: Arial;*/
-  /*font-size: 12px;*/
   line-height: 1.5;
 }
 
 .author a {
-  /*font-family: Arial;*/
   font-weight: bold;
   font-size: 11pt;
   color: #F89820 !important;

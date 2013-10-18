@@ -194,6 +194,7 @@
 	.mobile-social-box {
 		border-top: solid #ddd;
 		border-bottom: solid #ddd;
+		display: none !important;
 	}
 
 	.mobile-social-box * {

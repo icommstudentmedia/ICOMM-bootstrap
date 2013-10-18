@@ -35,27 +35,17 @@
                   <div class="navbar-inner">
                     <ul class="nav">
                       <li class="rightborder">
-                        <a href= "<?php echo content_url(); ?>/about">I~Comm Student Media</a>
+                        <a href= "<?php echo content_url(); ?>/about">About Us</a>
                       </li>
                       <li class="rightborder">
                         <a href="http://www.byui.edu/">BYU-Idaho</a>
                       </li>
-                      <li class="dropdown">
-                        <a  class="dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#">
-                        Other
-                        <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
                         <li>
                           <a href="http://www.soapboxagency.net/">Agency</a>
                         </li>
                         <li>
                           <a href="<?php echo content_url(); ?>/advertise-with-us/">Advertise with Us</a>
                         </li>
-                      </ul>
-                    </li>
                   </ul>
                 </div>
               </div>

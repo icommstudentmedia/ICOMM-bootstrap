@@ -23,8 +23,8 @@ get_header();
 
 	<hr/>
 
-	<div class="row-fluid responsive-about">
-		<div id="post-content" class="span5">
+	<div class="row-fluid responsive-about" >
+		<div id="post-content" class="span12">
 			
 			<?php 
 				if(have_posts() ) : while (have_posts() ) : the_post();

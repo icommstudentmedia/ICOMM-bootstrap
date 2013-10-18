@@ -1,8 +1,8 @@
 <?php
    /**
-    *   Template Name: Terms Of Use
+    *   Template Name: Info Page
     *   Date: October 16,2013
-    *   @author Guilherme Bentim
+    *   @author Guilherme Bentim, Isaac Andrade
     **/	
 get_header();
 ?>
@@ -16,7 +16,7 @@ get_header();
 		<!-- todo -->
 		<div class="span10">
 			<!-- change and style -->
-			<h2 class="feature"> Terms of Use </h2>
+			<h2 class="feature"> <?php wp_title("", true); ?></h2>
 		</div> 						  
 	</div>
 </div>
@@ -24,22 +24,15 @@ get_header();
 	<hr/>
 
 	<div class="row-fluid responsive-about">
-		<div class="span3">	<!-- Left Sidebar-->
-			<figure>
-		<img src="/wp-content/themes/icomm-bootstrap/img/icomm.png" width="120" height="164"/>
-			</figure>
-		</div>				<!-- End Left Sidebar -->
-
-		<div id="post-content" class="span5"> 	<!-- Content -->
+		<div id="post-content" class="span5">
 			
-			<h3> Sub Header</h3>
-			<p>Content
-			</p>
-						
-			<h3> Sub Header </h3>
-			<p> Content
-			<p/>
-		</div>						<!-- End Content -->
+			<?php 
+				if(have_posts() ) : while (have_posts() ) : the_post();
+				the_content();
+				endwhile; endif;
+			?>
+			
+		</div>
 	</div>
 
 	<div class="row-fluid"></div> <!-- I added this div so that I can push the footer on the bottom (LP) -->

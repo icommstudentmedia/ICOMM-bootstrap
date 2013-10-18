@@ -20,8 +20,8 @@
 		  		</div>
 		  		<div class="span6 pull-right align-right">
 		  			<p>
-		  				<a href = "/wp-content/themes/icomm-bootstrap/terms-use">Terms of Use</a> | 
-		  				<a href = "/wp-content/themes/icomm-bootstrap/privacy-policy">Privacy Policy</a>
+		  				<a href = "http://beta.byuicomm.net/terms-use">Terms of Use</a> | 
+		  				<a href = "http://beta.byuicomm.net/privacy-policy">Privacy Policy</a>
 		  			</p>
 			</div>
 		</div>

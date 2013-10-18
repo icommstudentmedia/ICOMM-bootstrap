@@ -746,6 +746,19 @@ body {
   height: 30px;
 }
 
+
+/*  Footer Alignment Fix
+*   Issue:    "Terms of Use" and "Privacy Policy" were positioned via the "span6" class which was also used
+*             for the copyright footer which pushed "Terms of Use" and "Privacy Policy" toward the middle of
+              the page
+    Solution: created a new div for "Terms of Use" and "Privacy Policy" and positioned accordingly
+    author Benjamin Bryce
+--------------------------------------------------------------------------------------------------------------*/
+.pull-right {
+  width: 18% !important;
+}
+
+
 /*************************************************************************************************************
 Override for the stylesheet of Google CSE (Custom Search) used in the search.php file.
 By Isaac Andrade

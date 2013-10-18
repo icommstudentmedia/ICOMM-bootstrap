@@ -31,7 +31,7 @@
 
               <div class="row-fluid visible-desktop">
 
-                <div class="span9">
+                <div class="span9 desktop-topleft-nav">
                   <div class="navbar-inner">
                     <ul class="nav">
                       <li class="rightborder">
@@ -60,7 +60,7 @@
                 </div>
               </div>
 
-              <div class="span3 login">
+              <div class="span3 login desktop-topright-nav">
                 <div class="navbar-inner">
                   <ul class="nav pull-right">
                     <li>

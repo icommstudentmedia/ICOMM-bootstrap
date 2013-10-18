@@ -760,6 +760,20 @@ body {
 }
 
 
+/*  Header Alignment Fix
+*   Issue:    "Logout", "Dashboard" and "Contact" did not contain a large enough div while the "I~Comm
+*             Student Media", "BYU-Idaho" and "Other" has too large a div
+    Solution: enlarge and shrink the two divs respectively
+    author Benjamin Bryce
+--------------------------------------------------------------------------------------------------------------*/
+.desktop-topleft-nav {
+  width: 74.35897435897436%;
+}
+
+.desktop-topright-nav {
+  width: 23.076923076923077%;
+}
+
 /*************************************************************************************************************
 Override for the stylesheet of Google CSE (Custom Search) used in the search.php file.
 By Isaac Andrade

@@ -9,7 +9,7 @@
 @media screen and (min-width : 980px) and (max-width : 1200px) {
 	#footer .row-fluid .mobile-pull-right {
 		/*for footer privacy and terms of use*/
-  		width: 23% !important;
+  		width: 23%;
 	}
 	#wrap .desktop-topleft-nav {
   		width: 71.468085%;
@@ -35,14 +35,14 @@
 	}
 
 	/*  Resizes the margins for the informations about the author, making it more compressed - Gizmo Bentim */
-	.responsive-about-title {
-		margin:0% !important;
-		padding:0% !important;
+	.container-fluid .responsive-about-title {
+		margin:0%;
+		padding:0%;
 	}
 
     /*  Aligns the information about the author in the center - Gizmo Bentim*/
-	.responsive-author {
-		text-align:center !important;
+	.container-fluid .responsive-author {
+		text-align:center;
 	}
     
     /*  Aligns the social media icons in the midlle - Gizmo Bentim */
@@ -137,14 +137,14 @@
 		display:none;
 	}
 
-	.mobile_leftcollapse{
+	.row-fluid .mobile_leftcollapse{
 		position: relative;
-		float: left !important;
+		float: left;
 		width: 54px;
 	}
 
-	.mobile-menu-button-correct-width{
-		width: 17px !important;
+	.row-fluid .mobile-menu-button-correct-width{
+		width: 17px;
 	}
 
 	.mobiletitle {
@@ -154,9 +154,9 @@
 		left: 50%;
 	}
 
-	.mobile_rightcollapse_bar {
+	.row-fluid .mobile_rightcollapse_bar {
 		position: relative;
-		float: right !important;
+		float: right;
 	}
 
 	#mobile-search-button {
@@ -182,16 +182,16 @@
 		height: 80px;
 	}
 
-	.mobileposition{
-		float:center!important;
+	.row-fluid .mobileposition{
+		float:center;
 	}
 
 	.nav-collapse, .nav-collapse.collapse {
 		width: 113px;
 	}
 
-	.mobile-margin {
-		margin: 0 4% !important;
+	#wrap .mobile-margin {
+		margin: 0 4%;
 	}
 
 	/***************************************************
@@ -225,8 +225,8 @@
 
 	#footer .row-fluid .mobile-center {
 		/*for footer privacy and terms of use*/
-		text-align: center !important;
-		width: 100% !important;
+		text-align: center;
+		width: 100%;
 	}
 
 }

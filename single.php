@@ -120,21 +120,19 @@
 				<p class="views">
 					<?php echo getPostViews(get_the_ID()); ?>
 				</p>
-				<div class="mobile-social-likes">
-					<div class="row-fluid">
-						<div class="span12 social-like">
-							<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
-						</div>
+				<div class="row-fluid">
+					<div class="span12 social-like">
+						<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
 					</div>
-					<div class="row-fluid">
-						<div class="span12 social-like">
-							<div class="g-plusone" data-size="tall"></div>
-						</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12 social-like">
+						<div class="g-plusone" data-size="tall"></div>
 					</div>
-					<div class="row-fluid">
-						<div class="span12 social-like">
-							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="vertical">Tweet</a>
-						</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12 social-like">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="vertical">Tweet</a>
 					</div>
 				</div>
 			</div>

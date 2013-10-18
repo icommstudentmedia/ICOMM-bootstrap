@@ -11,6 +11,13 @@
 		/*for footer privacy and terms of use*/
   		width: 23% !important;
 	}
+	#wrap .desktop-topleft-nav {
+  		width: 71.468085%;
+	}
+
+	#wrap .desktop-topright-nav {
+  		width: 26.404255%;
+	}
 }
 
 /* Smartphones (portrait and landscape) ----------- */

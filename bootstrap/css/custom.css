@@ -72,7 +72,7 @@ h3 {
 }
 
 
-/* Image Alignment  Guilherme Bentim
+/* Image Alignment  Guilherme Bentim, Benjamin Bryce
 ----------------------------------------------------------------------------------------*/
 img.alignnone {
   display: block;
@@ -93,6 +93,13 @@ img.aligncenter {
   text-align: center;
   margin: auto;
 }
+.social-icons {
+  width: 23% !important;
+}
+.social-block {
+  width: 185px;
+}
+
 
 /* Caption Styling
 ----------------------------------------------------------------------------------------*/

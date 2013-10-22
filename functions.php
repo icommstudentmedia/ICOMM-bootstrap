@@ -781,4 +781,8 @@ function google_ad($type) {
 		<script type="text/javascript"
 		src="//pagead2.googlesyndication.com/pagead/show_ads.js">
 		</script></div>';
+
+		if ($width > 250) {
+			echo '<hr>';
+		}
 }

@@ -92,11 +92,14 @@
 
             <div class="navbar-inner desktop-navbar"> <!--desktop navbar is found in the custom-responsive.css --> 
               <ul class="nav">
+
+                <!-- Took off Home icon as it took too much space in combination and was superfluous - Benjamin Bryce -->
                 <!-- <li class="rightborder">
                   <a href="<?php echo site_url(); ?>">
                     <i class="icon-home icon-white"></i>
                   </a>
                 </li> -->
+                
                 <?php wp_nav_menu (array( 'theme_location' => 'top-bar', 
                   'depth' => 2,
                   'container' => false,
@@ -129,8 +132,11 @@
                       <div class="nav-collapse collapse">
                         <ul class="nav">
                           <li class="rightborder">
-                            <a href="<?php echo site_url(); ?>"><i class="icon-home icon-white"></i></a>
-                          </li>
+
+                            <!-- Took off Home icon as it took too much space in combination and was superfluous - Benjamin Bryce -->
+                          <!--   <a href="<?php echo site_url(); ?>"><i class="icon-home icon-white"></i></a>
+                          </li> -->
+                          
                           <?php wp_nav_menu (array( 'theme_location' => 'top-bar', 
                             'depth' => 2,
                             'container' => false,

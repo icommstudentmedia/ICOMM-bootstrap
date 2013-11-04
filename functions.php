@@ -611,6 +611,8 @@ function posts_custom_column_views($column_name, $id){
 	Isaac Andrade
 */
 
+//featured image, thumbnails
+add_theme_support( 'post-thumbnails' ); 
 
 // disable the admin bar
 show_admin_bar(false);    

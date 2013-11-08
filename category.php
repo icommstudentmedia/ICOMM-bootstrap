@@ -76,11 +76,22 @@
               'cat' => $current_cat );
 
             $query = new WP_Query($args);
-            if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
-              // this way it can be included anywhere 
-              include 'includes/latest-stories.php';
-
-            endwhile; endif;
+                      
+            if( $query->have_posts() ) {
+              $i = 0;
+              while ( $query->have_posts() ) {
+                // add a Google Ad after the 3rd post
+                if ($i == 3){
+                  ad_control("among_posts", "");
+                  // include 'includes/postGoogleAd.php';
+                } else {
+                  $query->the_post();
+                  // this way it can be included anywhere 
+                  include 'includes/latest-stories.php';
+                }
+                $i++;
+              }
+            }
           ?>
           <div class="pull-left"><?php previous_posts_link(); ?></div>
           <div class="pull-right"><?php next_posts_link(); ?></div>

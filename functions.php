@@ -807,17 +807,13 @@ function google_ad($type) {
 * @return  void
 *****/
 function ad_control($type, $category) {
-	include '/includes/ads.php';
-
-	// Instantiate an Ads class
-	
 
 	// Dynamically get image depending on the category. Image name's patter is: scroll-ad-250-250-"category-name".png
 	if( $type )
 	$img_url = content_url() . '/themes/icomm-bootstrap/img/ads/scroll-ad-250-250-' . $category . '.png';
 
-	// Check if the image exists
-	if(getimagesize($img_url) !== false) {
+	// Check if the image exists, the @ suppresses PHP errors from showing on the user's screen
+	if(@getimagesize($img_url) !== false) {
 		?>
 		<div class="ad-box">
 			<a href="<?php echo content_url(); ?>/advertise-with-us">

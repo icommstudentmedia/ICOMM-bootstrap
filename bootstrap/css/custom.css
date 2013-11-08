@@ -513,8 +513,8 @@ img.feature-img {
 
 .crop100 img {
   position: absolute;
-  max-width: 1000px;
-  left: -50px;
+  max-width: 70px;
+  left: auto;
 }
 
 /* Single Post style

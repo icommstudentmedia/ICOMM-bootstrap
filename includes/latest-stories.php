@@ -1,3 +1,4 @@
+
 <?php 
 
 /**
@@ -9,7 +10,7 @@
 *              - HTML code to display the latest stories.
 *
 * 
-*S
+*
 * @author
 *
 *

@@ -112,7 +112,7 @@
               while ( $query->have_posts() ) {
                 // add a Google Ad after the 3rd post
                 if ($i == 3){
-                  google_ad("among_posts");
+                  ad_control("among_posts", "");
                   // include 'includes/postGoogleAd.php';
                 } else {
                   $query->the_post();
@@ -135,7 +135,7 @@
     <div class="span3 visible-desktop videos">
 
       <!-- Google Ads -->
-        <?php google_ad("sidebar"); ?>
+        <?php ad_control("sidebar", "home"); ?>
         
       <?php dynamic_sidebar('front-page'); ?>
     </div>

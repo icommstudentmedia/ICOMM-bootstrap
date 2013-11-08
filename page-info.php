@@ -49,7 +49,7 @@ get_header();
 			
 		</div>
 		<div class ="span4">
-		<?php google_ad("sidebar"); ?>
+		<?php ad_control("sidebar"); ?>
 
 	</div>
 	</div>

@@ -173,7 +173,7 @@
 	
 		<!-- Right sidebar -->
 		<div class="span3">
-			<?php google_ad("sidebar"); ?>
+			<?php ad_control("sidebar", $cat_name); ?>
 			<?php dynamic_sidebar('front-page'); ?>
 			<?php dynamic_sidebar('facebook'); ?>
 		</div>

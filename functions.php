@@ -758,33 +758,33 @@ function google_ad($type) {
 	// Set variables according to the $type ("sidebar" or "among_posts")
 	switch ($type) {
 		case "sidebar" :
-			$width = 250;
-			$height = 250;
-			$ad_slot_id = "7984789204";
+		$width = 250;
+		$height = 250;
+		$adTypeComment = "<!-- 250x250 -->";
+		$ad_slot_id = "7984789204";
 
-			break;
+		break;
 
 		case "among_posts" :
-			$width = 728;
-			$height = 90;
-			$ad_slot_id = "3736185607";
+		$width = 728;
+		$height = 90;
+		$ad_slot_id = "3736185607";
+		$adTypeComment = "<!-- Top Page Ad -->";
 
-			break;
+		break;
 	}
 
 	// Insert the code for the Google Ad using the variables set above
 	?>
 
-	<div class="ad-box"><script type="text/javascript"><!--
-	google_ad_client = "ca-pub-8066292357997211";
-	/* 250x250 */
-	google_ad_slot = <?php echo $ad_slot_id; ?>;
-	google_ad_width = <?php echo $width; ?>;
-	google_ad_height = <?php echo $height; ?>;
-		//-->
-		</script>
-		<script type="text/javascript"
-		src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+	<div class="ad-box"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<?php echo $adTypeComment ?>
+		<ins class="adsbygoogle"
+		style="display:inline-block;width:<?php echo $width ?>px;height:<?php echo $height ?>px"
+		data-ad-client="ca-pub-8066292357997211"
+		data-ad-slot="<?php echo $ad_slot_id ?>"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script></div>
 
 	<?php
@@ -810,7 +810,7 @@ function ad_control($type, $category) {
 
 	// Dynamically get image depending on the category. Image name's patter is: scroll-ad-250-250-"category-name".png
 	if( $type )
-	$img_url = content_url() . '/themes/icomm-bootstrap/img/ads/scroll-ad-250-250-' . $category . '.png';
+		$img_url = content_url() . '/themes/icomm-bootstrap/img/ads/scroll-ad-250-250-' . $category . '.png';
 
 	// Check if the image exists, the @ suppresses PHP errors from showing on the user's screen
 	if(@getimagesize($img_url) !== false) {

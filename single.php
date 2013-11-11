@@ -177,6 +177,7 @@
 			<?php dynamic_sidebar('front-page'); ?>
 			<?php dynamic_sidebar('facebook'); ?>
 		</div>
+		<?php ad_control("among_posts", ""); ?>
 	</div>
 </div>
 <script type="text/javascript">

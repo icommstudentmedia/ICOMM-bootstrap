@@ -810,7 +810,7 @@ function ad_control($type, $category) {
 
 	// Dynamically get image depending on the category. Image name's patter is: scroll-ad-250-250-"category-name".png
 	if( $type )
-		$img_url = content_url() . '/themes/icomm-bootstrap/img/ads/scroll-ad-250-250-' . $category . '.png';
+		$img_url = content_url() . '/themes/icomm-bootstrap/img/ads/scroll-ad-' . $type . '-' . $category . '.png';
 
 	// Check if the image exists, the @ suppresses PHP errors from showing on the user's screen
 	if(@getimagesize($img_url) !== false) {
@@ -822,6 +822,10 @@ function ad_control($type, $category) {
 		</div>
 
 		<?php
+			// Put a horizontal line in the "among_us" ad
+			if ($type == "among_posts") {
+				echo '<hr>';
+			}
 	}
 
 	// If image doesn't exist, feed Google Ad

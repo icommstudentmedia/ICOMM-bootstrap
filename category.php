@@ -82,7 +82,7 @@
               while ( $query->have_posts() ) {
                 // add a Google Ad after the 3rd post
                 if ($i == 3){
-                  ad_control("among_posts", "");
+                  ad_control("among_posts", $current_cat_name);
                   // include 'includes/postGoogleAd.php';
                 } else {
                   $query->the_post();

@@ -1,7 +1,6 @@
 <?php
 
-$app_query = new WP_Query();
-
+// !!!! --- If these credentials are not needed, delete the user in the database!!
 // username scroll_reader_13
 // password ScrollReaderUser_2013
 

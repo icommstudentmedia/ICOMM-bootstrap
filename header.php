@@ -41,7 +41,7 @@
                         <a href="http://www.byui.edu/">BYU-Idaho</a>
                       </li>
                         <li>
-                          <a href="http://www.soapboxagency.net/">Agency</a>
+                          <a href="http://www.soapboxagency.net/">Soapbox Agency</a>
                         </li>
                         <li>
                           <a href="<?php echo content_url(); ?>/advertise-with-us/">Advertise with Us</a>

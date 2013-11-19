@@ -5,7 +5,8 @@
 function get_articles_home($data)
 {
 	$args = array(
-		'post_type' => 'post'
+		'post_type' => 'post',
+		'post_count' => '5'
 		);
 	$app_query = get_query($args);
 	// Debug

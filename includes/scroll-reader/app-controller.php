@@ -37,8 +37,6 @@ $handlers = array(
 // Debugging Code
 $command = 'get_articles_home';
 $data = '';
-print_r($handlers);
-echo $command . " " . $data;
 // Use reflection to call handler functions depending on the values of $command $data
 $handlers[$command]($data);
 ?>

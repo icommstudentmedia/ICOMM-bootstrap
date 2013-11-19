@@ -542,7 +542,7 @@ img.feature-img {
 .postinfo-box-top-campus {
     border-top: 3px solid #FFCD67;
 }
-.postinfo-box-top-scroll-digital {
+.postinfo-box-top-digital {
     border-top: 3px solid #1EA1DC;
 }
 .postinfo-box-top-news {
@@ -867,7 +867,7 @@ by Isaac Andrade
 
 /**********************************/
 
-.btn-scroll-digital {
+.btn-digital {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #1EA1DC;
@@ -885,17 +885,17 @@ by Isaac Andrade
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-.btn-scroll-digital:hover,
-.btn-scroll-digital:active,
-.btn-scroll-digital.active,
-.btn-scroll-digital.disabled,
-.btn-scroll-digital[disabled] {
+.btn-digital:hover,
+.btn-digital:active,
+.btn-digital.active,
+.btn-digital.disabled,
+.btn-digital[disabled] {
   color: #ffffff;
   background-color: #1182b2;
   *background-color: #54a6c9;
 }
-.btn-scroll-digital:active,
-.btn-scroll-digital.active {
+.btn-digital:active,
+.btn-digital.active {
   background-color: #54a6c9 \9;
 }
 

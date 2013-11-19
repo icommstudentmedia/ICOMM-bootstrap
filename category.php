@@ -11,8 +11,14 @@
 
 <?php
   
-  $current_cat = get_query_var('cat');
-  $current_cat_name = get_cat_name($current_cat);
+  //Get the category ID
+  $cat_id = get_query_var('cat');
+  //Use the category ID to get the category object
+  $cat_object = get_category($cat_id);
+  //Get the name attribute of the category object
+  $cat_name = $cat_object->name;
+  //Get the slug attribute of the category object
+  $cat_slug = $cat_object->slug;
 
 ?>
 
@@ -25,7 +31,7 @@
   <!-- main content -->
   <div class="row-fluid vert-padding">
     <div class="span10">
-      <h2 class="feature"><?php echo ucwords($current_cat_name); ?> Top Stories</h2>      
+      <h2 class="feature"><?php echo ucwords($cat_name); ?> Top Stories</h2>      
     </div>
   </div>
 
@@ -35,7 +41,7 @@
       <div class="row-fluid visible-desktop">
         <?php
           $args = array(
-                  'cat' => $current_cat,
+                  'cat' => $cat_id,
                   'post_type' => 'any',
                   'posts_per_page' => 3,
                   'order' => 'DESC',
@@ -73,7 +79,7 @@
             else { $paged = 1; }
             $args = array('posts_per_page' => 20, 
               'paged' => $paged,
-              'cat' => $current_cat );
+              'cat' => $cat_id );
 
             $query = new WP_Query($args);
                       
@@ -82,7 +88,7 @@
               while ( $query->have_posts() ) {
                 // add a Site Ad after the 3rd post
                 if ($i == 3){
-                  ad_control("among_posts", $current_cat_name);
+                  ad_control("among_posts", $cat_slug);
                   // include 'includes/postGoogleAd.php';
                 } else {
                   $query->the_post();
@@ -99,7 +105,7 @@
     </div>
     <!-- Sidebar -->
     <div class="span3 visible-desktop">
-      <?php ad_control("sidebar", $current_cat_name); ?>
+      <?php ad_control("sidebar", $cat_slug); ?>
       <?php dynamic_sidebar('front-page'); ?>
     </div>
     

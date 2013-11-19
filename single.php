@@ -16,8 +16,10 @@
 	$cats = get_the_category();
 	//make sure we only get one category
 	$cat_name = $cats[0]->cat_name;
-	//capitalize first letter of each work
-	$cat_name = ucwords($cat_name);
+	
+	//get the slug to use on the buttons' classes and the ad_control function
+	$cat_slug = $cats[0]->slug;
+
 	//get the id
 	$cat_id = $cats[0]->cat_ID;
 
@@ -31,28 +33,6 @@
 
 	setPostViews(get_the_ID());
 
-	// complete the class name for the buttons displayed below by getting the id of the category
-	if($cat_id == 3) {
-		$cat_class = 'campus';
-	} elseif($cat_id == 1062) {
-		$cat_class = 'scroll-digital';
-	} elseif ($cat_id == 213) {
-		$cat_class = 'news';
-	} elseif ($cat_id == 1529) {
-		$cat_class = 'special';
-	} elseif ($cat_id == 306) {
-		$cat_class = 'photography';
-	} elseif ($cat_id == 4) {
-		$cat_class = 'entertainment';
-	} elseif ($cat_id == 5) {
-		$cat_class = 'lifestyle';
-	} elseif ($cat_id == 8) {
-		$cat_class = 'sports';
-	} elseif ($cat_id == 7) {
-		$cat_class = 'opinion';
-	} elseif ($cat_id == 1063) {
-		$cat_class = 'spanish';
-	}
 ?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -76,7 +56,7 @@
 <div class="container-fluid">	
   <div class="row-fluid vert-padding">
     <div class="span10">
-      <h2 class="feature"><?php echo $cat_name; ?> Section</h2>
+      <h2 class="feature"><?php echo ucwords($cat_name); ?> Section</h2>
     </div> 
 
     <!-- This file contains the social media icons for the desktop version and also 
@@ -100,7 +80,7 @@
 		<div class="span2 mobile-social-box">
 			<!-- category -->
 			<div class="postinfo-box postinfo-box-top postinfo-box-top-<?php echo $cat_class; ?> mobile-social-pos2">
-				<a class="btn btn-<?php echo $cat_class; ?>" href="<?php echo get_category_link($cat_id)?>"><?php echo strtoupper($cat_name); ?></a>
+				<a class="btn btn-<?php echo $cat_slug; ?>" href="<?php echo get_category_link($cat_id)?>"><?php echo strtoupper($cat_name); ?></a>
 			</div>
 			<div class="postinfo-box mobile-social-pos1">
 				<!-- author -->
@@ -173,7 +153,7 @@
 	
 		<!-- Right sidebar -->
 		<div class="span3">
-			<?php ad_control("sidebar", $cat_name); ?>
+			<?php ad_control("sidebar", $cat_slug); // Use $cat_class instead of $cat_name becasue the later had the first letter capitalized ?>
 			<?php dynamic_sidebar('front-page'); ?>
 			<?php dynamic_sidebar('facebook'); ?>
 		</div>

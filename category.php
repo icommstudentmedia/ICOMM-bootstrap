@@ -88,8 +88,14 @@
               while ( $query->have_posts() ) {
                 // add a Site Ad after the 3rd post
                 if ($i == 3){
-                  ad_control("among_posts", $cat_slug);
-                  // include 'includes/postGoogleAd.php';
+                  // Display our ad placeholders only to categories different than these
+                  if($cat_slug != "opinion") {
+                    ad_control("among_posts", "$cat_slug");
+                  }
+                    // Display Google Ads to the rest (by simply not passing any argument for the second parameter) 
+                  else {
+                    ad_control("among_posts", "");
+                  }
                 } else {
                   $query->the_post();
                   // this way it can be included anywhere 
@@ -105,7 +111,16 @@
     </div>
     <!-- Sidebar -->
     <div class="span3 visible-desktop">
-      <?php ad_control("sidebar", $cat_slug); ?>
+      <?php 
+        // Display our ad placeholders only to categories different than these
+        if($cat_slug != "opinion") {
+          ad_control("among_posts", "$cat_slug");
+        }
+        // Display Google Ads to the rest (by simply not passing any argument for the second parameter) 
+        else {
+          ad_control("among_posts", "");
+        }
+      ?>
       <?php dynamic_sidebar('front-page'); ?>
     </div>
     

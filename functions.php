@@ -808,7 +808,7 @@ function google_ad($type) {
 *****/
 function ad_control($type, $category) {
 
-	// Dynamically get image depending on the category. Image name's patter is: scroll-ad-250-250-"category-name".png
+	// Dynamically get image depending on the category. Image name's patter is: scroll-ad-$type-"category-name".png
 	if( $type )
 		$img_url = content_url() . '/themes/icomm-bootstrap/img/ads/scroll-ad-' . $type . '-' . $category . '.png';
 
@@ -817,7 +817,7 @@ function ad_control($type, $category) {
 		?>
 		<div class="ad-box">
 			<a href="<?php echo content_url(); ?>/advertise-with-us">
-				<img src="<?php echo $img_url ?>" alt="Advertise with the Scroll banner"></img>
+				<img src="<?php echo $img_url ?>" alt="Ad for Advertise with the Scroll"></img>
 			</a> 
 		</div>
 

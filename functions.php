@@ -833,3 +833,34 @@ function ad_control($type, $category) {
 		google_ad($type);
 	}
 }
+
+/**
+* Equipment and Facilities Feature (WP Plugin)
+*   This feature allows students to fill out forms to
+*	reserve equipments and rooms for their projects
+*
+* @author
+* @param
+* @return
+**/
+
+function themeoptions_admin_menu()  
+{  
+    // here's where we add our theme options page link to the dashboard sidebar  
+	add_menu_page("Equipment", "Equipment", 'edit_posts', 'equipment_tools', 'equipment_tools_page', '/equipment-request-icon.png');  
+	add_menu_page("Facility", "Facilities", 'edit_posts', 'facility_tools', 'facility_tools_page', '/facility-request-icon.png');  
+}
+function equipment_tools_page() 
+{ 
+    echo '<iframe src="http://www.byuicomm.net/admin/makereq.php" width="100%" height="800">
+  	<p>Your browser does not support iframes.</p>
+	</iframe>';
+} 
+function facility_tools_page() 
+{ 
+    echo '<iframe src="http://www.byuicomm.net/admin/makefacreq.php" width="100%" height="800">
+  	<p>Your browser does not support iframes.</p>
+	</iframe>';
+} 
+
+add_action('admin_menu', 'themeoptions_admin_menu');

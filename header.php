@@ -81,7 +81,7 @@
               </div>
               <div class="span4">
 
-                <form class="form-search line-height pull-right front-search" method="get" action="http://beta.byuicomm.net/search/">
+                <form class="form-search line-height pull-right front-search" method="get" action="http://www.byuicomm.net/search/">
                   <div class="input-append">
                     <input type="text" class="span9 search-query" name="q" placeholder="Search...">
                     <button type="submit" class="btn"><i class="icon-search"></i></button>

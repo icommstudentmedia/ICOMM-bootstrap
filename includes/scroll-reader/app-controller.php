@@ -17,6 +17,7 @@ else
 {
 	// Return a message to client
 }
+
 // Check if 'command' and 'data' came from POST message
 if($_POST['command'])
 {
@@ -34,9 +35,14 @@ $handlers = array(
 	'get_author' => 'get_author',
 	'get_articles_by_author' => 'get_articles_by_author'
 	);
-// Debugging Code
-$command = 'get_articles_home';
-$data = '';
+
 // Use reflection to call handler functions depending on the values of $command $data
-$handlers[$command]($data);
+$message = $handlers[$command]($data);
+
+// Create a json string
+$jsonMessage = json_encode($message);
+
+// Debug
+echo $jsonMessage;
+
 ?>

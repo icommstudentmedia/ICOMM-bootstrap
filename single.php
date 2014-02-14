@@ -156,11 +156,11 @@ setPostViews(get_the_ID());
 			<?php 
 				// Display our ad placeholders only to categories different than these
 				if($cat_slug != "opinion") {
-					ad_control("among_posts", "$cat_slug");
+					ad_control("sidebar", ""); //$cat_slug
 				}
 				// Display Google Ads to the rest (by simply not passing any argument for the second parameter) 
 				else {
-					ad_control("among_posts", "");
+					ad_control("sidebar", "");
 				}
 			?>
 			<?php dynamic_sidebar('front-page'); ?>
@@ -171,7 +171,7 @@ setPostViews(get_the_ID());
 <?php 
 	// Display our ad placeholders only to categories different than these
 if($cat_slug != "opinion") {
-	ad_control("among_posts", "$cat_slug");
+	ad_control("among_posts", ""); //$cat_slug
 }
 	// Display Google Ads to the rest (by simply not passing any argument for the second parameter) 
 else {

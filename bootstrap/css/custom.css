@@ -554,7 +554,7 @@ img.feature-img {
 .postinfo-box-top-photography {
     border-top: 3px solid #42DBB5;
 }
-.postinfo-box-top-entertainment {
+.postinfo-box-top-arts-entertainment {
     border-top: 3px solid #8D2D69;
 }
 .postinfo-box-top-lifestyle {
@@ -1003,7 +1003,7 @@ by Isaac Andrade
 
 /**************************************/
 
-.btn-entertainment {
+.btn-arts-entertainment {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #8D2D69;
@@ -1021,17 +1021,17 @@ by Isaac Andrade
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-.btn-entertainment:hover,
-.btn-entertainment:active,
-.btn-entertainment.active,
-.btn-entertainment.disabled,
-.btn-entertainment[disabled] {
+.btn-arts-entertainment:hover,
+.btn-arts-entertainment:active,
+.btn-arts-entertainment.active,
+.btn-arts-entertainment.disabled,
+.btn-arts-entertainment[disabled] {
   color: #ffffff;
   background-color: #a54380;
   *background-color: #a54380;
 }
-.btn-entertainment:active,
-.btn-entertainment.active {
+.btn-arts-entertainment:active,
+.btn-arts-entertainment.active {
   background-color: #a54380 \9;
 }
 

@@ -1171,6 +1171,21 @@ by Isaac Andrade
   background-color: #000F16 \9;
 }
 
+/*-------- LDP CSS Styles ---------*/
+.season {
+  text-align: left;
+}
+
+.episodes {
+  display: inline-block;
+}
+
+.episode {
+  list-style-type: none;
+  min-width: 227px;
+  display: inline-block;
+}
+
 /****** Need newer class for category / page headers to have correct spacing **********************************
 //Classes below are not being used anymore in about.php and contact.php. Instead, we are using .vert-padding and .social-pics
 //to keep consistency. Isaac Andrade

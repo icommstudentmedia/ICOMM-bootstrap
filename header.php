@@ -14,7 +14,8 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
 
 
-  <?php wp_head(); ?> 
+  <?php wp_head(); ?>
+  <script src="<?php bloginfo('template_directory')?>/js/icomm.custom.js"></script>
 </head> 
 <body> 
   <div id="wrap">

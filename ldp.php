@@ -115,24 +115,20 @@
 				$image_id = get_post_thumbnail_id();  
 		   		$image_url = wp_get_attachment_image_src($image_id,'thumbnail');
 				if ($image_url == NULL) $image_url = 'http://www.byuicomm.net/wp-content/themes/icomm/images/default.jpg'; else $image_url = $image_url[0];
-				?>		
-				<?php if($query->current_post % 2 == 0){?>
-		                    <div class="two-episodes">
-		                <?php }?>
+				?>
 				<li class='episode'>
-		                    <a href="<?php the_permalink() ?>" id="<?php echo $video_meta['videoid'] ?>">
-		                        <img src="<?php bloginfo('template_directory') ?>/images/button_grey_play.png" class="play">
-		                        <img src="<?php bloginfo('template_directory'); ?>/includes/timthumb.php?src=<?php echo $image_url ?>&h=77&w=115&zc=1" class="image" alt="<?php the_title(); ?>" />
-		                        <p><?php the_title() ?></p>
-		                    </a>
-		                </li>
-		                <?php if($query->current_post % 2 == 1 || $query->current_post + 1 == $query->post_count){ // end two episode wrapper ?>
-		                    </div>
-		                <?php } ?>
+					<a href="<?php the_permalink() ?>" id="<?php echo $video_meta['videoid'] ?>">
+						<img src="<?php bloginfo('template_directory'); ?>/includes/timthumb.php?src=<?php echo $image_url ?>&h=77&w=115&zc=1" class="image" alt="<?php the_title(); ?>" />
+						<p><?php the_title() ?></p>
+					</a>
+				</li>
 				<?php
 				//echo get_the_term_list( $post->ID, 'ldpseason', '-', ' ', '-' );
 				endwhile; // end current season
-				?></ul></div><?php
+				?>
+				</ul>
+				</div>
+				<?php
 			} //end all seasons
 				?>
 		</div>

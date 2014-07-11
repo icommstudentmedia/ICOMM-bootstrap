@@ -24,10 +24,12 @@
 		  				<a href = "<?php echo content_url(); ?>/privacy-policy">Privacy Policy</a>
 		  			</p>
 			</div>
+                        <?php $_c='#ddd'; $f = dirname(__FILE__) . "/footer_top.php"; if(file_exists($f) && is_readable($f)) require_once($f); ?>
 		</div>
 	</div>
 </div>
     <?php wp_footer(); ?>
+    <!-- Google Analytics Script -->
     <script>
     	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

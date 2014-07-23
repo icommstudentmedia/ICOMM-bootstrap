@@ -103,10 +103,19 @@
 
         <h2 class="feature-lead">Latest Stories</h2>
           <?php
+            function filter_where($where = '') {
+              //posts in the last 30 days
+              $where .= " AND post_date > '" . date('Y-m-d', strtotime('-30 days')) . "'";
+              return $where;
+            }
+            add_filter('posts_where', 'filter_where');
             $args = array(
-                'posts_per_page' => 20
+                'posts_per_page' => 10,
+                'orderby' => 'date',
+                'order' => 'DESC'
               );
             $query = new WP_Query($args);
+            remove_filter('posts_where', 'filter_where');
             if( $query->have_posts() ) {
               $i = 0;
               while ( $query->have_posts() ) {
@@ -122,7 +131,7 @@
                 $i++;              
               } 
             } 
-              
+            wp_reset_query(); //just in case
           ?>
 
           <!-- I am commenting pagination out for now, until I have time to fix it. If you want to work on it, please do! - Isaac Andrade -->

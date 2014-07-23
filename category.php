@@ -77,9 +77,11 @@
             elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
             elseif ( isset($_GET['paged']) ) { $paged = $_GET['paged']; }
             else { $paged = 1; }
-            $args = array('posts_per_page' => 20, 
+            $args = array(
+              'posts_per_page' => 10, 
               'paged' => $paged,
-              'cat' => $cat_id );
+              'cat' => $cat_id 
+              );
 
             $query = new WP_Query($args);
                       

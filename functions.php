@@ -132,7 +132,7 @@ wp_register_sidebar_widget('latest-videos', 'Latest Videos', 'latest_videos_cont
 function latest_videos_content($args){
 	extract($args);
 	echo $before_widget;
-	echo $before_title."Latest Videos".$after_title;
+	echo $before_title."Latest Stories".$after_title;
 	$args = array(
 		'posts_per_page' => 8, 
 		'post_status' => 'publish',

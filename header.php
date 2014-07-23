@@ -3,7 +3,8 @@
 <head> 
   <meta charset="utf-8"> 
   <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="http://icomm.com/wp-content/themes/icomm-bootstrap/img/favicon.ico">
   
 
   <!-- Le styles --> 
